@@ -4,7 +4,9 @@ on:
   schedule:
     - cron: '*/5 * * * *'   # every 5 minutes (GitHub Actions minimum)
   workflow_dispatch:         # manual trigger from GitHub UI
-  repository_dispatch:       # trigger via GitHub API (used by the site's refresh button)
+  push:
+    branches: [main]         # also run on every push to keep data fresh
+  repository_dispatch:
     types: [refresh]
 
 jobs:

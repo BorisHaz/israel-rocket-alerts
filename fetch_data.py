@@ -87,40 +87,35 @@ def fetch_alerts():
 
 
 def fetch_history():
-    """Fetch alert history from Pikud HaOref history endpoint."""
+    """
+    Fetch alert history from Tzeva Adom (globally accessible).
+    Pikud HaOref history is geo-blocked from non-Israeli IPs.
+    """
     history = []
     try:
         res = requests.get(
-            "https://www.oref.org.il/WarningMessages/History/AlertsHistory.json",
-            headers={
-                "Referer": "https://www.oref.org.il/",
-                "X-Requested-With": "XMLHttpRequest",
-                "User-Agent": "Mozilla/5.0",
-            },
+            "https://api.tzevaadom.co.il/alerts-history",
+            headers={"User-Agent": "Mozilla/5.0", "Accept": "application/json"},
             timeout=15,
         )
-        if res.status_code == 200 and len(res.text) > 1000:
-            raw = res.json()
-            for item in raw[:50]:  # take last 50 history items
-                cities_str = item.get("data", "")
-                cities = [c.strip() for c in cities_str.split(",") if c.strip()]
-                dt_str  = item.get("datetime", "")
-                try:
-                    dt = datetime.fromisoformat(dt_str)
-                    unix = int(dt.replace(tzinfo=timezone(timedelta(hours=2))).timestamp())
-                except Exception:
-                    unix = 0
-                aid = f"hist_{dt_str}"
+        if res.status_code != 200 or not res.text.strip():
+            print(f"History fetch: status {res.status_code}")
+            return history
+        raw = res.json()   # list of groups: [{id, alerts: [{time, cities, threat, isDrill}]}]
+        for group in raw:
+            for alert in group.get("alerts", []):
+                aid = f"tza_{group.get('id','')}_{alert.get('time','')}"
+                cities = alert.get("cities", [])
                 history.append({
-                    "id":        aid,
-                    "unix_time": unix,
-                    "cities":    cities,
+                    "id":         aid,
+                    "unix_time":  alert.get("time", 0),
+                    "cities":     cities,
                     "beer_sheva": any(c in BEER_SHEVA_NAMES for c in cities),
-                    "negev":     any(c in NEGEV_CITIES or c in BEER_SHEVA_NAMES for c in cities),
-                    "threat":    0,
-                    "is_drill":  False,
+                    "negev":      any(c in NEGEV_CITIES or c in BEER_SHEVA_NAMES for c in cities),
+                    "threat":     alert.get("threat", 0),
+                    "is_drill":   alert.get("isDrill", False),
                 })
-            print(f"Fetched {len(history)} history items")
+        print(f"Fetched {len(history)} history items from Tzeva Adom")
     except Exception as e:
         print(f"History fetch error: {e}")
     return history
