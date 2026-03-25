@@ -46,18 +46,18 @@
     /* ── LANG TOGGLE ── */
     .lang-toggle {
       display: flex; justify-content: flex-end;
-      gap: 0.5rem; margin-bottom: 1rem;
+      gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap;
     }
     .lang-btn {
       background: transparent; border: 1px solid var(--border);
-      color: var(--muted); padding: 0.3rem 0.7rem;
-      border-radius: 3px; cursor: pointer; font-size: 0.78rem;
+      color: var(--muted); padding: 0.35rem 0.8rem;
+      border-radius: 3px; cursor: pointer; font-size: 0.82rem;
       letter-spacing: 0.05em; transition: all 0.15s;
     }
     .refresh-btn {
       background: transparent; border: 1px solid var(--cyan);
-      color: var(--cyan); padding: 0.3rem 0.8rem;
-      border-radius: 3px; cursor: pointer; font-size: 0.78rem;
+      color: var(--cyan); padding: 0.35rem 0.9rem;
+      border-radius: 3px; cursor: pointer; font-size: 0.82rem;
       letter-spacing: 0.05em; transition: all 0.15s;
     }
     .refresh-btn:hover { background: rgba(0,212,255,0.12); }
@@ -90,16 +90,16 @@
     }
 
     .il-time {
-      margin-top: 0.6rem; font-size: 0.85rem;
+      margin-top: 0.6rem; font-size: 0.9rem;
       color: var(--cyan); letter-spacing: 0.06em;
       font-variant-numeric: tabular-nums;
     }
 
     .disclaimer {
       margin: 0.8rem auto 0; max-width: 600px;
-      font-size: 0.72rem; color: var(--orange); letter-spacing: 0.03em;
+      font-size: 0.75rem; color: var(--orange); letter-spacing: 0.03em;
       background: rgba(255,145,0,0.06); border: 1px solid rgba(255,145,0,0.25);
-      border-radius: 4px; padding: 0.5rem 0.8rem; text-align: center;
+      border-radius: 4px; padding: 0.55rem 0.9rem; text-align: center;
     }
 
     /* ── BEER SHEVA STATUS ── */
@@ -108,7 +108,7 @@
     }
 
     .family-label {
-      text-align: center; font-size: 0.72rem;
+      text-align: center; font-size: 0.75rem;
       letter-spacing: 0.12em; text-transform: uppercase;
       color: var(--muted); margin-bottom: 0.7rem;
     }
@@ -141,18 +141,14 @@
 
     .status-icon { font-size: 2.8rem; margin-bottom: 0.4rem; line-height: 1; }
 
-    .status-text-en { font-size: 1.6rem; font-weight: 700; }
-    .status-text-he {
-      font-size: 1.5rem; font-weight: 700;
-      direction: rtl; margin-top: 0.2rem;
-    }
+    .status-text { font-size: 1.6rem; font-weight: 700; margin-bottom: 0.1rem; }
 
-    .clear  .status-text-en, .clear  .status-text-he { color: var(--green);  text-shadow: 0 0 15px rgba(0,230,118,0.4); }
-    .recent .status-text-en, .recent .status-text-he { color: var(--yellow); text-shadow: 0 0 15px rgba(255,234,0,0.4); }
-    .alert  .status-text-en, .alert  .status-text-he { color: var(--red);    text-shadow: 0 0 15px rgba(255,23,68,0.5); }
+    .clear  .status-text { color: var(--green);  text-shadow: 0 0 15px rgba(0,230,118,0.4); }
+    .recent .status-text { color: var(--yellow); text-shadow: 0 0 15px rgba(255,234,0,0.4); }
+    .alert  .status-text { color: var(--red);    text-shadow: 0 0 15px rgba(255,23,68,0.5); }
 
     .status-since {
-      margin-top: 0.6rem; font-size: 0.82rem; color: var(--muted);
+      margin-top: 0.6rem; font-size: 0.85rem; color: var(--muted);
     }
 
     /* ── PREDICTION ── */
@@ -161,9 +157,8 @@
     }
 
     .section-title {
-      font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase;
+      font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase;
       color: var(--dim); margin-bottom: 0.6rem; padding-left: 0.2rem;
-      display: flex; justify-content: space-between;
     }
 
     .pred-card {
@@ -176,23 +171,19 @@
       justify-content: space-between; gap: 1rem; flex-wrap: wrap;
     }
 
-    .pred-risk {
-      font-size: 1rem; font-weight: 700; letter-spacing: 0.04em;
-    }
+    .pred-risk { font-size: 1rem; font-weight: 700; letter-spacing: 0.04em; }
     .risk-low      { color: var(--green); }
     .risk-medium   { color: var(--yellow); }
     .risk-high     { color: var(--orange); }
     .risk-critical { color: var(--red); }
 
-    .confidence-bar-wrap {
-      flex: 1; min-width: 140px;
-    }
+    .confidence-bar-wrap { flex: 1; min-width: 140px; }
     .confidence-label {
-      font-size: 0.72rem; color: var(--muted); margin-bottom: 0.3rem;
+      font-size: 0.75rem; color: var(--muted); margin-bottom: 0.3rem;
       display: flex; justify-content: space-between;
     }
     .confidence-bar {
-      height: 6px; background: rgba(255,255,255,0.06);
+      height: 8px; background: rgba(255,255,255,0.06);
       border-radius: 4px; overflow: hidden;
     }
     .confidence-fill {
@@ -206,33 +197,136 @@
     .pred-factors {
       margin-top: 0.9rem;
       display: grid; grid-template-columns: 1fr 1fr;
-      gap: 0.4rem 1rem;
+      gap: 0.5rem 1rem;
     }
 
     .factor {
-      font-size: 0.72rem; color: var(--muted);
+      font-size: 0.75rem; color: var(--muted);
       display: flex; justify-content: space-between; align-items: center;
       gap: 0.4rem;
     }
     .factor-bar {
-      flex: 1; height: 3px; background: rgba(255,255,255,0.06);
+      flex: 1; height: 4px; background: rgba(255,255,255,0.06);
       border-radius: 2px; overflow: hidden;
     }
     .factor-fill { height: 100%; background: var(--cyan); border-radius: 2px; }
-    .factor-val { font-size: 0.7rem; color: var(--dim); min-width: 28px; text-align: right; }
+    .factor-val { font-size: 0.72rem; color: var(--dim); min-width: 28px; text-align: right; }
 
     .pred-stats {
       margin-top: 0.85rem; display: flex; gap: 1.2rem; flex-wrap: wrap;
     }
-    .stat {
-      font-size: 0.75rem; color: var(--muted);
-    }
+    .stat { font-size: 0.78rem; color: var(--muted); }
     .stat strong { color: var(--text); }
 
-    /* ── RECENT ALERTS ── */
-    .alerts-wrap {
+    /* ── 24H HEATMAP (SENIOR-FRIENDLY) ── */
+    .heatmap-wrap {
       max-width: 680px; margin: 1rem auto;
     }
+
+    .heatmap-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 6px; padding: 1.2rem 1rem 1rem;
+    }
+
+    /* Time-period zone labels above the chart */
+    .hm-periods {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 3px; margin-bottom: 6px;
+    }
+    .hm-period {
+      text-align: center; font-size: 0.72rem; font-weight: 600;
+      letter-spacing: 0.06em; padding: 3px 0;
+      border-radius: 3px; color: rgba(255,255,255,0.55);
+      background: rgba(255,255,255,0.04);
+    }
+
+    /* The bars area */
+    .heatmap-bars {
+      display: flex; align-items: flex-end;
+      gap: 3px; height: 110px; position: relative;
+    }
+
+    /* Horizontal gridlines */
+    .heatmap-bars::before,
+    .heatmap-bars::after {
+      content: ''; position: absolute; left: 0; right: 0;
+      border-top: 1px dashed rgba(255,255,255,0.07);
+      pointer-events: none;
+    }
+    .heatmap-bars::before { top: 0; }
+    .heatmap-bars::after  { top: 50%; }
+
+    .hm-bar-wrap {
+      flex: 1; display: flex; flex-direction: column;
+      align-items: center; justify-content: flex-end;
+      height: 100%; position: relative;
+    }
+
+    .hm-bar {
+      width: 100%; border-radius: 3px 3px 0 0;
+      min-height: 6px; transition: all 0.4s;
+    }
+
+    /* Current-hour glow + thick border */
+    .hm-bar-wrap.now .hm-bar {
+      outline: 2px solid #ffffff;
+      outline-offset: 2px;
+      filter: brightness(1.2);
+    }
+
+    /* NOW triangle above current bar */
+    .hm-bar-wrap.now::before {
+      content: '▼ NOW';
+      position: absolute; top: -22px;
+      font-size: 0.6rem; font-weight: 700;
+      color: #fff; letter-spacing: 0.04em;
+      white-space: nowrap;
+      background: rgba(255,255,255,0.18);
+      padding: 1px 4px; border-radius: 3px;
+    }
+
+    /* Hour labels */
+    .heatmap-labels {
+      display: flex; margin-top: 5px;
+    }
+
+    .hm-label {
+      flex: 1; font-size: 0.7rem; color: var(--muted);
+      text-align: center; line-height: 1.2;
+    }
+    .hm-label.now-lbl {
+      color: #fff; font-weight: 700; font-size: 0.75rem;
+    }
+    .hm-label.major { color: var(--dim); }
+
+    /* Big summary strip at bottom */
+    .hm-summary {
+      margin-top: 1rem; padding: 0.9rem 1rem;
+      border-radius: 5px; text-align: center;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .hm-summary .hm-now-label {
+      font-size: 1.1rem; font-weight: 700; letter-spacing: 0.04em;
+    }
+    .hm-summary .hm-best {
+      font-size: 0.82rem; color: var(--muted); margin-top: 0.35rem;
+    }
+    .hm-summary .hm-best strong { color: var(--green); }
+
+    /* Legend */
+    .heatmap-legend {
+      display: flex; justify-content: center; gap: 0.9rem;
+      margin-top: 0.9rem; flex-wrap: wrap;
+    }
+    .legend-item {
+      display: flex; align-items: center; gap: 0.4rem;
+      font-size: 0.75rem; color: var(--muted);
+    }
+    .legend-dot { width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; }
+
+    /* ── RECENT ALERTS ── */
+    .alerts-wrap { max-width: 680px; margin: 1rem auto; }
 
     .alert-list { display: flex; flex-direction: column; gap: 0.45rem; }
 
@@ -240,23 +334,21 @@
       background: var(--card); border: 1px solid var(--border);
       border-radius: 5px; padding: 0.65rem 0.9rem;
       display: flex; align-items: flex-start; gap: 0.7rem;
-      font-size: 0.8rem;
+      font-size: 0.82rem;
     }
-    .alert-item.bs   { border-left: 3px solid var(--red); }
+    .alert-item.bs    { border-left: 3px solid var(--red); }
     .alert-item.negev { border-left: 3px solid var(--orange); }
 
-    .alert-time { color: var(--dim); font-size: 0.72rem; white-space: nowrap; padding-top: 1px; }
+    .alert-time { color: var(--dim); font-size: 0.74rem; white-space: nowrap; padding-top: 1px; }
 
     .alert-cities {
       flex: 1; color: var(--text); direction: rtl;
       line-height: 1.5; text-align: right;
     }
-    .alert-cities .bs-highlight {
-      color: var(--red); font-weight: 600;
-    }
+    .alert-cities .bs-highlight { color: var(--red); font-weight: 600; }
 
     .bs-tag {
-      font-size: 0.62rem; letter-spacing: 0.1em;
+      font-size: 0.64rem; letter-spacing: 0.1em;
       background: rgba(255,23,68,0.12); color: var(--red);
       border: 1px solid rgba(255,23,68,0.3);
       padding: 0.1rem 0.4rem; border-radius: 2px;
@@ -265,7 +357,7 @@
 
     .no-alerts {
       text-align: center; color: var(--dim); padding: 1.5rem;
-      font-size: 0.85rem; letter-spacing: 0.1em;
+      font-size: 0.9rem; letter-spacing: 0.1em;
     }
 
     /* ── DAILY STATS ── */
@@ -283,85 +375,17 @@
       font-size: 1.8rem; font-weight: 700; line-height: 1;
       color: var(--cyan);
     }
-    .stat-card .lbl { font-size: 0.7rem; color: var(--muted); margin-top: 0.3rem; }
+    .stat-card .lbl { font-size: 0.73rem; color: var(--muted); margin-top: 0.3rem; }
 
-    /* ── 24H HEATMAP ── */
-    .heatmap-wrap {
-      max-width: 680px; margin: 1rem auto;
-    }
-
-    .heatmap-card {
-      background: var(--card); border: 1px solid var(--border);
-      border-radius: 6px; padding: 1rem 1rem 0.7rem;
-    }
-
-    .heatmap-bars {
-      display: flex; align-items: flex-end;
-      gap: 2px; height: 64px; margin-bottom: 4px;
-    }
-
-    .hm-bar-wrap {
-      flex: 1; display: flex; flex-direction: column;
-      align-items: center; justify-content: flex-end; height: 100%;
-      position: relative;
-    }
-
-    .hm-bar {
-      width: 100%; border-radius: 2px 2px 0 0;
-      transition: opacity 0.3s;
-      min-height: 4px;
-    }
-
-    .hm-bar-wrap.now .hm-bar {
-      outline: 2px solid #fff;
-      outline-offset: 1px;
-    }
-
-    .hm-bar-wrap.now::after {
-      content: '▼';
-      position: absolute; top: -16px;
-      font-size: 9px; color: #fff;
-      line-height: 1;
-    }
-
-    .heatmap-labels {
-      display: flex; justify-content: space-between;
-      padding: 0 0; margin-top: 2px;
-    }
-
-    .hm-label {
-      font-size: 0.62rem; color: var(--dim);
-      letter-spacing: 0.02em; text-align: center;
-      flex: 1;
-    }
-
-    .hm-label.now-lbl { color: var(--text); font-weight: 600; }
-
-    .heatmap-legend {
-      display: flex; justify-content: center; gap: 1.1rem;
-      margin-top: 0.7rem; flex-wrap: wrap;
-    }
-
-    .legend-item {
-      display: flex; align-items: center; gap: 0.35rem;
-      font-size: 0.68rem; color: var(--muted);
-    }
-    .legend-dot {
-      width: 8px; height: 8px; border-radius: 2px; flex-shrink: 0;
-    }
-
-    .hm-now-info {
-      margin-top: 0.6rem; padding-top: 0.6rem;
-      border-top: 1px solid var(--border);
-      font-size: 0.75rem; color: var(--muted); text-align: center;
-    }
-    .hm-now-info strong { color: var(--text); }
-
-    /* ── HEBREW direction ── */
-    [dir="rtl"] { direction: rtl; }
+    /* ── LANGUAGE VISIBILITY ── */
     .he { display: none; }
+    .ru { display: none; }
+    /* English is default — shown unless body has is-he or is-ru */
     .is-he .he { display: block; }
-    .is-he .en { display: none; }
+    .is-he .en, .is-he .ru { display: none; }
+    .is-ru .ru { display: block; }
+    .is-ru .en, .is-ru .he { display: none; }
+    [dir="rtl"] { direction: rtl; }
 
     .loading { text-align: center; color: var(--dim); padding: 3rem; font-size: 0.9rem; }
   </style>
@@ -371,6 +395,7 @@
 <div class="lang-toggle">
   <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
   <button class="lang-btn"        id="btn-he" onclick="setLang('he')">עב</button>
+  <button class="lang-btn"        id="btn-ru" onclick="setLang('ru')">РУС</button>
   <button class="refresh-btn"     id="refresh-btn" onclick="triggerRefresh()">⟳ Refresh</button>
 </div>
 
@@ -378,19 +403,23 @@
   <div class="family-title">
     <span class="en">🏠 Hazanov Family Quiet Time</span>
     <span class="he" dir="rtl">🏠 זמן שקט למשפחת חזנוב</span>
+    <span class="ru">🏠 Тихое Время Семьи Хазанов</span>
   </div>
   <h1>
     <span class="en">🚨 Israel Rocket Alerts</span>
     <span class="he" dir="rtl">🚨 התרעות טילים - ישראל</span>
+    <span class="ru">🚨 Ракетные Тревоги Израиля</span>
   </h1>
   <div class="header-sub">
     <span class="en">Real-time tracking · Beer Sheva focus · Hazanov Family</span>
     <span class="he" dir="rtl">מעקב בזמן אמת · פוקוס באר שבע · משפחת חזנוב</span>
+    <span class="ru">Отслеживание в реальном времени · Беэр-Шева · Семья Хазанов</span>
   </div>
   <div class="il-time" id="il-time">--</div>
   <div class="disclaimer">
     <span class="en">⚠ This site is informational only. Always follow the official Pikud HaOref app and Red Alert sirens. Do NOT use this as your only source during an emergency.</span>
     <span class="he" dir="rtl">⚠ אתר זה למטרות מידע בלבד. תמיד עקוב אחר אפליקציית פיקוד העורף הרשמית והאזעקות. אל תשתמש באתר זה כמקור היחיד שלך במצב חירום.</span>
+    <span class="ru">⚠ Сайт только для информации. Всегда следуйте официальному приложению Пикуд а-Ореф и сиренам. Не используйте этот сайт как единственный источник в экстренной ситуации.</span>
   </div>
 </header>
 
@@ -398,11 +427,11 @@
   <div class="family-label">
     <span class="en">Beer Sheva Status · Hazanov Family</span>
     <span class="he" dir="rtl">מצב באר שבע · משפחת חזנוב</span>
+    <span class="ru">Статус Беэр-Шевы · Семья Хазанов</span>
   </div>
   <div class="bs-card" id="bs-card">
     <div class="status-icon" id="status-icon">⏳</div>
-    <div class="status-text-en en" id="status-en">Loading...</div>
-    <div class="status-text-he he" id="status-he" dir="rtl">טוען...</div>
+    <div class="status-text" id="status-text">Loading...</div>
     <div class="status-since" id="status-since"></div>
   </div>
 </div>
@@ -411,6 +440,7 @@
   <div class="section-title">
     <span class="en">Quiet Time Prediction · Beer Sheva</span>
     <span class="he" dir="rtl">תחזית זמן שקט · באר שבע</span>
+    <span class="ru">Прогноз тихого времени · Беэр-Шева</span>
   </div>
   <div class="pred-card" id="pred-card">
     <div class="loading">Loading...</div>
@@ -421,6 +451,7 @@
   <div class="section-title">
     <span class="en">24-Hour Quiet Time Forecast · Beer Sheva (Israel Time)</span>
     <span class="he" dir="rtl">תחזית 24 שעות · זמן שקט · באר שבע</span>
+    <span class="ru">Прогноз тишины на 24 часа · Беэр-Шева (Израильское время)</span>
   </div>
   <div class="heatmap-card" id="heatmap-card">
     <div class="loading">Loading…</div>
@@ -433,6 +464,7 @@
     <div class="lbl">
       <span class="en">Alerts nationwide (24h)</span>
       <span class="he" dir="rtl">התרעות ארצית (24ש)</span>
+      <span class="ru">Тревоги по стране (24ч)</span>
     </div>
   </div>
   <div class="stat-card">
@@ -440,6 +472,7 @@
     <div class="lbl">
       <span class="en">Beer Sheva alerts (24h)</span>
       <span class="he" dir="rtl">התרעות ב"ש (24ש)</span>
+      <span class="ru">Тревоги Беэр-Шевы (24ч)</span>
     </div>
   </div>
 </div>
@@ -448,6 +481,7 @@
   <div class="section-title">
     <span class="en">Recent Alerts</span>
     <span class="he" dir="rtl">התרעות אחרונות</span>
+    <span class="ru">Последние тревоги</span>
   </div>
   <div class="alert-list" id="alert-list">
     <div class="loading">Loading...</div>
@@ -456,108 +490,146 @@
 
 <script>
 let lang = 'en';
-let refreshInterval;
+let _lastData = null;
+let _lastHour = -1;
 
+// ── Translations ────────────────────────────────────────────────────────────
 const STATUS = {
-  clear: {
-    icon: '✅',
-    en: 'ALL CLEAR',
-    he: 'אין התרעה',
-  },
-  recent: {
-    icon: '⚠️',
-    en: 'RECENT ACTIVITY',
-    he: 'פעילות אחרונה',
-  },
-  alert: {
-    icon: '🚨',
-    en: 'ACTIVE ALERT',
-    he: 'התרעה פעילה!',
-  },
+  clear:  { icon: '✅', en: 'ALL CLEAR',        he: 'אין התרעה',       ru: 'ВСЁ СПОКОЙНО' },
+  recent: { icon: '⚠️', en: 'RECENT ACTIVITY',  he: 'פעילות אחרונה',  ru: 'НЕДАВНЯЯ АКТИВНОСТЬ' },
+  alert:  { icon: '🚨', en: 'ACTIVE ALERT',      he: 'התרעה פעילה!',   ru: 'АКТИВНАЯ ТРЕВОГА!' },
 };
 
 const RISK_LABELS = {
-  low:      { en: 'Low Risk — Likely Quiet',         he: 'סיכון נמוך — צפוי שקט',       cls: 'risk-low',      fill: 'fill-low' },
-  medium:   { en: 'Moderate Risk',                   he: 'סיכון בינוני',                 cls: 'risk-medium',   fill: 'fill-medium' },
-  high:     { en: 'High Risk — Stay Alert',          he: 'סיכון גבוה — היה ערני',        cls: 'risk-high',     fill: 'fill-high' },
-  critical: { en: 'Critical — Take Cover Immediately', he: 'קריטי — היכנס למרחב מוגן!', cls: 'risk-critical', fill: 'fill-critical' },
+  low:      { en: 'Low Risk — Likely Quiet',            he: 'סיכון נמוך — צפוי שקט',         ru: 'Низкий риск — скорее тихо',        cls: 'risk-low',      fill: 'fill-low' },
+  medium:   { en: 'Moderate Risk',                      he: 'סיכון בינוני',                   ru: 'Умеренный риск',                   cls: 'risk-medium',   fill: 'fill-medium' },
+  high:     { en: 'High Risk — Stay Alert',             he: 'סיכון גבוה — היה ערני',          ru: 'Высокий риск — будьте осторожны',  cls: 'risk-high',     fill: 'fill-high' },
+  critical: { en: 'Critical — Take Cover Immediately',  he: 'קריטי — היכנס למרחב מוגן!',     ru: 'Критично — немедленно в укрытие!', cls: 'risk-critical', fill: 'fill-critical' },
 };
 
 const FACTOR_LABELS = {
-  recency_score: { en: 'Time since last alert', he: 'זמן מהתרעה אחרונה' },
-  burst_score:   { en: 'Recent burst (3h)',     he: 'פעילות אחרונה (3ש)' },
-  volume_score:  { en: 'Daily volume (24h)',    he: 'נפח יומי (24ש)' },
-  tod_score:     { en: 'Time of day',           he: 'שעת היום' },
+  recency_score: { en: 'Time since last alert', he: 'זמן מהתרעה אחרונה',   ru: 'Время с последней тревоги' },
+  burst_score:   { en: 'Recent burst (3h)',     he: 'פעילות אחרונה (3ש)',  ru: 'Вспышка тревог (3ч)' },
+  volume_score:  { en: 'Daily volume (24h)',    he: 'נפח יומי (24ש)',      ru: 'Объём за сутки (24ч)' },
+  tod_score:     { en: 'Time of day',           he: 'שעת היום',            ru: 'Время суток' },
 };
 
+const HM_LEVELS = {
+  quiet:    { en: 'Relatively Quiet',       he: 'שקט יחסית',           ru: 'Относительно тихо' },
+  moderate: { en: 'Moderate Activity',      he: 'פעילות בינונית',      ru: 'Умеренная активность' },
+  elevated: { en: 'Elevated Activity',      he: 'פעילות מוגברת',       ru: 'Повышенная активность' },
+  high:     { en: 'High Activity Period',   he: 'תקופת פעילות גבוהה', ru: 'Период высокой активности' },
+};
+
+const PERIOD_LABELS = {
+  night:     { en: '🌙 Night',      he: '🌙 לילה',    ru: '🌙 Ночь' },
+  morning:   { en: '🌅 Morning',    he: '🌅 בוקר',    ru: '🌅 Утро' },
+  afternoon: { en: '☀️ Afternoon',  he: '☀️ צהריים',  ru: '☀️ День' },
+  evening:   { en: '🌆 Evening',    he: '🌆 ערב',     ru: '🌆 Вечер' },
+};
+
+function T(key, obj) { return obj[lang] ?? obj.en ?? ''; }
+
+// ── Language toggle ──────────────────────────────────────────────────────────
 function setLang(l) {
   lang = l;
-  document.body.classList.toggle('is-he', l === 'he');
+  document.body.classList.remove('is-en', 'is-he', 'is-ru');
+  if (l !== 'en') document.body.classList.add('is-' + l);
   document.documentElement.lang = l;
-  document.getElementById('btn-en').classList.toggle('active', l === 'en');
-  document.getElementById('btn-he').classList.toggle('active', l === 'he');
+  ['en','he','ru'].forEach(x =>
+    document.getElementById('btn-' + x).classList.toggle('active', x === l)
+  );
+  // Re-render all dynamic sections with new language
+  if (_lastData) {
+    renderStatus(_lastData);
+    renderPrediction(_lastData.prediction);
+    renderHeatmap(_lastData);
+    renderAlerts(_lastData.recent_alerts);
+  }
+  const btn = document.getElementById('refresh-btn');
+  btn.textContent = l === 'ru' ? '⟳ Обновить' : l === 'he' ? '⟳ רענן' : '⟳ Refresh';
+}
+
+// ── Clock ────────────────────────────────────────────────────────────────────
+function ilOffset() {
+  const now = new Date();
+  const m = now.getUTCMonth() + 1, d = now.getUTCDate();
+  return (m > 3 || (m === 3 && d >= 24) || m < 10 || (m === 10 && d < 25)) ? 3 : 2;
 }
 
 function updateClock() {
-  // Israel time (IDT = UTC+3, IST = UTC+2)
-  const now   = new Date();
-  const month = now.getUTCMonth() + 1;
-  const day   = now.getUTCDate();
-  const isDST = month > 3 || (month === 3 && day >= 24) || month < 10 || (month === 10 && day < 25);
-  const offset = isDST ? 3 : 2;
-  const il = new Date(now.getTime() + offset * 3600000);
+  const now = new Date();
+  const il  = new Date(now.getTime() + ilOffset() * 3600000);
   const pad = n => String(n).padStart(2, '0');
-  const timeStr = `${pad(il.getUTCDate())}/${pad(il.getUTCMonth()+1)}/${il.getUTCFullYear()}  ${pad(il.getUTCHours())}:${pad(il.getUTCMinutes())}:${pad(il.getUTCSeconds())}  🕐 Israel Time`;
-  document.getElementById('il-time').textContent = timeStr;
+  const label = lang === 'ru' ? '🕐 Израильское время'
+              : lang === 'he' ? '🕐 שעון ישראל'
+              : '🕐 Israel Time';
+  document.getElementById('il-time').textContent =
+    `${pad(il.getUTCDate())}/${pad(il.getUTCMonth()+1)}/${il.getUTCFullYear()}  ${pad(il.getUTCHours())}:${pad(il.getUTCMinutes())}:${pad(il.getUTCSeconds())}  ${label}`;
 }
 
-function minsSince(minsVal) {
-  if (minsVal === null || minsVal === undefined) return '';
-  if (minsVal < 60)  return `${minsVal} min ago`;
-  const h = Math.floor(minsVal / 60), m = minsVal % 60;
-  return m ? `${h}h ${m}m ago` : `${h}h ago`;
+// ── Helpers ───────────────────────────────────────────────────────────────────
+function minsSince(v) {
+  if (v == null) return '';
+  if (v < 60) {
+    return lang === 'ru' ? `${v} мин назад`
+         : lang === 'he' ? `לפני ${v} דק'`
+         : `${v} min ago`;
+  }
+  const h = Math.floor(v/60), m = v%60;
+  const hm = m ? (lang === 'ru' ? `${h} ч ${m} мин` : `${h}h ${m}m`) : (lang === 'ru' ? `${h} ч` : `${h}h`);
+  return lang === 'ru' ? `${hm} назад` : lang === 'he' ? `לפני ${hm}` : `${hm} ago`;
 }
 
+// ── Render: Status card ───────────────────────────────────────────────────────
 function renderStatus(data) {
-  const s = data.beer_sheva_status || 'clear';
+  const s    = data.beer_sheva_status || 'clear';
   const info = STATUS[s] || STATUS.clear;
   const card = document.getElementById('bs-card');
   card.className = `bs-card ${s}`;
   document.getElementById('status-icon').textContent = info.icon;
-  document.getElementById('status-en').textContent = info.en;
-  document.getElementById('status-he').textContent = info.he;
+  document.getElementById('status-text').textContent = info[lang] ?? info.en;
 
   const p = data.prediction || {};
-  const since = p.mins_since_last != null
-    ? (lang === 'he'
-        ? `התרעה אחרונה: ${p.last_bs_alert || ''} (${p.mins_since_last} דק' אחרות)`
-        : `Last alert: ${p.last_bs_alert || ''} (${minsSince(p.mins_since_last)})`)
-    : (lang === 'he' ? 'אין מידע על התרעות אחרונות' : 'No recent alert data available');
+  let since = '';
+  if (p.mins_since_last != null) {
+    const ago = minsSince(p.mins_since_last);
+    since = lang === 'ru' ? `Последняя тревога: ${p.last_bs_alert || ''} (${ago})`
+          : lang === 'he' ? `התרעה אחרונה: ${p.last_bs_alert || ''} (${ago})`
+          : `Last alert: ${p.last_bs_alert || ''} (${ago})`;
+  } else {
+    since = lang === 'ru' ? 'Нет данных о последних тревогах'
+          : lang === 'he' ? 'אין מידע על התרעות אחרונות'
+          : 'No recent alert data available';
+  }
   document.getElementById('status-since').textContent = since;
 }
 
+// ── Render: Prediction card ───────────────────────────────────────────────────
 function renderPrediction(pred) {
   if (!pred) return;
   const rl = RISK_LABELS[pred.risk_level] || RISK_LABELS.medium;
-  const factors = pred.factors || {};
+  const f  = pred.factors || {};
+
   const factorHTML = Object.entries(FACTOR_LABELS).map(([key, lbl]) => {
-    const val = factors[key] ?? 0;
+    const val = f[key] ?? 0;
     return `<div class="factor">
-      <span>${lang === 'he' ? lbl.he : lbl.en}</span>
+      <span>${lbl[lang] ?? lbl.en}</span>
       <div class="factor-bar"><div class="factor-fill" style="width:${val}%"></div></div>
       <span class="factor-val">${val}%</span>
     </div>`;
   }).join('');
 
+  const qLabel  = lang === 'ru' ? 'Вероятность тишины' : lang === 'he' ? 'סיכוי שקט' : 'Quiet confidence';
+  const a3Label = lang === 'ru' ? 'Тревоги Б-Ш (3ч): '  : lang === 'he' ? 'התרעות ב"ש (3ש): '  : 'BS alerts (3h): ';
+  const a24Label= lang === 'ru' ? 'Тревоги Б-Ш (24ч): ' : lang === 'he' ? 'התרעות ב"ש (24ש): ' : 'BS alerts (24h): ';
+
   document.getElementById('pred-card').innerHTML = `
     <div class="pred-top">
-      <div>
-        <div class="pred-risk ${rl.cls}">${lang === 'he' ? rl.he : rl.en}</div>
-      </div>
+      <div><div class="pred-risk ${rl.cls}">${rl[lang] ?? rl.en}</div></div>
       <div class="confidence-bar-wrap">
         <div class="confidence-label">
-          <span>${lang === 'he' ? 'סיכוי שקט' : 'Quiet confidence'}</span>
-          <span>${pred.quiet_confidence}%</span>
+          <span>${qLabel}</span><span>${pred.quiet_confidence}%</span>
         </div>
         <div class="confidence-bar">
           <div class="confidence-fill ${rl.fill}" style="width:${pred.quiet_confidence}%"></div>
@@ -566,130 +638,132 @@ function renderPrediction(pred) {
     </div>
     <div class="pred-factors">${factorHTML}</div>
     <div class="pred-stats">
-      <div class="stat">
-        <span>${lang === 'he' ? 'התרעות ב"ש (3ש): ' : 'BS alerts (3h): '}</span>
-        <strong>${pred.bs_alerts_3h ?? 0}</strong>
-      </div>
-      <div class="stat">
-        <span>${lang === 'he' ? 'התרעות ב"ש (24ש): ' : 'BS alerts (24h): '}</span>
-        <strong>${pred.bs_alerts_24h ?? 0}</strong>
-      </div>
-    </div>
-  `;
+      <div class="stat"><span>${a3Label}</span><strong>${pred.bs_alerts_3h ?? 0}</strong></div>
+      <div class="stat"><span>${a24Label}</span><strong>${pred.bs_alerts_24h ?? 0}</strong></div>
+    </div>`;
 }
 
+// ── Render: Alerts list ───────────────────────────────────────────────────────
 function renderAlerts(alerts) {
   const list = document.getElementById('alert-list');
   if (!alerts || !alerts.length) {
-    list.innerHTML = `<div class="no-alerts">${lang === 'he' ? 'אין התרעות אחרונות' : 'No recent alerts'}</div>`;
+    const none = lang === 'ru' ? 'Нет последних тревог' : lang === 'he' ? 'אין התרעות אחרונות' : 'No recent alerts';
+    list.innerHTML = `<div class="no-alerts">${none}</div>`;
     return;
   }
   list.innerHTML = alerts.map(a => {
     const citiesHTML = a.cities.map(c => {
-      const isBS = c.includes('באר שבע') || c.includes('beer') || c.includes('Beer');
+      const isBS = c.includes('באר שבע');
       return isBS ? `<span class="bs-highlight">${c}</span>` : c;
     }).join(' · ');
-
     return `<div class="alert-item ${a.beer_sheva ? 'bs' : a.negev ? 'negev' : ''}">
       <div class="alert-time">${a.time_il}</div>
       <div class="alert-cities" dir="rtl">${citiesHTML}</div>
-      ${a.beer_sheva ? `<div class="bs-tag">B"SH</div>` : ''}
+      ${a.beer_sheva ? `<div class="bs-tag">ב"ש</div>` : ''}
     </div>`;
   }).join('');
 }
 
-// Time-of-day quiet score per hour (Israel time), matching fetch_data.py logic
-// Higher = quieter / safer
+// ── Render: 24H Heatmap ───────────────────────────────────────────────────────
+// Time-of-day quiet score per hour (Israel time) — higher = quieter
 const TOD_SCORE = [
   0.70, 0.70, 0.85, 0.85, 0.85, 0.85, // 00–05  late night → pre-dawn
   0.55, 0.55, 0.55, 0.50, 0.50, 0.50, // 06–11  morning
-  0.50, 0.50, 0.45, 0.45, 0.45, 0.45, // 12–17  afternoon (most active)
+  0.50, 0.50, 0.45, 0.45, 0.45, 0.45, // 12–17  afternoon
   0.40, 0.40, 0.40, 0.40, 0.70, 0.70, // 18–23  evening → late night
 ];
 
-function renderHeatmap(data) {
-  const pred  = data?.prediction || {};
-  const now   = new Date();
-  const month = now.getUTCMonth() + 1;
-  const day   = now.getUTCDate();
-  const isDST = month > 3 || (month === 3 && day >= 24) || month < 10 || (month === 10 && day < 25);
-  const ilHour = (now.getUTCHours() + (isDST ? 3 : 2)) % 24;
+function barColor(score) {
+  if (score >= 0.78) return { bg: '#00e676', glow: 'rgba(0,230,118,0.6)',  level: 'quiet' };
+  if (score >= 0.60) return { bg: '#ffea00', glow: 'rgba(255,234,0,0.5)',  level: 'moderate' };
+  if (score >= 0.42) return { bg: '#ff9100', glow: 'rgba(255,145,0,0.5)', level: 'elevated' };
+  return                    { bg: '#ff1744', glow: 'rgba(255,23,68,0.5)',  level: 'high' };
+}
 
-  // Blend time-of-day score with current activity level
-  // recency/burst/volume are fixed right now but we show how the tod modulates risk
+function renderHeatmap(data) {
+  const pred    = data?.prediction || {};
+  const ilHour  = (new Date().getUTCHours() + ilOffset()) % 24;
+
   const recencyW = 0.40, burstW = 0.25, volumeW = 0.20, todW = 0.15;
   const f = pred.factors || {};
   const recency = (f.recency_score ?? 50) / 100;
   const burst   = (f.burst_score   ?? 50) / 100;
   const volume  = (f.volume_score  ?? 50) / 100;
 
-  const bars = TOD_SCORE.map((tod, h) => {
-    // Replace only the tod component; keep real-time factors fixed
-    const score = recency * recencyW + burst * burstW + volume * volumeW + tod * todW;
-    // Normalise into [0,1] for bar height — use proportion relative to best possible
-    return Math.max(0.05, Math.min(1, score));
-  });
+  const scores = TOD_SCORE.map(tod =>
+    Math.max(0.05, Math.min(1,
+      recency * recencyW + burst * burstW + volume * volumeW + tod * todW
+    ))
+  );
+  const maxScore = Math.max(...scores);
+  const bestHour = scores.indexOf(maxScore);
 
-  const maxScore = Math.max(...bars);
+  // ── Period zone headers (Night 0-5, Morning 6-11, Afternoon 12-17, Evening 18-23)
+  const periodsHTML = ['night','morning','afternoon','evening'].map(p =>
+    `<div class="hm-period">${PERIOD_LABELS[p][lang] ?? PERIOD_LABELS[p].en}</div>`
+  ).join('');
 
-  // Color: green (quiet) → yellow → orange → red (risky)
-  function barColor(score) {
-    // score 0.8+ = green, 0.6–0.8 = yellow, 0.4–0.6 = orange, <0.4 = red
-    if (score >= 0.78) return { bg: '#00e676', glow: 'rgba(0,230,118,0.5)' };
-    if (score >= 0.60) return { bg: '#ffea00', glow: 'rgba(255,234,0,0.4)' };
-    if (score >= 0.42) return { bg: '#ff9100', glow: 'rgba(255,145,0,0.4)' };
-    return                    { bg: '#ff1744', glow: 'rgba(255,23,68,0.4)' };
-  }
-
-  // Build bars
-  const barsHTML = bars.map((score, h) => {
+  // ── Bars
+  const barsHTML = scores.map((score, h) => {
     const heightPct = Math.round((score / maxScore) * 100);
     const isNow = h === ilHour;
     const { bg, glow } = barColor(score);
-    const style = `height:${heightPct}%; background:${bg}; ${isNow ? `box-shadow:0 0 8px ${glow};` : 'opacity:0.72;'}`;
+    const opacity = isNow ? '1' : '0.68';
+    const style = `height:${heightPct}%; background:${bg}; opacity:${opacity}; ${isNow ? `box-shadow:0 0 10px ${glow};` : ''}`;
     return `<div class="hm-bar-wrap${isNow ? ' now' : ''}">
       <div class="hm-bar" style="${style}"></div>
     </div>`;
   }).join('');
 
-  // Labels: show only every 3 hours
+  // ── Hour labels: show every 2 hours + current hour
   const labelsHTML = Array.from({length: 24}, (_, h) => {
     const isNow = h === ilHour;
-    if (h % 3 === 0 || isNow) {
-      return `<div class="hm-label${isNow ? ' now-lbl' : ''}" style="flex:${h % 3 === 0 || isNow ? 3 : 1}">${h === ilHour ? `→${h}` : h}</div>`;
-    }
-    return `<div class="hm-label" style="flex:1"></div>`;
+    const show  = h % 2 === 0 || isNow;
+    if (!show) return `<div class="hm-label"></div>`;
+    const cls = isNow ? 'hm-label now-lbl' : 'hm-label major';
+    const txt = isNow ? `⬆${h}` : `${h}`;
+    return `<div class="${cls}">${txt}</div>`;
   }).join('');
 
-  const nowScore = bars[ilHour];
-  const { bg: nowBg } = barColor(nowScore);
-  let nowLabel, nowLabelHe;
-  if (nowScore >= 0.78) { nowLabel = 'Relatively Quiet'; nowLabelHe = 'שקט יחסית'; }
-  else if (nowScore >= 0.60) { nowLabel = 'Moderate Activity';  nowLabelHe = 'פעילות בינונית'; }
-  else if (nowScore >= 0.42) { nowLabel = 'Elevated Activity';  nowLabelHe = 'פעילות מוגברת'; }
-  else                       { nowLabel = 'High Activity Period'; nowLabelHe = 'תקופת פעילות גבוהה'; }
+  // ── Summary strip
+  const nowColor = barColor(scores[ilHour]);
+  const nowLvl   = HM_LEVELS[nowColor.level][lang] ?? HM_LEVELS[nowColor.level].en;
 
-  const bestHour = bars.indexOf(maxScore);
+  const bestLabel = lang === 'ru'
+    ? `Исторически тише всего около <strong>${bestHour}:00–${(bestHour+3)%24}:00</strong>`
+    : lang === 'he'
+    ? `<strong>${bestHour}:00–${(bestHour+3)%24}:00</strong> — שקט ביותר היסטורית`
+    : `Historically quietest around <strong>${bestHour}:00–${(bestHour+3)%24}:00</strong>`;
+
+  const nowPrefix = lang === 'ru' ? `Сейчас (${ilHour}:00):`
+                  : lang === 'he' ? `עכשיו (${ilHour}:00):`
+                  : `Now (${ilHour}:00):`;
+
+  const legendQuiet    = lang === 'ru' ? 'Тихо'    : lang === 'he' ? 'שקט'    : 'Quiet';
+  const legendModerate = lang === 'ru' ? 'Умеренно': lang === 'he' ? 'בינוני' : 'Moderate';
+  const legendElevated = lang === 'ru' ? 'Повышен' : lang === 'he' ? 'מוגבר'  : 'Elevated';
+  const legendHigh     = lang === 'ru' ? 'Высокий' : lang === 'he' ? 'גבוה'   : 'High Risk';
 
   document.getElementById('heatmap-card').innerHTML = `
+    <div class="hm-periods">${periodsHTML}</div>
     <div class="heatmap-bars">${barsHTML}</div>
     <div class="heatmap-labels">${labelsHTML}</div>
+    <div class="hm-summary" style="background:${nowColor.bg}18; border-color:${nowColor.bg}44;">
+      <div class="hm-now-label" style="color:${nowColor.bg};">${nowPrefix} ${nowLvl}</div>
+      <div class="hm-best">${bestLabel}</div>
+    </div>
     <div class="heatmap-legend">
-      <div class="legend-item"><div class="legend-dot" style="background:#00e676"></div><span class="en">Quiet</span><span class="he">שקט</span></div>
-      <div class="legend-item"><div class="legend-dot" style="background:#ffea00"></div><span class="en">Moderate</span><span class="he">בינוני</span></div>
-      <div class="legend-item"><div class="legend-dot" style="background:#ff9100"></div><span class="en">Elevated</span><span class="he">מוגבר</span></div>
-      <div class="legend-item"><div class="legend-dot" style="background:#ff1744"></div><span class="en">High Risk</span><span class="he">סיכון גבוה</span></div>
-    </div>
-    <div class="hm-now-info">
-      <span class="en">Now (${ilHour}:00 IL): <strong style="color:${nowBg}">${nowLabel}</strong> &nbsp;·&nbsp; Historically quietest around <strong>${bestHour}:00–${(bestHour+2)%24}:00</strong></span>
-      <span class="he" dir="rtl">עכשיו (${ilHour}:00): <strong style="color:${nowBg}">${nowLabelHe}</strong> &nbsp;·&nbsp; הכי שקט היסטורית בסביבות <strong>${bestHour}:00–${(bestHour+2)%24}:00</strong></span>
-    </div>
-  `;
+      <div class="legend-item"><div class="legend-dot" style="background:#00e676"></div>${legendQuiet}</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#ffea00"></div>${legendModerate}</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#ff9100"></div>${legendElevated}</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#ff1744"></div>${legendHigh}</div>
+    </div>`;
 }
 
+// ── Load data ─────────────────────────────────────────────────────────────────
 async function loadData() {
   try {
-    const res = await fetch('data.json?t=' + Date.now());
+    const res  = await fetch('data.json?t=' + Date.now());
     if (!res.ok) throw new Error();
     const data = await res.json();
 
@@ -706,34 +780,29 @@ async function loadData() {
 
   } catch {
     document.getElementById('pred-card').innerHTML =
-      `<div class="loading">Could not load data</div>`;
+      `<div class="loading">${lang === 'ru' ? 'Ошибка загрузки данных' : lang === 'he' ? 'שגיאה בטעינת הנתונים' : 'Could not load data'}</div>`;
   }
 }
 
-// Clock ticks every second; re-render heatmap on hour change
-let _lastHour = -1;
-let _lastData  = null;
-setInterval(() => {
-  updateClock();
-  const now   = new Date();
-  const month = now.getUTCMonth() + 1;
-  const day   = now.getUTCDate();
-  const isDST = month > 3 || (month === 3 && day >= 24) || month < 10 || (month === 10 && day < 25);
-  const ilHour = (now.getUTCHours() + (isDST ? 3 : 2)) % 24;
-  if (ilHour !== _lastHour && _lastData) { renderHeatmap(_lastData); _lastHour = ilHour; }
-}, 1000);
-updateClock();
-
+// ── Refresh button ────────────────────────────────────────────────────────────
 async function triggerRefresh() {
   const btn = document.getElementById('refresh-btn');
   btn.disabled = true;
-  btn.textContent = '⟳ Loading…';
+  btn.textContent = lang === 'ru' ? '⟳ Загрузка…' : lang === 'he' ? '⟳ טוען…' : '⟳ Loading…';
   await loadData();
   btn.disabled = false;
-  btn.textContent = '⟳ Refresh';
+  btn.textContent = lang === 'ru' ? '⟳ Обновить' : lang === 'he' ? '⟳ רענן' : '⟳ Refresh';
 }
 
-// Data polls every 30 seconds to catch updates quickly
+// ── Clock + hourly heatmap update ─────────────────────────────────────────────
+setInterval(() => {
+  updateClock();
+  const h = (new Date().getUTCHours() + ilOffset()) % 24;
+  if (h !== _lastHour && _lastData) { renderHeatmap(_lastData); _lastHour = h; }
+}, 1000);
+updateClock();
+
+// ── Start ─────────────────────────────────────────────────────────────────────
 loadData();
 setInterval(loadData, 30 * 1000);
 </script>
