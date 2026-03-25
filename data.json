@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-03-25T20:05:12.763609+00:00",
-  "israel_time": "25/03/2026 23:05:13",
+  "updated_at": "2026-03-25T20:54:07.444056+00:00",
+  "israel_time": "25/03/2026 23:54:07",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
     "quiet_confidence": 81,
     "last_bs_alert": "25/03/2026 08:15 (IL)",
-    "mins_since_last": 890,
+    "mins_since_last": 939,
     "bs_alerts_24h": 1,
     "bs_alerts_3h": 0,
     "factors": {
@@ -17,6 +17,38 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "25/03 23:45",
+      "cities": [
+        "כרם בן זמרה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "25/03 23:35",
+      "cities": [
+        "ע'ג'ר"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "25/03 23:34",
+      "cities": [
+        "מטולה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "25/03 23:08",
+      "cities": [
+        "מרגליות"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "25/03 22:44",
       "cities": [
@@ -150,53 +182,57 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "25/03 22:16",
-      "cities": [
-        "ערב אל עראמשה"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "25/03 22:14",
-      "cities": [
-        "אדמית",
-        "אילון",
-        "גורן",
-        "זרעית",
-        "יערה"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "25/03 22:13",
-      "cities": [
-        "ערב אל עראמשה"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "25/03 21:14",
-      "cities": [
-        "גשר הזיו",
-        "סער",
-        "איזור תעשייה מילואות צפון",
-        "לימן",
-        "חוף אכזיב"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 241,
+    "alerts_today": 243,
     "bs_today": 1
   },
   "alert_history": [
+    {
+      "id": "tza_6605_1774471553",
+      "unix_time": 1774471553,
+      "cities": [
+        "כרם בן זמרה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_6604_1774470919",
+      "unix_time": 1774470919,
+      "cities": [
+        "ע'ג'ר"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_6604_1774470879",
+      "unix_time": 1774470879,
+      "cities": [
+        "מטולה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_6603_1774469339",
+      "unix_time": 1774469339,
+      "cities": [
+        "מרגליות"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_6602_1774467877",
       "unix_time": 1774467877,
@@ -3360,77 +3396,6 @@
       "beer_sheva": false,
       "negev": false,
       "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6565_1774415650",
-      "unix_time": 1774415650,
-      "cities": [
-        "אבו קרינאת",
-        "ערערה בנגב"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6565_1774415644",
-      "unix_time": 1774415644,
-      "cities": [
-        "אזור תעשייה דימונה",
-        "אזור תעשייה רותם",
-        "דימונה",
-        "ירוחם",
-        "קסר א-סר",
-        "בתי מלון ים המלח",
-        "מלונות ים המלח מרכז",
-        "נווה זוהר",
-        "עין בוקק"
-      ],
-      "beer_sheva": false,
-      "negev": true,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6564_1774414529",
-      "unix_time": 1774414529,
-      "cities": [
-        "ביריה",
-        "חצור הגלילית",
-        "צפת - עיר",
-        "אור הגנוז",
-        "אזור תעשייה רמת דלתון",
-        "איילת השחר",
-        "בר יוחאי",
-        "ג'ש - גוש חלב",
-        "דלתון",
-        "חולתה",
-        "יסוד המעלה",
-        "כרם בן זמרה",
-        "מרכז אזורי מרום גליל",
-        "ספסופה - כפר חושן",
-        "עלמה",
-        "עמוקה",
-        "קדיתא",
-        "ריחאנייה",
-        "שדה אליעזר"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6564_1774414512",
-      "unix_time": 1774414512,
-      "cities": [
-        "אביבים"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
       "is_drill": false
     }
   ]
