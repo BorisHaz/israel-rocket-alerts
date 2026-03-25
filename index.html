@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Israel Rocket Alerts · Beer Sheva</title>
+  <style>
+    :root {
+      --bg:       #07090f;
+      --card:     #0d1020;
+      --border:   #1e2445;
+      --text:     #eef2ff;
+      --muted:    #8899cc;
+      --dim:      #4a5580;
+      --cyan:     #00d4ff;
+      --green:    #00e676;
+      --yellow:   #ffea00;
+      --orange:   #ff9100;
+      --red:      #ff1744;
+      --blue:     #2979ff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      min-height: 100vh;
+      padding: 1.5rem 1rem 4rem;
+    }
+
+    /* Grid background */
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background-image:
+        linear-gradient(rgba(0,212,255,0.01) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,212,255,0.01) 1px, transparent 1px);
+      background-size: 44px 44px;
+      pointer-events: none; z-index: 0;
+    }
+
+    * > * { position: relative; z-index: 1; }
+
+    /* ── LANG TOGGLE ── */
+    .lang-toggle {
+      display: flex; justify-content: flex-end;
+      gap: 0.5rem; margin-bottom: 1rem;
+    }
+    .lang-btn {
+      background: transparent; border: 1px solid var(--border);
+      color: var(--muted); padding: 0.3rem 0.7rem;
+      border-radius: 3px; cursor: pointer; font-size: 0.78rem;
+      letter-spacing: 0.05em; transition: all 0.15s;
+    }
+    .lang-btn.active { border-color: var(--cyan); color: var(--cyan); background: rgba(0,212,255,0.07); }
+
+    /* ── HEADER ── */
+    header { text-align: center; margin-bottom: 1.5rem; }
+
+    header h1 {
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
+      font-weight: 700; letter-spacing: 0.04em;
+      color: var(--cyan);
+      text-shadow: 0 0 20px rgba(0,212,255,0.4);
+      margin-bottom: 0.3rem;
+    }
+
+    .header-sub {
+      color: var(--muted); font-size: 0.8rem; letter-spacing: 0.08em;
+    }
+
+    .il-time {
+      margin-top: 0.6rem; font-size: 0.85rem;
+      color: var(--cyan); letter-spacing: 0.06em;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .disclaimer {
+      margin: 0.8rem auto 0; max-width: 600px;
+      font-size: 0.72rem; color: var(--orange); letter-spacing: 0.03em;
+      background: rgba(255,145,0,0.06); border: 1px solid rgba(255,145,0,0.25);
+      border-radius: 4px; padding: 0.5rem 0.8rem; text-align: center;
+    }
+
+    /* ── BEER SHEVA STATUS ── */
+    .bs-status-wrap {
+      max-width: 680px; margin: 1.5rem auto;
+    }
+
+    .family-label {
+      text-align: center; font-size: 0.72rem;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 0.7rem;
+    }
+
+    .bs-card {
+      border-radius: 8px; padding: 1.5rem 1.5rem 1.2rem;
+      border: 2px solid var(--border);
+      text-align: center; transition: all 0.4s;
+      position: relative; overflow: hidden;
+    }
+
+    .bs-card::before {
+      content: ''; position: absolute; inset: 0;
+      opacity: 0.06; border-radius: 8px;
+      transition: opacity 0.4s;
+    }
+
+    .bs-card.clear   { border-color: rgba(0,230,118,0.5);  }
+    .bs-card.recent  { border-color: rgba(255,234,0,0.5);  }
+    .bs-card.alert   { border-color: rgba(255,23,68,0.7);  animation: alert-pulse 1.2s infinite; }
+
+    .bs-card.clear::before  { background: var(--green); }
+    .bs-card.recent::before { background: var(--yellow); }
+    .bs-card.alert::before  { background: var(--red); opacity: 0.1; }
+
+    @keyframes alert-pulse {
+      0%,100% { box-shadow: 0 0 20px rgba(255,23,68,0.3); }
+      50%      { box-shadow: 0 0 50px rgba(255,23,68,0.6); }
+    }
+
+    .status-icon { font-size: 2.8rem; margin-bottom: 0.4rem; line-height: 1; }
+
+    .status-text-en { font-size: 1.6rem; font-weight: 700; }
+    .status-text-he {
+      font-size: 1.5rem; font-weight: 700;
+      direction: rtl; margin-top: 0.2rem;
+    }
+
+    .clear  .status-text-en, .clear  .status-text-he { color: var(--green);  text-shadow: 0 0 15px rgba(0,230,118,0.4); }
+    .recent .status-text-en, .recent .status-text-he { color: var(--yellow); text-shadow: 0 0 15px rgba(255,234,0,0.4); }
+    .alert  .status-text-en, .alert  .status-text-he { color: var(--red);    text-shadow: 0 0 15px rgba(255,23,68,0.5); }
+
+    .status-since {
+      margin-top: 0.6rem; font-size: 0.82rem; color: var(--muted);
+    }
+
+    /* ── PREDICTION ── */
+    .prediction-wrap {
+      max-width: 680px; margin: 1rem auto;
+    }
+
+    .section-title {
+      font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--dim); margin-bottom: 0.6rem; padding-left: 0.2rem;
+      display: flex; justify-content: space-between;
+    }
+
+    .pred-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 6px; padding: 1.1rem 1.2rem;
+    }
+
+    .pred-top {
+      display: flex; align-items: center;
+      justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+    }
+
+    .pred-risk {
+      font-size: 1rem; font-weight: 700; letter-spacing: 0.04em;
+    }
+    .risk-low      { color: var(--green); }
+    .risk-medium   { color: var(--yellow); }
+    .risk-high     { color: var(--orange); }
+    .risk-critical { color: var(--red); }
+
+    .confidence-bar-wrap {
+      flex: 1; min-width: 140px;
+    }
+    .confidence-label {
+      font-size: 0.72rem; color: var(--muted); margin-bottom: 0.3rem;
+      display: flex; justify-content: space-between;
+    }
+    .confidence-bar {
+      height: 6px; background: rgba(255,255,255,0.06);
+      border-radius: 4px; overflow: hidden;
+    }
+    .confidence-fill {
+      height: 100%; border-radius: 4px; transition: width 0.6s ease;
+    }
+    .fill-low      { background: var(--green);  box-shadow: 0 0 6px var(--green); }
+    .fill-medium   { background: var(--yellow); box-shadow: 0 0 6px var(--yellow); }
+    .fill-high     { background: var(--orange); box-shadow: 0 0 6px var(--orange); }
+    .fill-critical { background: var(--red);    box-shadow: 0 0 6px var(--red); }
+
+    .pred-factors {
+      margin-top: 0.9rem;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 0.4rem 1rem;
+    }
+
+    .factor {
+      font-size: 0.72rem; color: var(--muted);
+      display: flex; justify-content: space-between; align-items: center;
+      gap: 0.4rem;
+    }
+    .factor-bar {
+      flex: 1; height: 3px; background: rgba(255,255,255,0.06);
+      border-radius: 2px; overflow: hidden;
+    }
+    .factor-fill { height: 100%; background: var(--cyan); border-radius: 2px; }
+    .factor-val { font-size: 0.7rem; color: var(--dim); min-width: 28px; text-align: right; }
+
+    .pred-stats {
+      margin-top: 0.85rem; display: flex; gap: 1.2rem; flex-wrap: wrap;
+    }
+    .stat {
+      font-size: 0.75rem; color: var(--muted);
+    }
+    .stat strong { color: var(--text); }
+
+    /* ── RECENT ALERTS ── */
+    .alerts-wrap {
+      max-width: 680px; margin: 1rem auto;
+    }
+
+    .alert-list { display: flex; flex-direction: column; gap: 0.45rem; }
+
+    .alert-item {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 5px; padding: 0.65rem 0.9rem;
+      display: flex; align-items: flex-start; gap: 0.7rem;
+      font-size: 0.8rem;
+    }
+    .alert-item.bs   { border-left: 3px solid var(--red); }
+    .alert-item.negev { border-left: 3px solid var(--orange); }
+
+    .alert-time { color: var(--dim); font-size: 0.72rem; white-space: nowrap; padding-top: 1px; }
+
+    .alert-cities {
+      flex: 1; color: var(--text); direction: rtl;
+      line-height: 1.5; text-align: right;
+    }
+    .alert-cities .bs-highlight {
+      color: var(--red); font-weight: 600;
+    }
+
+    .bs-tag {
+      font-size: 0.62rem; letter-spacing: 0.1em;
+      background: rgba(255,23,68,0.12); color: var(--red);
+      border: 1px solid rgba(255,23,68,0.3);
+      padding: 0.1rem 0.4rem; border-radius: 2px;
+      white-space: nowrap;
+    }
+
+    .no-alerts {
+      text-align: center; color: var(--dim); padding: 1.5rem;
+      font-size: 0.85rem; letter-spacing: 0.1em;
+    }
+
+    /* ── DAILY STATS ── */
+    .stats-row {
+      max-width: 680px; margin: 1rem auto;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 0.6rem;
+    }
+    .stat-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 6px; padding: 0.9rem 1rem;
+      text-align: center;
+    }
+    .stat-card .num {
+      font-size: 1.8rem; font-weight: 700; line-height: 1;
+      color: var(--cyan);
+    }
+    .stat-card .lbl { font-size: 0.7rem; color: var(--muted); margin-top: 0.3rem; }
+
+    /* ── HEBREW direction ── */
+    [dir="rtl"] { direction: rtl; }
+    .he { display: none; }
+    .is-he .he { display: block; }
+    .is-he .en { display: none; }
+
+    .loading { text-align: center; color: var(--dim); padding: 3rem; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+<div class="lang-toggle">
+  <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+  <button class="lang-btn"        id="btn-he" onclick="setLang('he')">עב</button>
+</div>
+
+<header>
+  <h1>
+    <span class="en">🚨 Israel Rocket Alerts</span>
+    <span class="he" dir="rtl">🚨 התרעות טילים - ישראל</span>
+  </h1>
+  <div class="header-sub">
+    <span class="en">Real-time tracking · Beer Sheva focus · Hazanov Family</span>
+    <span class="he" dir="rtl">מעקב בזמן אמת · פוקוס באר שבע · משפחת חזנוב</span>
+  </div>
+  <div class="il-time" id="il-time">--</div>
+  <div class="disclaimer">
+    <span class="en">⚠ This site is informational only. Always follow the official Pikud HaOref app and Red Alert sirens. Do NOT use this as your only source during an emergency.</span>
+    <span class="he" dir="rtl">⚠ אתר זה למטרות מידע בלבד. תמיד עקוב אחר אפליקציית פיקוד העורף הרשמית והאזעקות. אל תשתמש באתר זה כמקור היחיד שלך במצב חירום.</span>
+  </div>
+</header>
+
+<div class="bs-status-wrap">
+  <div class="family-label">
+    <span class="en">Beer Sheva Status · Hazanov Family</span>
+    <span class="he" dir="rtl">מצב באר שבע · משפחת חזנוב</span>
+  </div>
+  <div class="bs-card" id="bs-card">
+    <div class="status-icon" id="status-icon">⏳</div>
+    <div class="status-text-en en" id="status-en">Loading...</div>
+    <div class="status-text-he he" id="status-he" dir="rtl">טוען...</div>
+    <div class="status-since" id="status-since"></div>
+  </div>
+</div>
+
+<div class="prediction-wrap">
+  <div class="section-title">
+    <span class="en">Quiet Time Prediction · Beer Sheva</span>
+    <span class="he" dir="rtl">תחזית זמן שקט · באר שבע</span>
+  </div>
+  <div class="pred-card" id="pred-card">
+    <div class="loading">Loading...</div>
+  </div>
+</div>
+
+<div class="stats-row" id="stats-row" style="display:none">
+  <div class="stat-card">
+    <div class="num" id="stat-total">-</div>
+    <div class="lbl">
+      <span class="en">Alerts nationwide (24h)</span>
+      <span class="he" dir="rtl">התרעות ארצית (24ש)</span>
+    </div>
+  </div>
+  <div class="stat-card">
+    <div class="num" id="stat-bs">-</div>
+    <div class="lbl">
+      <span class="en">Beer Sheva alerts (24h)</span>
+      <span class="he" dir="rtl">התרעות ב"ש (24ש)</span>
+    </div>
+  </div>
+</div>
+
+<div class="alerts-wrap">
+  <div class="section-title">
+    <span class="en">Recent Alerts</span>
+    <span class="he" dir="rtl">התרעות אחרונות</span>
+  </div>
+  <div class="alert-list" id="alert-list">
+    <div class="loading">Loading...</div>
+  </div>
+</div>
+
+<script>
+let lang = 'en';
+let refreshInterval;
+
+const STATUS = {
+  clear: {
+    icon: '✅',
+    en: 'ALL CLEAR',
+    he: 'אין התרעה',
+  },
+  recent: {
+    icon: '⚠️',
+    en: 'RECENT ACTIVITY',
+    he: 'פעילות אחרונה',
+  },
+  alert: {
+    icon: '🚨',
+    en: 'ACTIVE ALERT',
+    he: 'התרעה פעילה!',
+  },
+};
+
+const RISK_LABELS = {
+  low:      { en: 'Low Risk — Likely Quiet',         he: 'סיכון נמוך — צפוי שקט',       cls: 'risk-low',      fill: 'fill-low' },
+  medium:   { en: 'Moderate Risk',                   he: 'סיכון בינוני',                 cls: 'risk-medium',   fill: 'fill-medium' },
+  high:     { en: 'High Risk — Stay Alert',          he: 'סיכון גבוה — היה ערני',        cls: 'risk-high',     fill: 'fill-high' },
+  critical: { en: 'Critical — Take Cover Immediately', he: 'קריטי — היכנס למרחב מוגן!', cls: 'risk-critical', fill: 'fill-critical' },
+};
+
+const FACTOR_LABELS = {
+  recency_score: { en: 'Time since last alert', he: 'זמן מהתרעה אחרונה' },
+  burst_score:   { en: 'Recent burst (3h)',     he: 'פעילות אחרונה (3ש)' },
+  volume_score:  { en: 'Daily volume (24h)',    he: 'נפח יומי (24ש)' },
+  tod_score:     { en: 'Time of day',           he: 'שעת היום' },
+};
+
+function setLang(l) {
+  lang = l;
+  document.body.classList.toggle('is-he', l === 'he');
+  document.documentElement.lang = l;
+  document.getElementById('btn-en').classList.toggle('active', l === 'en');
+  document.getElementById('btn-he').classList.toggle('active', l === 'he');
+}
+
+function updateClock() {
+  // Israel time (IDT = UTC+3, IST = UTC+2)
+  const now   = new Date();
+  const month = now.getUTCMonth() + 1;
+  const day   = now.getUTCDate();
+  const isDST = month > 3 || (month === 3 && day >= 24) || month < 10 || (month === 10 && day < 25);
+  const offset = isDST ? 3 : 2;
+  const il = new Date(now.getTime() + offset * 3600000);
+  const pad = n => String(n).padStart(2, '0');
+  const timeStr = `${pad(il.getUTCDate())}/${pad(il.getUTCMonth()+1)}/${il.getUTCFullYear()}  ${pad(il.getUTCHours())}:${pad(il.getUTCMinutes())}:${pad(il.getUTCSeconds())}  🕐 Israel Time`;
+  document.getElementById('il-time').textContent = timeStr;
+}
+
+function minsSince(minsVal) {
+  if (minsVal === null || minsVal === undefined) return '';
+  if (minsVal < 60)  return `${minsVal} min ago`;
+  const h = Math.floor(minsVal / 60), m = minsVal % 60;
+  return m ? `${h}h ${m}m ago` : `${h}h ago`;
+}
+
+function renderStatus(data) {
+  const s = data.beer_sheva_status || 'clear';
+  const info = STATUS[s] || STATUS.clear;
+  const card = document.getElementById('bs-card');
+  card.className = `bs-card ${s}`;
+  document.getElementById('status-icon').textContent = info.icon;
+  document.getElementById('status-en').textContent = info.en;
+  document.getElementById('status-he').textContent = info.he;
+
+  const p = data.prediction || {};
+  const since = p.mins_since_last != null
+    ? (lang === 'he'
+        ? `התרעה אחרונה: ${p.last_bs_alert || ''} (${p.mins_since_last} דק' אחרות)`
+        : `Last alert: ${p.last_bs_alert || ''} (${minsSince(p.mins_since_last)})`)
+    : (lang === 'he' ? 'אין מידע על התרעות אחרונות' : 'No recent alert data available');
+  document.getElementById('status-since').textContent = since;
+}
+
+function renderPrediction(pred) {
+  if (!pred) return;
+  const rl = RISK_LABELS[pred.risk_level] || RISK_LABELS.medium;
+  const factors = pred.factors || {};
+  const factorHTML = Object.entries(FACTOR_LABELS).map(([key, lbl]) => {
+    const val = factors[key] ?? 0;
+    return `<div class="factor">
+      <span>${lang === 'he' ? lbl.he : lbl.en}</span>
+      <div class="factor-bar"><div class="factor-fill" style="width:${val}%"></div></div>
+      <span class="factor-val">${val}%</span>
+    </div>`;
+  }).join('');
+
+  document.getElementById('pred-card').innerHTML = `
+    <div class="pred-top">
+      <div>
+        <div class="pred-risk ${rl.cls}">${lang === 'he' ? rl.he : rl.en}</div>
+      </div>
+      <div class="confidence-bar-wrap">
+        <div class="confidence-label">
+          <span>${lang === 'he' ? 'סיכוי שקט' : 'Quiet confidence'}</span>
+          <span>${pred.quiet_confidence}%</span>
+        </div>
+        <div class="confidence-bar">
+          <div class="confidence-fill ${rl.fill}" style="width:${pred.quiet_confidence}%"></div>
+        </div>
+      </div>
+    </div>
+    <div class="pred-factors">${factorHTML}</div>
+    <div class="pred-stats">
+      <div class="stat">
+        <span>${lang === 'he' ? 'התרעות ב"ש (3ש): ' : 'BS alerts (3h): '}</span>
+        <strong>${pred.bs_alerts_3h ?? 0}</strong>
+      </div>
+      <div class="stat">
+        <span>${lang === 'he' ? 'התרעות ב"ש (24ש): ' : 'BS alerts (24h): '}</span>
+        <strong>${pred.bs_alerts_24h ?? 0}</strong>
+      </div>
+    </div>
+  `;
+}
+
+function renderAlerts(alerts) {
+  const list = document.getElementById('alert-list');
+  if (!alerts || !alerts.length) {
+    list.innerHTML = `<div class="no-alerts">${lang === 'he' ? 'אין התרעות אחרונות' : 'No recent alerts'}</div>`;
+    return;
+  }
+  list.innerHTML = alerts.map(a => {
+    const citiesHTML = a.cities.map(c => {
+      const isBS = c.includes('באר שבע') || c.includes('beer') || c.includes('Beer');
+      return isBS ? `<span class="bs-highlight">${c}</span>` : c;
+    }).join(' · ');
+
+    return `<div class="alert-item ${a.beer_sheva ? 'bs' : a.negev ? 'negev' : ''}">
+      <div class="alert-time">${a.time_il}</div>
+      <div class="alert-cities" dir="rtl">${citiesHTML}</div>
+      ${a.beer_sheva ? `<div class="bs-tag">B"SH</div>` : ''}
+    </div>`;
+  }).join('');
+}
+
+async function loadData() {
+  try {
+    const res = await fetch('data.json?t=' + Date.now());
+    if (!res.ok) throw new Error();
+    const data = await res.json();
+
+    renderStatus(data);
+    renderPrediction(data.prediction);
+    renderAlerts(data.recent_alerts);
+
+    const statsRow = document.getElementById('stats-row');
+    statsRow.style.display = 'grid';
+    document.getElementById('stat-total').textContent = data.daily_stats?.alerts_today ?? '-';
+    document.getElementById('stat-bs').textContent    = data.daily_stats?.bs_today ?? '-';
+
+  } catch {
+    document.getElementById('pred-card').innerHTML =
+      `<div class="loading">Could not load data</div>`;
+  }
+}
+
+// Clock ticks every second
+setInterval(updateClock, 1000);
+updateClock();
+
+// Data refreshes every 60 seconds
+loadData();
+setInterval(loadData, 60 * 1000);
+</script>
+</body>
+</html>
