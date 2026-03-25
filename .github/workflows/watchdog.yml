@@ -1,0 +1,48 @@
+name: Watchdog — Keep Data Fresh
+
+on:
+  schedule:
+    # Runs at :09, :19, :29, :39, :49, :59 — every 10 minutes, offset from main cron
+    - cron: '9,19,29,39,49,59 * * * *'
+
+jobs:
+  watchdog:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    steps:
+      - name: Check data age and trigger update if stale
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Fetch updated_at from current data.json
+          UPDATED=$(curl -sf "https://raw.githubusercontent.com/BorisHaz/israel-rocket-alerts/main/data.json?t=$(date +%s)" \
+            | python3 -c "import json,sys; print(json.load(sys.stdin).get('updated_at',''))" 2>/dev/null || echo "")
+
+          if [ -z "$UPDATED" ]; then
+            echo "Could not read data.json — triggering update"
+            gh workflow run update-data.yml --repo BorisHaz/israel-rocket-alerts
+            exit 0
+          fi
+
+          # Calculate age in seconds
+          AGE=$(python3 -c "
+from datetime import datetime, timezone
+import sys
+ts = '$UPDATED'
+try:
+    dt = datetime.fromisoformat(ts.replace('Z','+00:00'))
+    age = (datetime.now(timezone.utc) - dt).total_seconds()
+    print(int(age))
+except:
+    print(9999)
+")
+          echo "Data age: ${AGE}s ($(( AGE / 60 ))m)"
+
+          # Trigger update if data is older than 8 minutes
+          if [ "$AGE" -gt 480 ]; then
+            echo "STALE — triggering update workflow"
+            gh workflow run update-data.yml --repo BorisHaz/israel-rocket-alerts
+          else
+            echo "Fresh — no action needed"
+          fi
