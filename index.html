@@ -285,6 +285,78 @@
     }
     .stat-card .lbl { font-size: 0.7rem; color: var(--muted); margin-top: 0.3rem; }
 
+    /* ── 24H HEATMAP ── */
+    .heatmap-wrap {
+      max-width: 680px; margin: 1rem auto;
+    }
+
+    .heatmap-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 6px; padding: 1rem 1rem 0.7rem;
+    }
+
+    .heatmap-bars {
+      display: flex; align-items: flex-end;
+      gap: 2px; height: 64px; margin-bottom: 4px;
+    }
+
+    .hm-bar-wrap {
+      flex: 1; display: flex; flex-direction: column;
+      align-items: center; justify-content: flex-end; height: 100%;
+      position: relative;
+    }
+
+    .hm-bar {
+      width: 100%; border-radius: 2px 2px 0 0;
+      transition: opacity 0.3s;
+      min-height: 4px;
+    }
+
+    .hm-bar-wrap.now .hm-bar {
+      outline: 2px solid #fff;
+      outline-offset: 1px;
+    }
+
+    .hm-bar-wrap.now::after {
+      content: '▼';
+      position: absolute; top: -16px;
+      font-size: 9px; color: #fff;
+      line-height: 1;
+    }
+
+    .heatmap-labels {
+      display: flex; justify-content: space-between;
+      padding: 0 0; margin-top: 2px;
+    }
+
+    .hm-label {
+      font-size: 0.62rem; color: var(--dim);
+      letter-spacing: 0.02em; text-align: center;
+      flex: 1;
+    }
+
+    .hm-label.now-lbl { color: var(--text); font-weight: 600; }
+
+    .heatmap-legend {
+      display: flex; justify-content: center; gap: 1.1rem;
+      margin-top: 0.7rem; flex-wrap: wrap;
+    }
+
+    .legend-item {
+      display: flex; align-items: center; gap: 0.35rem;
+      font-size: 0.68rem; color: var(--muted);
+    }
+    .legend-dot {
+      width: 8px; height: 8px; border-radius: 2px; flex-shrink: 0;
+    }
+
+    .hm-now-info {
+      margin-top: 0.6rem; padding-top: 0.6rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.75rem; color: var(--muted); text-align: center;
+    }
+    .hm-now-info strong { color: var(--text); }
+
     /* ── HEBREW direction ── */
     [dir="rtl"] { direction: rtl; }
     .he { display: none; }
@@ -342,6 +414,16 @@
   </div>
   <div class="pred-card" id="pred-card">
     <div class="loading">Loading...</div>
+  </div>
+</div>
+
+<div class="heatmap-wrap">
+  <div class="section-title">
+    <span class="en">24-Hour Quiet Time Forecast · Beer Sheva (Israel Time)</span>
+    <span class="he" dir="rtl">תחזית 24 שעות · זמן שקט · באר שבע</span>
+  </div>
+  <div class="heatmap-card" id="heatmap-card">
+    <div class="loading">Loading…</div>
   </div>
 </div>
 
@@ -516,14 +598,105 @@ function renderAlerts(alerts) {
   }).join('');
 }
 
+// Time-of-day quiet score per hour (Israel time), matching fetch_data.py logic
+// Higher = quieter / safer
+const TOD_SCORE = [
+  0.70, 0.70, 0.85, 0.85, 0.85, 0.85, // 00–05  late night → pre-dawn
+  0.55, 0.55, 0.55, 0.50, 0.50, 0.50, // 06–11  morning
+  0.50, 0.50, 0.45, 0.45, 0.45, 0.45, // 12–17  afternoon (most active)
+  0.40, 0.40, 0.40, 0.40, 0.70, 0.70, // 18–23  evening → late night
+];
+
+function renderHeatmap(data) {
+  const pred  = data?.prediction || {};
+  const now   = new Date();
+  const month = now.getUTCMonth() + 1;
+  const day   = now.getUTCDate();
+  const isDST = month > 3 || (month === 3 && day >= 24) || month < 10 || (month === 10 && day < 25);
+  const ilHour = (now.getUTCHours() + (isDST ? 3 : 2)) % 24;
+
+  // Blend time-of-day score with current activity level
+  // recency/burst/volume are fixed right now but we show how the tod modulates risk
+  const recencyW = 0.40, burstW = 0.25, volumeW = 0.20, todW = 0.15;
+  const f = pred.factors || {};
+  const recency = (f.recency_score ?? 50) / 100;
+  const burst   = (f.burst_score   ?? 50) / 100;
+  const volume  = (f.volume_score  ?? 50) / 100;
+
+  const bars = TOD_SCORE.map((tod, h) => {
+    // Replace only the tod component; keep real-time factors fixed
+    const score = recency * recencyW + burst * burstW + volume * volumeW + tod * todW;
+    // Normalise into [0,1] for bar height — use proportion relative to best possible
+    return Math.max(0.05, Math.min(1, score));
+  });
+
+  const maxScore = Math.max(...bars);
+
+  // Color: green (quiet) → yellow → orange → red (risky)
+  function barColor(score) {
+    // score 0.8+ = green, 0.6–0.8 = yellow, 0.4–0.6 = orange, <0.4 = red
+    if (score >= 0.78) return { bg: '#00e676', glow: 'rgba(0,230,118,0.5)' };
+    if (score >= 0.60) return { bg: '#ffea00', glow: 'rgba(255,234,0,0.4)' };
+    if (score >= 0.42) return { bg: '#ff9100', glow: 'rgba(255,145,0,0.4)' };
+    return                    { bg: '#ff1744', glow: 'rgba(255,23,68,0.4)' };
+  }
+
+  // Build bars
+  const barsHTML = bars.map((score, h) => {
+    const heightPct = Math.round((score / maxScore) * 100);
+    const isNow = h === ilHour;
+    const { bg, glow } = barColor(score);
+    const style = `height:${heightPct}%; background:${bg}; ${isNow ? `box-shadow:0 0 8px ${glow};` : 'opacity:0.72;'}`;
+    return `<div class="hm-bar-wrap${isNow ? ' now' : ''}">
+      <div class="hm-bar" style="${style}"></div>
+    </div>`;
+  }).join('');
+
+  // Labels: show only every 3 hours
+  const labelsHTML = Array.from({length: 24}, (_, h) => {
+    const isNow = h === ilHour;
+    if (h % 3 === 0 || isNow) {
+      return `<div class="hm-label${isNow ? ' now-lbl' : ''}" style="flex:${h % 3 === 0 || isNow ? 3 : 1}">${h === ilHour ? `→${h}` : h}</div>`;
+    }
+    return `<div class="hm-label" style="flex:1"></div>`;
+  }).join('');
+
+  const nowScore = bars[ilHour];
+  const { bg: nowBg } = barColor(nowScore);
+  let nowLabel, nowLabelHe;
+  if (nowScore >= 0.78) { nowLabel = 'Relatively Quiet'; nowLabelHe = 'שקט יחסית'; }
+  else if (nowScore >= 0.60) { nowLabel = 'Moderate Activity';  nowLabelHe = 'פעילות בינונית'; }
+  else if (nowScore >= 0.42) { nowLabel = 'Elevated Activity';  nowLabelHe = 'פעילות מוגברת'; }
+  else                       { nowLabel = 'High Activity Period'; nowLabelHe = 'תקופת פעילות גבוהה'; }
+
+  const bestHour = bars.indexOf(maxScore);
+
+  document.getElementById('heatmap-card').innerHTML = `
+    <div class="heatmap-bars">${barsHTML}</div>
+    <div class="heatmap-labels">${labelsHTML}</div>
+    <div class="heatmap-legend">
+      <div class="legend-item"><div class="legend-dot" style="background:#00e676"></div><span class="en">Quiet</span><span class="he">שקט</span></div>
+      <div class="legend-item"><div class="legend-dot" style="background:#ffea00"></div><span class="en">Moderate</span><span class="he">בינוני</span></div>
+      <div class="legend-item"><div class="legend-dot" style="background:#ff9100"></div><span class="en">Elevated</span><span class="he">מוגבר</span></div>
+      <div class="legend-item"><div class="legend-dot" style="background:#ff1744"></div><span class="en">High Risk</span><span class="he">סיכון גבוה</span></div>
+    </div>
+    <div class="hm-now-info">
+      <span class="en">Now (${ilHour}:00 IL): <strong style="color:${nowBg}">${nowLabel}</strong> &nbsp;·&nbsp; Historically quietest around <strong>${bestHour}:00–${(bestHour+2)%24}:00</strong></span>
+      <span class="he" dir="rtl">עכשיו (${ilHour}:00): <strong style="color:${nowBg}">${nowLabelHe}</strong> &nbsp;·&nbsp; הכי שקט היסטורית בסביבות <strong>${bestHour}:00–${(bestHour+2)%24}:00</strong></span>
+    </div>
+  `;
+}
+
 async function loadData() {
   try {
     const res = await fetch('data.json?t=' + Date.now());
     if (!res.ok) throw new Error();
     const data = await res.json();
 
+    _lastData = data;
     renderStatus(data);
     renderPrediction(data.prediction);
+    renderHeatmap(data);
     renderAlerts(data.recent_alerts);
 
     const statsRow = document.getElementById('stats-row');
@@ -537,8 +710,18 @@ async function loadData() {
   }
 }
 
-// Clock ticks every second
-setInterval(updateClock, 1000);
+// Clock ticks every second; re-render heatmap on hour change
+let _lastHour = -1;
+let _lastData  = null;
+setInterval(() => {
+  updateClock();
+  const now   = new Date();
+  const month = now.getUTCMonth() + 1;
+  const day   = now.getUTCDate();
+  const isDST = month > 3 || (month === 3 && day >= 24) || month < 10 || (month === 10 && day < 25);
+  const ilHour = (now.getUTCHours() + (isDST ? 3 : 2)) % 24;
+  if (ilHour !== _lastHour && _lastData) { renderHeatmap(_lastData); _lastHour = ilHour; }
+}, 1000);
 updateClock();
 
 async function triggerRefresh() {
