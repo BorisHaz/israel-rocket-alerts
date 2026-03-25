@@ -229,9 +229,9 @@ def main():
         if a["id"] not in history_map:
             history_map[a["id"]] = a
 
-    # Sort by time desc, keep most recent HISTORY_LIMIT
-    alert_history = sorted(history_map.values(), key=lambda a: a["unix_time"], reverse=True)
-    alert_history = alert_history[:HISTORY_LIMIT]
+    # Sort by time desc — use full list for stats, then cap for storage
+    alert_history_full = sorted(history_map.values(), key=lambda a: a["unix_time"], reverse=True)
+    alert_history = alert_history_full[:HISTORY_LIMIT]
 
     # Current Beer Sheva status
     now_ts   = now_utc.timestamp()
@@ -272,10 +272,10 @@ def main():
             "negev":      a.get("negev", False),
         })
 
-    # Daily stats
+    # Daily stats — use full uncapped list so count is never truncated
     cutoff_today = now_ts - 86400
-    alerts_today    = sum(1 for a in alert_history if a["unix_time"] > cutoff_today and not a["is_drill"])
-    bs_today        = sum(1 for a in alert_history if a["unix_time"] > cutoff_today and a["beer_sheva"] and not a["is_drill"])
+    alerts_today = sum(1 for a in alert_history_full if a["unix_time"] > cutoff_today and not a["is_drill"])
+    bs_today     = sum(1 for a in alert_history_full if a["unix_time"] > cutoff_today and a["beer_sheva"] and not a["is_drill"])
 
     output = {
         "updated_at":      now_utc.isoformat(),
