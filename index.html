@@ -449,9 +449,9 @@
 
 <div class="heatmap-wrap">
   <div class="section-title">
-    <span class="en">24-Hour Quiet Time Forecast · Beer Sheva (Israel Time)</span>
-    <span class="he" dir="rtl">תחזית 24 שעות · זמן שקט · באר שבע</span>
-    <span class="ru">Прогноз тишины на 24 часа · Беэр-Шева (Израильское время)</span>
+    <span class="en">Which hours of the day are typically quieter? · Beer Sheva (Israel Time)</span>
+    <span class="he" dir="rtl">באילו שעות ביום בדרך כלל שקט יותר? · באר שבע</span>
+    <span class="ru">В какие часы дня обычно тише? · Беэр-Шева (Израильское время)</span>
   </div>
   <div class="heatmap-card" id="heatmap-card">
     <div class="loading">Loading…</div>
@@ -681,20 +681,13 @@ function barColor(score) {
 }
 
 function renderHeatmap(data) {
-  const pred    = data?.prediction || {};
-  const ilHour  = (new Date().getUTCHours() + ilOffset()) % 24;
+  const pred   = data?.prediction || {};
+  const ilHour = (new Date().getUTCHours() + ilOffset()) % 24;
 
-  const recencyW = 0.40, burstW = 0.25, volumeW = 0.20, todW = 0.15;
-  const f = pred.factors || {};
-  const recency = (f.recency_score ?? 50) / 100;
-  const burst   = (f.burst_score   ?? 50) / 100;
-  const volume  = (f.volume_score  ?? 50) / 100;
-
-  const scores = TOD_SCORE.map(tod =>
-    Math.max(0.05, Math.min(1,
-      recency * recencyW + burst * burstW + volume * volumeW + tod * todW
-    ))
-  );
+  // Use TOD_SCORE directly — this shows the HISTORICAL daily pattern of quiet vs active hours.
+  // The real-time blended prediction is already shown in the card above; mixing it in here
+  // collapsed all bars to the same color when things are currently quiet.
+  const scores   = TOD_SCORE;
   const maxScore = Math.max(...scores);
   const bestHour = scores.indexOf(maxScore);
 
@@ -730,10 +723,10 @@ function renderHeatmap(data) {
   const nowLvl   = HM_LEVELS[nowColor.level][lang] ?? HM_LEVELS[nowColor.level].en;
 
   const bestLabel = lang === 'ru'
-    ? `Исторически тише всего около <strong>${bestHour}:00–${(bestHour+3)%24}:00</strong>`
+    ? `Исторически тише всего: <strong>${bestHour}:00 – ${(bestHour+4)%24}:00</strong> &nbsp;·&nbsp; На основе исторических данных`
     : lang === 'he'
-    ? `<strong>${bestHour}:00–${(bestHour+3)%24}:00</strong> — שקט ביותר היסטורית`
-    : `Historically quietest around <strong>${bestHour}:00–${(bestHour+3)%24}:00</strong>`;
+    ? `<strong>${bestHour}:00 – ${(bestHour+4)%24}:00</strong> — שקט ביותר היסטורית &nbsp;·&nbsp; בהתבסס על נתונים היסטוריים`
+    : `Historically quietest: <strong>${bestHour}:00 – ${(bestHour+4)%24}:00</strong> &nbsp;·&nbsp; Based on historical patterns`;
 
   const nowPrefix = lang === 'ru' ? `Сейчас (${ilHour}:00):`
                   : lang === 'he' ? `עכשיו (${ilHour}:00):`
