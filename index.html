@@ -261,11 +261,51 @@
       flex: 1; display: flex; flex-direction: column;
       align-items: center; justify-content: flex-end;
       height: 100%; position: relative;
+      cursor: pointer;
     }
 
     .hm-bar {
       width: 100%; border-radius: 3px 3px 0 0;
-      min-height: 6px; transition: all 0.4s;
+      min-height: 6px; transition: all 0.2s;
+    }
+
+    .hm-bar-wrap:hover .hm-bar {
+      filter: brightness(1.35);
+      transform: scaleY(1.06);
+      transform-origin: bottom;
+    }
+
+    /* Tooltip on hover */
+    .hm-bar-wrap .hm-tooltip {
+      display: none;
+      position: absolute;
+      bottom: calc(100% + 10px);
+      left: 50%; transform: translateX(-50%);
+      background: #1a2040;
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 6px;
+      padding: 6px 10px;
+      white-space: nowrap;
+      z-index: 10;
+      pointer-events: none;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.6);
+    }
+    .hm-bar-wrap:hover .hm-tooltip { display: block; }
+
+    .hm-tooltip .tt-time {
+      font-size: 1rem; font-weight: 700; color: #fff;
+      letter-spacing: 0.04em; text-align: center;
+    }
+    .hm-tooltip .tt-level {
+      font-size: 0.75rem; text-align: center; margin-top: 2px;
+    }
+    /* Arrow pointing down */
+    .hm-tooltip::after {
+      content: '';
+      position: absolute; top: 100%; left: 50%;
+      transform: translateX(-50%);
+      border: 6px solid transparent;
+      border-top-color: rgba(255,255,255,0.25);
     }
 
     /* Current-hour glow + thick border */
@@ -696,14 +736,23 @@ function renderHeatmap(data) {
     `<div class="hm-period">${PERIOD_LABELS[p][lang] ?? PERIOD_LABELS[p].en}</div>`
   ).join('');
 
+  // Level label for tooltip
+  const levelLabel = (lvl) => HM_LEVELS[lvl][lang] ?? HM_LEVELS[lvl].en;
+
   // ── Bars
   const barsHTML = scores.map((score, h) => {
     const heightPct = Math.round((score / maxScore) * 100);
     const isNow = h === ilHour;
-    const { bg, glow } = barColor(score);
+    const { bg, glow, level } = barColor(score);
     const opacity = isNow ? '1' : '0.68';
     const style = `height:${heightPct}%; background:${bg}; opacity:${opacity}; ${isNow ? `box-shadow:0 0 10px ${glow};` : ''}`;
+    const timeStr = `${String(h).padStart(2,'0')}:00 – ${String((h+1)%24).padStart(2,'0')}:00`;
+    const nowMark = isNow ? (lang === 'ru' ? ' ← сейчас' : lang === 'he' ? ' ← עכשיו' : ' ← now') : '';
     return `<div class="hm-bar-wrap${isNow ? ' now' : ''}">
+      <div class="hm-tooltip">
+        <div class="tt-time">${timeStr}${nowMark}</div>
+        <div class="tt-level" style="color:${bg}">${levelLabel(level)}</div>
+      </div>
       <div class="hm-bar" style="${style}"></div>
     </div>`;
   }).join('');
