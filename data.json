@@ -1,22 +1,100 @@
 {
-  "updated_at": "2026-03-26T21:56:51.630246+00:00",
-  "israel_time": "27/03/2026 00:56:52",
-  "beer_sheva_status": "clear",
+  "updated_at": "2026-03-26T22:38:33.842466+00:00",
+  "israel_time": "27/03/2026 01:38:34",
+  "beer_sheva_status": "recent",
   "prediction": {
-    "risk_level": "low",
-    "quiet_confidence": 86,
-    "last_bs_alert": null,
-    "mins_since_last": null,
-    "bs_alerts_24h": 0,
-    "bs_alerts_3h": 0,
+    "risk_level": "medium",
+    "quiet_confidence": 47,
+    "last_bs_alert": "27/03/2026 00:58 (IL)",
+    "mins_since_last": 40,
+    "bs_alerts_24h": 1,
+    "bs_alerts_3h": 1,
     "factors": {
-      "recency_score": 90,
+      "recency_score": 30,
       "tod_score": 70,
-      "volume_score": 90,
-      "burst_score": 85
+      "volume_score": 65,
+      "burst_score": 45
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "27/03 01:14",
+      "cities": [
+        "מלכיה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "27/03 01:14",
+      "cities": [
+        "יראון"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "27/03 01:14",
+      "cities": [
+        "אביבים"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "27/03 00:59",
+      "cities": [
+        "אל פורעה",
+        "חוות טואמין"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "27/03 00:58",
+      "cities": [
+        "דקל",
+        "ניר עוז",
+        "סופה",
+        "שדי אברהם",
+        "מבטחים, עמיעוז, ישע",
+        "מגן",
+        "ניר יצחק",
+        "עין הבשור"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "27/03 00:58",
+      "cities": [
+        "אבו קרינאת",
+        "כסייפה",
+        "מרעית",
+        "ערערה בנגב",
+        "תל ערד",
+        "אזור תעשייה מיתרים",
+        "אל סייד",
+        "הר עמשא"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "27/03 00:58",
+      "cities": [
+        "באר שבע - דרום",
+        "באר שבע - מזרח",
+        "באר שבע - מערב",
+        "באר שבע - צפון",
+        "אופקים",
+        "אזור תעשייה עידן הנגב",
+        "גבעות בר",
+        "להב"
+      ],
+      "beer_sheva": true,
+      "negev": true
+    },
     {
       "time_il": "27/03 00:41",
       "cities": [
@@ -147,76 +225,162 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "26/03 22:10",
-      "cities": [
-        "דמיידה",
-        "יובלים",
-        "יודפת",
-        "יעד",
-        "כאבול",
-        "כאוכב אבו אלהיג'א",
-        "כפר מנדא",
-        "מורשת"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "26/03 22:10",
-      "cities": [
-        "אזור תעשייה יקנעם עילית"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "26/03 22:04",
-      "cities": [
-        "לוחמי הגטאות"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "26/03 22:04",
-      "cities": [
-        "שמרת"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "26/03 22:04",
-      "cities": [
-        "בית העלמין החדש עכו"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "26/03 22:04",
-      "cities": [
-        "עכו"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "26/03 22:04",
-      "cities": [
-        "עכו - אזור תעשייה"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 244,
-    "bs_today": 0
+    "alerts_today": 247,
+    "bs_today": 1
   },
   "alert_history": [
+    {
+      "id": "tza_6693_1774563291",
+      "unix_time": 1774563291,
+      "cities": [
+        "מלכיה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_6693_1774563257",
+      "unix_time": 1774563257,
+      "cities": [
+        "יראון"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_6693_1774563243",
+      "unix_time": 1774563243,
+      "cities": [
+        "אביבים"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_6660_1774562346",
+      "unix_time": 1774562346,
+      "cities": [
+        "אל פורעה",
+        "חוות טואמין"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_6660_1774562313",
+      "unix_time": 1774562313,
+      "cities": [
+        "דקל",
+        "ניר עוז",
+        "סופה",
+        "שדי אברהם",
+        "מבטחים, עמיעוז, ישע",
+        "מגן",
+        "ניר יצחק",
+        "עין הבשור",
+        "פרי גן",
+        "צוחר, אוהד",
+        "שדה ניצן",
+        "תלמי אליהו",
+        "תלמי יוסף"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_6660_1774562311",
+      "unix_time": 1774562311,
+      "cities": [
+        "אבו קרינאת",
+        "כסייפה",
+        "מרעית",
+        "ערערה בנגב",
+        "תל ערד",
+        "אזור תעשייה מיתרים",
+        "אל סייד",
+        "הר עמשא",
+        "חורה",
+        "טנא עומרים",
+        "כרמים",
+        "כרמית",
+        "מיתר",
+        "נבטים",
+        "סנסנה",
+        "סעווה",
+        "שגב שלום",
+        "שני ליבנה",
+        "תל שבע",
+        "אבו תלול",
+        "אום בטין",
+        "חוות מור ואברהם",
+        "חוות מקנה יהודה",
+        "חירן"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_6660_1774562310",
+      "unix_time": 1774562310,
+      "cities": [
+        "באר שבע - דרום",
+        "באר שבע - מזרח",
+        "באר שבע - מערב",
+        "באר שבע - צפון",
+        "אופקים",
+        "אזור תעשייה עידן הנגב",
+        "גבעות בר",
+        "להב",
+        "להבים",
+        "מסלול",
+        "משמר הנגב",
+        "פדויים",
+        "רנן",
+        "תארבין",
+        "רהט",
+        "אורים",
+        "אשל הנשיא",
+        "בטחה",
+        "גבולות",
+        "גילת",
+        "חצרים",
+        "לקיה",
+        "עומר",
+        "צאלים",
+        "תפרח",
+        "בית יתיר",
+        "עשהאל",
+        "שמעה",
+        "אשכולות",
+        "ברוש",
+        "פטיש",
+        "תאשור",
+        "אתר דודאים",
+        "ואדי אל נעם דרום",
+        "קריית חינוך מרחבים",
+        "אשתמוע",
+        "חוות טליה"
+      ],
+      "beer_sheva": true,
+      "negev": true,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_6659_1774561307",
       "unix_time": 1774561307,
@@ -3649,102 +3813,6 @@
       "beer_sheva": false,
       "negev": false,
       "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6619_1774508893",
-      "unix_time": 1774508893,
-      "cities": [
-        "מרגליות"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6619_1774508860",
-      "unix_time": 1774508860,
-      "cities": [
-        "כפר יובל",
-        "מטולה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6619_1774508853",
-      "unix_time": 1774508853,
-      "cities": [
-        "הגושרים"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6619_1774508849",
-      "unix_time": 1774508849,
-      "cities": [
-        "בית הלל"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6619_1774508844",
-      "unix_time": 1774508844,
-      "cities": [
-        "כפר גלעדי",
-        "קריית שמונה",
-        "תל חי"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6619_1774508834",
-      "unix_time": 1774508834,
-      "cities": [
-        "כפר גלעדי",
-        "מעיין ברוך",
-        "קריית שמונה",
-        "תל חי"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6618_1774508457",
-      "unix_time": 1774508457,
-      "cities": [
-        "קדר",
-        "ורד יריחו",
-        "ייט''ב",
-        "כוכב השחר",
-        "מבואות יריחו",
-        "מצפה יריחו",
-        "נעמה",
-        "אעירה השחר",
-        "החווה של זוהר",
-        "חוות מלכיאל",
-        "חוות מעלה אהוביה",
-        "עינות קדם",
-        "צומת אלמוג",
-        "קדר דרום"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
       "is_drill": false
     }
   ]
