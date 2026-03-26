@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-26T21:32:34.072183+00:00",
-  "israel_time": "27/03/2026 00:32:35",
+  "updated_at": "2026-03-26T21:56:51.630246+00:00",
+  "israel_time": "27/03/2026 00:56:52",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
@@ -17,6 +17,14 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "27/03 00:41",
+      "cities": [
+        "משגב עם"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "27/03 00:18",
       "cities": [
@@ -202,16 +210,6 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "26/03 22:04",
-      "cities": [
-        "ג'וליס",
-        "ירכא",
-        "כליל"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
@@ -219,6 +217,17 @@
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_6659_1774561307",
+      "unix_time": 1774561307,
+      "cities": [
+        "משגב עם"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_6658_1774559936",
       "unix_time": 1774559936,
@@ -3732,17 +3741,6 @@
         "עינות קדם",
         "צומת אלמוג",
         "קדר דרום"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6618_1774508439",
-      "unix_time": 1774508439,
-      "cities": [
-        "בר כוכבא"
       ],
       "beer_sheva": false,
       "negev": false,
