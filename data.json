@@ -1,22 +1,30 @@
 {
-  "updated_at": "2026-03-26T22:38:33.842466+00:00",
-  "israel_time": "27/03/2026 01:38:34",
-  "beer_sheva_status": "recent",
+  "updated_at": "2026-03-26T23:01:38.420658+00:00",
+  "israel_time": "27/03/2026 02:01:38",
+  "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "medium",
-    "quiet_confidence": 47,
+    "quiet_confidence": 59,
     "last_bs_alert": "27/03/2026 00:58 (IL)",
-    "mins_since_last": 40,
+    "mins_since_last": 63,
     "bs_alerts_24h": 1,
     "bs_alerts_3h": 1,
     "factors": {
-      "recency_score": 30,
-      "tod_score": 70,
+      "recency_score": 55,
+      "tod_score": 85,
       "volume_score": 65,
       "burst_score": 45
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "27/03 01:58",
+      "cities": [
+        "מלכיה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "27/03 01:14",
       "cities": [
@@ -210,21 +218,6 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "26/03 22:11",
-      "cities": [
-        "בענה",
-        "דיר אל-אסד",
-        "הר חלוץ",
-        "לבון",
-        "נחף",
-        "גיתה",
-        "כישור",
-        "כסרא סמיע"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
@@ -232,6 +225,17 @@
     "bs_today": 1
   },
   "alert_history": [
+    {
+      "id": "tza_6694_1774565921",
+      "unix_time": 1774565921,
+      "cities": [
+        "מלכיה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_6693_1774563291",
       "unix_time": 1774563291,
@@ -3797,18 +3801,6 @@
       "cities": [
         "מנרה",
         "מרגליות"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6619_1774509033",
-      "unix_time": 1774509033,
-      "cities": [
-        "בית הלל",
-        "קריית שמונה"
       ],
       "beer_sheva": false,
       "negev": false,
