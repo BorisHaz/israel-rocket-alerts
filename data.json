@@ -1,22 +1,30 @@
 {
-  "updated_at": "2026-03-27T14:01:02.278872+00:00",
-  "israel_time": "27/03/2026 17:01:02",
+  "updated_at": "2026-03-27T15:03:49.222251+00:00",
+  "israel_time": "27/03/2026 18:03:50",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "medium",
-    "quiet_confidence": 71,
+    "quiet_confidence": 70,
     "last_bs_alert": "27/03/2026 10:40 (IL)",
-    "mins_since_last": 381,
+    "mins_since_last": 443,
     "bs_alerts_24h": 2,
     "bs_alerts_3h": 0,
     "factors": {
       "recency_score": 75,
-      "tod_score": 45,
+      "tod_score": 40,
       "volume_score": 65,
       "burst_score": 85
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "27/03 17:52",
+      "cities": [
+        "מלכיה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "27/03 15:07",
       "cities": [
@@ -202,25 +210,24 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "27/03 14:18",
-      "cities": [
-        "קדומים",
-        "ינוב",
-        "תנובות",
-        "נורדיה",
-        "כפר יונה"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 165,
+    "alerts_today": 147,
     "bs_today": 2
   },
   "alert_history": [
+    {
+      "id": "tza_6709_1774623169",
+      "unix_time": 1774623169,
+      "cities": [
+        "מלכיה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_6708_1774613245",
       "unix_time": 1774613245,
@@ -4125,21 +4132,6 @@
       "unix_time": 1774519227,
       "cities": [
         "כפר מסריק"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6625_1774519218",
-      "unix_time": 1774519218,
-      "cities": [
-        "עין המפרץ",
-        "עכו - אזור תעשייה",
-        "אזור תעשייה שער נעמן",
-        "קריית ביאליק",
-        "אזור תעשייה קריית ביאליק"
       ],
       "beer_sheva": false,
       "negev": false,
