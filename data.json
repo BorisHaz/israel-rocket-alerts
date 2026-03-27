@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-03-27T16:02:41.507034+00:00",
-  "israel_time": "27/03/2026 19:02:41",
+  "updated_at": "2026-03-27T17:07:08.411170+00:00",
+  "israel_time": "27/03/2026 20:07:08",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "medium",
     "quiet_confidence": 70,
     "last_bs_alert": "27/03/2026 10:40 (IL)",
-    "mins_since_last": 502,
+    "mins_since_last": 567,
     "bs_alerts_24h": 2,
     "bs_alerts_3h": 0,
     "factors": {
@@ -17,6 +17,44 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "27/03 19:07",
+      "cities": [
+        "בית ספר שדה מירון"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "27/03 19:07",
+      "cities": [
+        "סאסא"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "27/03 19:07",
+      "cities": [
+        "מירון",
+        "מרכז אזורי מרום גליל",
+        "בר יוחאי",
+        "קדיתא",
+        "אור הגנוז",
+        "צבעון"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "27/03 19:07",
+      "cities": [
+        "ג'ש - גוש חלב",
+        "ספסופה - כפר חושן"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "27/03 18:59",
       "cities": [
@@ -154,65 +192,63 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "27/03 14:20",
-      "cities": [
-        "איתן",
-        "אחוזם",
-        "נועם",
-        "שלווה",
-        "אופקים",
-        "אזור תעשייה נ.ע.מ",
-        "אזור תעשייה עידן הנגב",
-        "בית הגדי"
-      ],
-      "beer_sheva": false,
-      "negev": true
-    },
-    {
-      "time_il": "27/03 14:20",
-      "cities": [
-        "יבנה",
-        "כפר הנגיד",
-        "נס ציונה"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "27/03 14:19",
-      "cities": [
-        "אזור תעשייה אריאל",
-        "אזור תעשייה ברקן",
-        "ברוכין",
-        "עלי זהב - לשם",
-        "פדואל"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "27/03 14:19",
-      "cities": [
-        "פארק תעשיות פלמחים",
-        "פלמחים",
-        "ראשון לציון - מזרח",
-        "אירוס",
-        "בית חנן",
-        "בית עובד",
-        "גן שורק",
-        "נטעים"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 138,
+    "alerts_today": 137,
     "bs_today": 2
   },
   "alert_history": [
+    {
+      "id": "tza_6712_1774627663",
+      "unix_time": 1774627663,
+      "cities": [
+        "בית ספר שדה מירון"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_6712_1774627653",
+      "unix_time": 1774627653,
+      "cities": [
+        "סאסא"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_6712_1774627638",
+      "unix_time": 1774627638,
+      "cities": [
+        "מירון",
+        "מרכז אזורי מרום גליל",
+        "בר יוחאי",
+        "קדיתא",
+        "אור הגנוז",
+        "צבעון"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_6712_1774627636",
+      "unix_time": 1774627636,
+      "cities": [
+        "ג'ש - גוש חלב",
+        "ספסופה - כפר חושן"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_6711_1774627140",
       "unix_time": 1774627140,
@@ -4091,50 +4127,6 @@
       "beer_sheva": false,
       "negev": false,
       "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6627_1774523485",
-      "unix_time": 1774523485,
-      "cities": [
-        "יראון"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6626_1774520095",
-      "unix_time": 1774520095,
-      "cities": [
-        "בית ספר שדה מירון"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6626_1774520090",
-      "unix_time": 1774520090,
-      "cities": [
-        "סאסא"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6625_1774519273",
-      "unix_time": 1774519273,
-      "cities": [
-        "אזור תעשייה שער נעמן"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
       "is_drill": false
     }
   ]
