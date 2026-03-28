@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-03-28T19:52:46.183510+00:00",
-  "israel_time": "28/03/2026 22:52:46",
+  "updated_at": "2026-03-28T20:25:21.415697+00:00",
+  "israel_time": "28/03/2026 23:25:21",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "medium",
     "quiet_confidence": 52,
     "last_bs_alert": "28/03/2026 21:05 (IL)",
-    "mins_since_last": 107,
-    "bs_alerts_24h": 6,
+    "mins_since_last": 140,
+    "bs_alerts_24h": 5,
     "bs_alerts_3h": 1,
     "factors": {
       "recency_score": 55,
@@ -17,6 +17,23 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "28/03 23:21",
+      "cities": [
+        "ערב אל עראמשה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "28/03 23:20",
+      "cities": [
+        "אדמית",
+        "חניתה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "28/03 22:50",
       "cities": [
@@ -197,29 +214,36 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "28/03 20:04",
-      "cities": [
-        "אילות"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "28/03 20:03",
-      "cities": [
-        "אילת"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 191,
-    "bs_today": 6
+    "alerts_today": 189,
+    "bs_today": 5
   },
   "alert_history": [
+    {
+      "id": "tza_6751_1774729265",
+      "unix_time": 1774729265,
+      "cities": [
+        "ערב אל עראמשה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_6751_1774729231",
+      "unix_time": 1774729231,
+      "cities": [
+        "אדמית",
+        "חניתה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
     {
       "id": "tza_6750_1774727436",
       "unix_time": 1774727436,
@@ -3989,31 +4013,6 @@
         "עכו",
         "ג'דידה מכר",
         "בית העלמין החדש עכו"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6713_1774631475",
-      "unix_time": 1774631475,
-      "cities": [
-        "עין המפרץ"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6713_1774631438",
-      "unix_time": 1774631438,
-      "cities": [
-        "אזור תעשייה קריית ביאליק",
-        "כפר מסריק",
-        "עכו - אזור תעשייה",
-        "כפר ביאליק"
       ],
       "beer_sheva": false,
       "negev": false,
