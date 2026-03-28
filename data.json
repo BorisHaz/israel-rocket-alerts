@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-03-28T10:41:26.292621+00:00",
-  "israel_time": "28/03/2026 13:41:26",
+  "updated_at": "2026-03-28T11:04:27.206462+00:00",
+  "israel_time": "28/03/2026 14:04:27",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "medium",
-    "quiet_confidence": 67,
+    "quiet_confidence": 66,
     "last_bs_alert": "28/03/2026 06:53 (IL)",
-    "mins_since_last": 408,
+    "mins_since_last": 431,
     "bs_alerts_24h": 3,
     "bs_alerts_3h": 0,
     "factors": {
       "recency_score": 75,
-      "tod_score": 50,
+      "tod_score": 45,
       "volume_score": 40,
       "burst_score": 85
     }
