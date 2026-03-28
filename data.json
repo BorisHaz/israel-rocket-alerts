@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-03-28T13:59:02.580740+00:00",
-  "israel_time": "28/03/2026 16:59:02",
+  "updated_at": "2026-03-28T14:41:35.597050+00:00",
+  "israel_time": "28/03/2026 17:41:36",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "medium",
     "quiet_confidence": 66,
     "last_bs_alert": "28/03/2026 06:53 (IL)",
-    "mins_since_last": 606,
+    "mins_since_last": 648,
     "bs_alerts_24h": 3,
     "bs_alerts_3h": 0,
     "factors": {
@@ -17,6 +17,30 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "28/03 17:15",
+      "cities": [
+        "אזור תעשייה רמת דלתון"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "28/03 17:14",
+      "cities": [
+        "דלתון"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "28/03 17:13",
+      "cities": [
+        "מרגליות"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "28/03 16:47",
       "cities": [
@@ -157,37 +181,46 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "28/03 16:38",
-      "cities": [
-        "שניר"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "28/03 16:38",
-      "cities": [
-        "כפר סאלד"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "28/03 16:37",
-      "cities": [
-        "קיבוץ דן"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 173,
+    "alerts_today": 176,
     "bs_today": 3
   },
   "alert_history": [
+    {
+      "id": "tza_6742_1774707309",
+      "unix_time": 1774707309,
+      "cities": [
+        "אזור תעשייה רמת דלתון"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_6742_1774707286",
+      "unix_time": 1774707286,
+      "cities": [
+        "דלתון"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_6742_1774707220",
+      "unix_time": 1774707220,
+      "cities": [
+        "מרגליות"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_6741_1774705641",
       "unix_time": 1774705641,
@@ -4126,48 +4159,6 @@
         "מרכז אזורי דרום השרון",
         "מתחם גלילות",
         "מתחם פי גלילות"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6706_1774610099",
-      "unix_time": 1774610099,
-      "cities": [
-        "גשר הזיו",
-        "סער",
-        "איזור תעשייה מילואות צפון",
-        "בצת",
-        "לימן",
-        "שלומי",
-        "חוף אכזיב",
-        "חוף בצת",
-        "מצובה",
-        "ראש הנקרה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6706_1774610089",
-      "unix_time": 1774610089,
-      "cities": [
-        "נהריה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6705_1774609676",
-      "unix_time": 1774609676,
-      "cities": [
-        "מצפה יאיר"
       ],
       "beer_sheva": false,
       "negev": false,
