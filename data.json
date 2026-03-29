@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-03-29T21:51:30.683538+00:00",
-  "israel_time": "30/03/2026 00:51:31",
+  "updated_at": "2026-03-29T22:21:56.233688+00:00",
+  "israel_time": "30/03/2026 01:21:56",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "medium",
     "quiet_confidence": 48,
     "last_bs_alert": "29/03/2026 23:11 (IL)",
-    "mins_since_last": 100,
+    "mins_since_last": 131,
     "bs_alerts_24h": 7,
     "bs_alerts_3h": 1,
     "factors": {
@@ -17,6 +17,38 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "30/03 01:00",
+      "cities": [
+        "אילת"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "30/03 00:59",
+      "cities": [
+        "אזור תעשייה שחורת"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "30/03 00:59",
+      "cities": [
+        "אילות"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "30/03 00:59",
+      "cities": [
+        "אילת"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "29/03 23:11",
       "cities": [
@@ -168,52 +200,57 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "29/03 20:01",
-      "cities": [
-        "מלכיה"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "29/03 20:01",
-      "cities": [
-        "בצת",
-        "חניתה",
-        "מצובה",
-        "ראש הנקרה",
-        "שלומי"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "29/03 20:01",
-      "cities": [
-        "גשר הזיו",
-        "סער",
-        "בן עמי",
-        "נהריה"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "29/03 20:00",
-      "cities": [
-        "ברעם"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 178,
+    "alerts_today": 166,
     "bs_today": 7
   },
   "alert_history": [
+    {
+      "id": "tza_6791_1774821645",
+      "unix_time": 1774821645,
+      "cities": [
+        "אילת"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_6791_1774821597",
+      "unix_time": 1774821597,
+      "cities": [
+        "אזור תעשייה שחורת"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_6791_1774821587",
+      "unix_time": 1774821587,
+      "cities": [
+        "אילות"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_6791_1774821569",
+      "unix_time": 1774821569,
+      "cities": [
+        "אילת"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
     {
       "id": "tza_6790_1774815081",
       "unix_time": 1774815081,
@@ -3628,51 +3665,6 @@
       "beer_sheva": false,
       "negev": false,
       "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6748_1774720419",
-      "unix_time": 1774720419,
-      "cities": [
-        "ערב אל עראמשה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6747_1774719907",
-      "unix_time": 1774719907,
-      "cities": [
-        "יערה",
-        "ערב אל עראמשה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6746_1774717476",
-      "unix_time": 1774717476,
-      "cities": [
-        "אזור תעשייה שחורת"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6746_1774717446",
-      "unix_time": 1774717446,
-      "cities": [
-        "אילות"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
       "is_drill": false
     }
   ]
