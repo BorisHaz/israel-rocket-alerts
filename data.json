@@ -1,22 +1,30 @@
 {
-  "updated_at": "2026-03-29T22:57:05.929309+00:00",
-  "israel_time": "30/03/2026 01:57:06",
+  "updated_at": "2026-03-29T23:41:00.921658+00:00",
+  "israel_time": "30/03/2026 02:41:01",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "medium",
-    "quiet_confidence": 52,
+    "quiet_confidence": 72,
     "last_bs_alert": "29/03/2026 23:11 (IL)",
-    "mins_since_last": 166,
+    "mins_since_last": 210,
     "bs_alerts_24h": 5,
-    "bs_alerts_3h": 1,
+    "bs_alerts_3h": 0,
     "factors": {
-      "recency_score": 55,
-      "tod_score": 70,
+      "recency_score": 75,
+      "tod_score": 85,
       "volume_score": 40,
-      "burst_score": 45
+      "burst_score": 85
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "30/03 01:57",
+      "cities": [
+        "דוב''ב"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "30/03 01:00",
       "cities": [
@@ -192,21 +200,24 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "29/03 20:01",
-      "cities": [
-        "איזור תעשייה מילואות צפון"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 157,
+    "alerts_today": 151,
     "bs_today": 5
   },
   "alert_history": [
+    {
+      "id": "tza_6792_1774825047",
+      "unix_time": 1774825047,
+      "cities": [
+        "דוב''ב"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_6791_1774821645",
       "unix_time": 1774821645,
@@ -3649,18 +3660,6 @@
         "יחיעם",
         "ינוח ג'ת",
         "עין יעקב"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6749_1774721003",
-      "unix_time": 1774721003,
-      "cities": [
-        "אזור תעשייה בר-לב",
-        "אחיהוד"
       ],
       "beer_sheva": false,
       "negev": false,
