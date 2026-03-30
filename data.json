@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-03-29T23:41:00.921658+00:00",
-  "israel_time": "30/03/2026 02:41:01",
+  "updated_at": "2026-03-30T00:04:01.406296+00:00",
+  "israel_time": "30/03/2026 03:04:03",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "medium",
     "quiet_confidence": 72,
     "last_bs_alert": "29/03/2026 23:11 (IL)",
-    "mins_since_last": 210,
+    "mins_since_last": 233,
     "bs_alerts_24h": 5,
     "bs_alerts_3h": 0,
     "factors": {
@@ -17,6 +17,14 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "30/03 02:51",
+      "cities": [
+        "ע'ג'ר"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "30/03 01:57",
       "cities": [
@@ -191,15 +199,6 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "29/03 20:01",
-      "cities": [
-        "לימן",
-        "חוף אכזיב"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
@@ -207,6 +206,17 @@
     "bs_today": 5
   },
   "alert_history": [
+    {
+      "id": "tza_6793_1774828318",
+      "unix_time": 1774828318,
+      "cities": [
+        "ע'ג'ר"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_6792_1774825047",
       "unix_time": 1774825047,
@@ -3642,24 +3652,6 @@
       "unix_time": 1774721010,
       "cities": [
         "ירכא"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6749_1774721009",
-      "unix_time": 1774721009,
-      "cities": [
-        "הילה",
-        "כפר ורדים",
-        "מעונה",
-        "מעיליא",
-        "מעלות תרשיחא",
-        "יחיעם",
-        "ינוח ג'ת",
-        "עין יעקב"
       ],
       "beer_sheva": false,
       "negev": false,
