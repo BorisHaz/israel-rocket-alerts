@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-03-30T11:18:25.154856+00:00",
-  "israel_time": "30/03/2026 14:18:25",
+  "updated_at": "2026-03-30T12:07:55.802494+00:00",
+  "israel_time": "30/03/2026 15:07:56",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "medium",
     "quiet_confidence": 66,
     "last_bs_alert": "30/03/2026 07:36 (IL)",
-    "mins_since_last": 402,
+    "mins_since_last": 451,
     "bs_alerts_24h": 6,
     "bs_alerts_3h": 0,
     "factors": {
@@ -17,6 +17,22 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "30/03 14:55",
+      "cities": [
+        "ערב אל עראמשה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "30/03 14:55",
+      "cities": [
+        "אדמית"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "30/03 14:04",
       "cities": [
@@ -208,37 +224,35 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "30/03 11:30",
-      "cities": [
-        "נתניה - מערב",
-        "שושנת העמקים",
-        "אודים",
-        "ארסוף",
-        "געש",
-        "יקום",
-        "מכון וינגייט",
-        "שפיים"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "30/03 11:28",
-      "cities": [
-        "בוסתן הגליל",
-        "לוחמי הגטאות"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 182,
+    "alerts_today": 174,
     "bs_today": 6
   },
   "alert_history": [
+    {
+      "id": "tza_6812_1774871707",
+      "unix_time": 1774871707,
+      "cities": [
+        "ערב אל עראמשה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_6812_1774871705",
+      "unix_time": 1774871705,
+      "cities": [
+        "אדמית"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_6811_1774868682",
       "unix_time": 1774868682,
@@ -3703,32 +3717,6 @@
       "unix_time": 1774780083,
       "cities": [
         "פנימיית עין כרם"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6768_1774780082",
-      "unix_time": 1774780082,
-      "cities": [
-        "עלמון"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6768_1774780052",
-      "unix_time": 1774780052,
-      "cities": [
-        "אשדוד - א,ב,ד,ה",
-        "אשדוד - ג,ו,ז",
-        "בני עטרות",
-        "משמר השבעה",
-        "פארק תעשייה ראם"
       ],
       "beer_sheva": false,
       "negev": false,
