@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-31T19:19:59.818179+00:00",
-  "israel_time": "31/03/2026 22:20:00",
+  "updated_at": "2026-03-31T20:03:25.511717+00:00",
+  "israel_time": "31/03/2026 23:03:26",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
@@ -17,6 +17,31 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "31/03 22:59",
+      "cities": [
+        "אבירים",
+        "פסוטה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "31/03 22:59",
+      "cities": [
+        "מעלות תרשיחא"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "31/03 22:32",
+      "cities": [
+        "זרעית"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "31/03 21:08",
       "cities": [
@@ -164,42 +189,47 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "31/03 20:32",
-      "cities": [
-        "נתיב השיירה",
-        "שייח' דנון",
-        "אדמית",
-        "אילון",
-        "גורן",
-        "ערב אל עראמשה"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "31/03 20:32",
-      "cities": [
-        "עבדון"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "31/03 20:31",
-      "cities": [
-        "בצת"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 199,
+    "alerts_today": 202,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_6860_1774987187",
+      "unix_time": 1774987187,
+      "cities": [
+        "אבירים",
+        "פסוטה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_6860_1774987175",
+      "unix_time": 1774987175,
+      "cities": [
+        "מעלות תרשיחא"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_6859_1774985551",
+      "unix_time": 1774985551,
+      "cities": [
+        "זרעית"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
     {
       "id": "tza_6858_1774980507",
       "unix_time": 1774980507,
@@ -3243,53 +3273,6 @@
       "beer_sheva": false,
       "negev": false,
       "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6823_1774916694",
-      "unix_time": 1774916694,
-      "cities": [
-        "אדמית",
-        "ערב אל עראמשה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6822_1774910418",
-      "unix_time": 1774910418,
-      "cities": [
-        "ע'ג'ר"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6821_1774895652",
-      "unix_time": 1774895652,
-      "cities": [
-        "אלון מורה",
-        "ארגמן",
-        "חמרה",
-        "יפית",
-        "משואה",
-        "פצאל",
-        "תומר",
-        "שלומציון",
-        "גבעת פורת יוסף",
-        "חוות הרשאש",
-        "חוות מרום שמואל",
-        "חוות ראש תאנה",
-        "מלאכי השלום",
-        "מצפור פצאל"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
       "is_drill": false
     }
   ]
