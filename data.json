@@ -1,22 +1,30 @@
 {
-  "updated_at": "2026-04-01T18:37:31.208203+00:00",
-  "israel_time": "01/04/2026 21:37:31",
+  "updated_at": "2026-04-01T19:44:31.639750+00:00",
+  "israel_time": "01/04/2026 22:44:32",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
-    "quiet_confidence": 76,
+    "quiet_confidence": 81,
     "last_bs_alert": "01/04/2026 06:28 (IL)",
-    "mins_since_last": 909,
+    "mins_since_last": 976,
     "bs_alerts_24h": 1,
     "bs_alerts_3h": 0,
     "factors": {
       "recency_score": 90,
-      "tod_score": 40,
+      "tod_score": 70,
       "volume_score": 65,
       "burst_score": 85
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "01/04 22:01",
+      "cities": [
+        "מלכיה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "01/04 21:24",
       "cities": [
@@ -181,21 +189,6 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "01/04 20:18",
-      "cities": [
-        "אזור תעשייה עד הלום",
-        "אשדוד - א,ב,ד,ה",
-        "אשדוד - איזור תעשייה צפוני",
-        "אשדוד - ג,ו,ז",
-        "אשדוד - ח,ט,י,יג,יד,טז",
-        "אשדוד -יא,יב,טו,יז,מרינה,סיט",
-        "בני דרום",
-        "ניר גלים"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
@@ -203,6 +196,17 @@
     "bs_today": 1
   },
   "alert_history": [
+    {
+      "id": "tza_6896_1775070099",
+      "unix_time": 1775070099,
+      "cities": [
+        "מלכיה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_6895_1775067890",
       "unix_time": 1775067890,
@@ -4715,17 +4719,6 @@
       "beer_sheva": false,
       "negev": false,
       "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6857_1774978239",
-      "unix_time": 1774978239,
-      "cities": [
-        "בצת"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
       "is_drill": false
     }
   ]
