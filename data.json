@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-02T06:42:54.516362+00:00",
-  "israel_time": "02/04/2026 09:42:54",
+  "updated_at": "2026-04-02T07:52:34.006918+00:00",
+  "israel_time": "02/04/2026 10:52:34",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
@@ -17,6 +17,31 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "02/04 10:49",
+      "cities": [
+        "מטולה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "02/04 10:29",
+      "cities": [
+        "מטולה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "02/04 10:20",
+      "cities": [
+        "עמוקה",
+        "חצור הגלילית"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "02/04 09:05",
       "cities": [
@@ -169,51 +194,47 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "02/04 07:19",
-      "cities": [
-        "אזור תעשייה מבוא כרמל",
-        "רמת השופט",
-        "כפר החורש",
-        "מגדל העמק",
-        "שריד",
-        "בת שלמה",
-        "כפר ברוך",
-        "פוריידיס"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "02/04 07:19",
-      "cities": [
-        "אזור תעשייה שער נעמן",
-        "חיפה - נווה שאנן ורמות כרמל",
-        "אושה",
-        "אפק",
-        "חיפה - בת גלים ק.אליעזר",
-        "חיפה - כרמל, הדר ועיר תחתית",
-        "חיפה - מערב",
-        "חיפה - מפרץ"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "02/04 06:34",
-      "cities": [
-        "אביבים"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 190,
+    "alerts_today": 182,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_6919_1775116184",
+      "unix_time": 1775116184,
+      "cities": [
+        "מטולה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_6918_1775114987",
+      "unix_time": 1775114987,
+      "cities": [
+        "מטולה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_6917_1775114452",
+      "unix_time": 1775114452,
+      "cities": [
+        "עמוקה",
+        "חצור הגלילית"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_6916_1775109901",
       "unix_time": 1775109901,
@@ -4907,43 +4928,6 @@
       "beer_sheva": false,
       "negev": false,
       "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6867_1775021845",
-      "unix_time": 1775021845,
-      "cities": [
-        "זרעית"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6867_1775021836",
-      "unix_time": 1775021836,
-      "cities": [
-        "נטועה",
-        "שתולה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6867_1775021829",
-      "unix_time": 1775021829,
-      "cities": [
-        "אבן מנחם",
-        "נטועה",
-        "פסוטה",
-        "שומרה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
       "is_drill": false
     }
   ]
