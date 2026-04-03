@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-03T14:04:32.541399+00:00",
-  "israel_time": "03/04/2026 17:04:33",
+  "updated_at": "2026-04-03T14:59:36.546645+00:00",
+  "israel_time": "03/04/2026 17:59:36",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
@@ -17,6 +17,35 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "03/04 17:06",
+      "cities": [
+        "אזור תעשייה רמת דלתון",
+        "אור הגנוז",
+        "בר יוחאי",
+        "דלתון",
+        "קדיתא"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "03/04 17:06",
+      "cities": [
+        "ביריה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "03/04 17:06",
+      "cities": [
+        "צפת - עיר",
+        "צפת - עכברה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "03/04 16:35",
       "cities": [
@@ -190,55 +219,51 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "03/04 16:11",
-      "cities": [
-        "מגדלים",
-        "עמיחי",
-        "אחיה",
-        "אש קודש",
-        "חוות מגדלים"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "03/04 16:11",
-      "cities": [
-        "יבנה",
-        "גבעת ברנר",
-        "גזר",
-        "גני יוחנן",
-        "יציץ",
-        "כפר ביל''ו",
-        "פתחיה",
-        "קריית עקרון"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "03/04 16:11",
-      "cities": [
-        "תל אביב - דרום העיר ויפו",
-        "תל אביב - מזרח",
-        "תל אביב - מרכז העיר",
-        "תל אביב - עבר הירקון",
-        "אור יהודה",
-        "אזור",
-        "בני ברק",
-        "בת ים"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 150,
+    "alerts_today": 144,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_6966_1775225209",
+      "unix_time": 1775225209,
+      "cities": [
+        "אזור תעשייה רמת דלתון",
+        "אור הגנוז",
+        "בר יוחאי",
+        "דלתון",
+        "קדיתא"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_6966_1775225187",
+      "unix_time": 1775225187,
+      "cities": [
+        "ביריה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_6966_1775225163",
+      "unix_time": 1775225163,
+      "cities": [
+        "צפת - עיר",
+        "צפת - עכברה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_6965_1775223343",
       "unix_time": 1775223343,
@@ -3701,43 +3726,6 @@
       "unix_time": 1775109805,
       "cities": [
         "מרגליות"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6915_1775109690",
-      "unix_time": 1775109690,
-      "cities": [
-        "משגב עם",
-        "קריית שמונה",
-        "כפר גלעדי",
-        "תל חי"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6914_1775109535",
-      "unix_time": 1775109535,
-      "cities": [
-        "כפר יובל"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6914_1775109516",
-      "unix_time": 1775109516,
-      "cities": [
-        "בית הלל",
-        "מעיין ברוך"
       ],
       "beer_sheva": false,
       "negev": false,
