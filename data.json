@@ -1,22 +1,30 @@
 {
-  "updated_at": "2026-04-03T10:23:57.967675+00:00",
-  "israel_time": "03/04/2026 13:23:58",
+  "updated_at": "2026-04-03T11:10:02.040904+00:00",
+  "israel_time": "03/04/2026 14:10:02",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
-    "quiet_confidence": 83,
+    "quiet_confidence": 82,
     "last_bs_alert": null,
     "mins_since_last": null,
     "bs_alerts_24h": 0,
     "bs_alerts_3h": 0,
     "factors": {
       "recency_score": 90,
-      "tod_score": 50,
+      "tod_score": 45,
       "volume_score": 90,
       "burst_score": 85
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "03/04 13:56",
+      "cities": [
+        "משגב עם"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "03/04 13:20",
       "cities": [
@@ -196,23 +204,24 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "03/04 09:11",
-      "cities": [
-        "קריית שמונה",
-        "כפר יובל",
-        "תל חי"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 162,
+    "alerts_today": 153,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_6960_1775213762",
+      "unix_time": 1775213762,
+      "cities": [
+        "משגב עם"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_6959_1775211627",
       "unix_time": 1775211627,
@@ -3817,28 +3826,6 @@
         "גבעת אלה",
         "גבת",
         "דמיידה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6905_1775089796",
-      "unix_time": 1775089796,
-      "cities": [
-        "בית ג'אן",
-        "בענה",
-        "הר חלוץ",
-        "חרשים",
-        "מג'דל כרום",
-        "נחף",
-        "סאג'ור",
-        "צורית גילון",
-        "בית ספר שדה מירון",
-        "מתת",
-        "סאסא",
-        "פקיעין"
       ],
       "beer_sheva": false,
       "negev": false,
