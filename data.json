@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-03T21:20:18.467631+00:00",
-  "israel_time": "04/04/2026 00:20:19",
+  "updated_at": "2026-04-03T21:53:58.943318+00:00",
+  "israel_time": "04/04/2026 00:54:00",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
@@ -17,6 +17,15 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "04/04 00:34",
+      "cities": [
+        "אביבים",
+        "יראון"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "04/04 00:02",
       "cities": [
@@ -200,21 +209,25 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "03/04 19:34",
-      "cities": [
-        "מרגליות"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 145,
+    "alerts_today": 146,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_6977_1775252046",
+      "unix_time": 1775252046,
+      "cities": [
+        "אביבים",
+        "יראון"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_6976_1775250167",
       "unix_time": 1775250167,
@@ -4585,21 +4598,6 @@
         "דלתון",
         "כרם בן זמרה",
         "קדיתא"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6936_1775146370",
-      "unix_time": 1775146370,
-      "cities": [
-        "כורזים ורד הגליל",
-        "אליפלט",
-        "אמנון",
-        "עמיעד",
-        "מרכז אזורי רמת כורזים"
       ],
       "beer_sheva": false,
       "negev": false,
