@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-03T11:53:29.767544+00:00",
-  "israel_time": "03/04/2026 14:53:30",
+  "updated_at": "2026-04-03T12:58:55.220004+00:00",
+  "israel_time": "03/04/2026 15:58:55",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
@@ -17,6 +17,23 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "03/04 15:51",
+      "cities": [
+        "אביבים"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "03/04 15:50",
+      "cities": [
+        "כרם בן זמרה",
+        "יראון"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "03/04 14:27",
       "cities": [
@@ -186,29 +203,36 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "03/04 09:32",
-      "cities": [
-        "אבירים"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "03/04 09:12",
-      "cities": [
-        "בית הלל"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 151,
+    "alerts_today": 147,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_6962_1775220673",
+      "unix_time": 1775220673,
+      "cities": [
+        "אביבים"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_6962_1775220652",
+      "unix_time": 1775220652,
+      "cities": [
+        "כרם בן זמרה",
+        "יראון"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_6961_1775215620",
       "unix_time": 1775215620,
@@ -3580,64 +3604,6 @@
       "unix_time": 1775094421,
       "cities": [
         "הבונים"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6906_1775094372",
-      "unix_time": 1775094372,
-      "cities": [
-        "דיר אל-אסד",
-        "תובל",
-        "חמדת ימים",
-        "שריד"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6906_1775094365",
-      "unix_time": 1775094365,
-      "cities": [
-        "סאג'ור",
-        "כרכום",
-        "מרכז אזורי רמת כורזים",
-        "שפר",
-        "חיפה - בת גלים ק.אליעזר",
-        "חיפה - כרמל, הדר ועיר תחתית",
-        "חיפה - מערב",
-        "אזור תעשייה יקנעם עילית",
-        "יקנעם המושבה והזורע",
-        "יקנעם עילית",
-        "בית אורן",
-        "גבעת וולפסון",
-        "דלית אל כרמל",
-        "החותרים",
-        "טירת כרמל",
-        "כפר גלים",
-        "כפר מסריק",
-        "עין המפרץ",
-        "עכו - אזור תעשייה",
-        "אזור תעשייה ניר עציון",
-        "בית העלמין החדש עכו",
-        "בית צבי",
-        "גבע כרמל",
-        "כרם מהר''ל",
-        "מגדים",
-        "מרכז מיר''ב",
-        "נווה ים",
-        "ניר עציון, ימין אורד",
-        "עין הוד",
-        "עין חוד",
-        "עין כרמל",
-        "עתלית",
-        "צרופה",
-        "תחנת רכבת כפר יהושוע"
       ],
       "beer_sheva": false,
       "negev": false,
