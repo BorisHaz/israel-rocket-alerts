@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-03T20:48:29.012040+00:00",
-  "israel_time": "03/04/2026 23:48:29",
+  "updated_at": "2026-04-03T21:20:18.467631+00:00",
+  "israel_time": "04/04/2026 00:20:19",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
@@ -17,6 +17,21 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "04/04 00:02",
+      "cities": [
+        "איזור תעשייה מילואות צפון",
+        "בצת",
+        "חוף בצת",
+        "לימן",
+        "מצובה",
+        "ראש הנקרה",
+        "שלומי",
+        "גשר הזיו"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "03/04 23:38",
       "cities": [
@@ -193,22 +208,34 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "03/04 19:34",
-      "cities": [
-        "בית הלל",
-        "הגושרים"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 144,
+    "alerts_today": 145,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_6976_1775250167",
+      "unix_time": 1775250167,
+      "cities": [
+        "איזור תעשייה מילואות צפון",
+        "בצת",
+        "חוף בצת",
+        "לימן",
+        "מצובה",
+        "ראש הנקרה",
+        "שלומי",
+        "גשר הזיו",
+        "נהריה",
+        "סער",
+        "חוף אכזיב"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_6975_1775248692",
       "unix_time": 1775248692,
@@ -4573,17 +4600,6 @@
         "אמנון",
         "עמיעד",
         "מרכז אזורי רמת כורזים"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6935_1775145572",
-      "unix_time": 1775145572,
-      "cities": [
-        "משגב עם"
       ],
       "beer_sheva": false,
       "negev": false,
