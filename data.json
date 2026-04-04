@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-04-04T06:13:48.019047+00:00",
-  "israel_time": "04/04/2026 09:13:48",
+  "updated_at": "2026-04-04T07:29:02.931363+00:00",
+  "israel_time": "04/04/2026 10:29:03",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "medium",
     "quiet_confidence": 72,
     "last_bs_alert": "04/04/2026 01:31 (IL)",
-    "mins_since_last": 463,
+    "mins_since_last": 538,
     "bs_alerts_24h": 2,
     "bs_alerts_3h": 0,
     "factors": {
@@ -17,6 +17,25 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "04/04 09:38",
+      "cities": [
+        "כפר יובל",
+        "מטולה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "04/04 09:38",
+      "cities": [
+        "כפר גלעדי",
+        "קריית שמונה",
+        "תל חי"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "04/04 07:27",
       "cities": [
@@ -212,29 +231,38 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "03/04 23:08",
-      "cities": [
-        "חיפה - קריית חיים ושמואל"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "03/04 23:08",
-      "cities": [
-        "קריית ים"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 129,
+    "alerts_today": 124,
     "bs_today": 2
   },
   "alert_history": [
+    {
+      "id": "tza_6983_1775284722",
+      "unix_time": 1775284722,
+      "cities": [
+        "כפר יובל",
+        "מטולה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_6983_1775284704",
+      "unix_time": 1775284704,
+      "cities": [
+        "כפר גלעדי",
+        "קריית שמונה",
+        "תל חי"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_6982_1775276845",
       "unix_time": 1775276845,
@@ -4762,28 +4790,6 @@
       "unix_time": 1775146809,
       "cities": [
         "כפר ורדים"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6936_1775146799",
-      "unix_time": 1775146799,
-      "cities": [
-        "יחיעם"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6936_1775146779",
-      "unix_time": 1775146779,
-      "cities": [
-        "מעונה"
       ],
       "beer_sheva": false,
       "negev": false,
