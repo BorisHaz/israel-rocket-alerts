@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-04-04T19:59:36.425844+00:00",
-  "israel_time": "04/04/2026 22:59:37",
+  "updated_at": "2026-04-04T20:46:07.851707+00:00",
+  "israel_time": "04/04/2026 23:46:08",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
     "quiet_confidence": 81,
     "last_bs_alert": "04/04/2026 01:31 (IL)",
-    "mins_since_last": 1289,
+    "mins_since_last": 1335,
     "bs_alerts_24h": 2,
     "bs_alerts_3h": 0,
     "factors": {
@@ -17,6 +17,22 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "04/04 23:38",
+      "cities": [
+        "חניתה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "04/04 23:37",
+      "cities": [
+        "ערב אל עראמשה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "04/04 20:35",
       "cities": [
@@ -202,36 +218,35 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "04/04 19:11",
-      "cities": [
-        "יראון"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "04/04 18:51",
-      "cities": [
-        "גשר הזיו",
-        "איזור תעשייה מילואות צפון",
-        "בצת",
-        "חוף בצת",
-        "לימן",
-        "ראש הנקרה",
-        "שלומי",
-        "חוף אכזיב"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 91,
+    "alerts_today": 87,
     "bs_today": 2
   },
   "alert_history": [
+    {
+      "id": "tza_7003_1775335099",
+      "unix_time": 1775335099,
+      "cities": [
+        "חניתה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7003_1775335047",
+      "unix_time": 1775335047,
+      "cities": [
+        "ערב אל עראמשה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
     {
       "id": "tza_7002_1775324125",
       "unix_time": 1775324125,
@@ -5381,28 +5396,6 @@
       "unix_time": 1775197932,
       "cities": [
         "אבירים"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6953_1775196750",
-      "unix_time": 1775196750,
-      "cities": [
-        "בית הלל"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6953_1775196748",
-      "unix_time": 1775196748,
-      "cities": [
-        "מרגליות"
       ],
       "beer_sheva": false,
       "negev": false,
