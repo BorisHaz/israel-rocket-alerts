@@ -1,22 +1,38 @@
 {
-  "updated_at": "2026-04-05T11:01:53.999758+00:00",
-  "israel_time": "05/04/2026 14:01:54",
+  "updated_at": "2026-04-05T11:39:54.469233+00:00",
+  "israel_time": "05/04/2026 14:39:54",
   "beer_sheva_status": "recent",
   "prediction": {
     "risk_level": "high",
-    "quiet_confidence": 26,
+    "quiet_confidence": 38,
     "last_bs_alert": "05/04/2026 13:48 (IL)",
-    "mins_since_last": 14,
+    "mins_since_last": 52,
     "bs_alerts_24h": 3,
     "bs_alerts_3h": 2,
     "factors": {
-      "recency_score": 0,
+      "recency_score": 30,
       "tod_score": 45,
       "volume_score": 40,
       "burst_score": 45
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "05/04 14:38",
+      "cities": [
+        "יפתח"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "05/04 14:07",
+      "cities": [
+        "מרגליות"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "05/04 13:49",
       "cities": [
@@ -194,37 +210,35 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "05/04 10:34",
-      "cities": [
-        "אביבים",
-        "יראון"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "05/04 10:05",
-      "cities": [
-        "בענה",
-        "אילניה",
-        "גבעת אבני",
-        "הודיות",
-        "כמון - כמאנה מזרחית",
-        "כפר זיתים",
-        "לביא",
-        "מע'אר"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 111,
+    "alerts_today": 113,
     "bs_today": 3
   },
   "alert_history": [
+    {
+      "id": "tza_7052_1775389103",
+      "unix_time": 1775389103,
+      "cities": [
+        "יפתח"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7051_1775387230",
+      "unix_time": 1775387230,
+      "cities": [
+        "מרגליות"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_7050_1775386184",
       "unix_time": 1775386184,
@@ -5264,34 +5278,6 @@
       "unix_time": 1775230068,
       "cities": [
         "מגדל"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6969_1775230062",
-      "unix_time": 1775230062,
-      "cities": [
-        "טבריה",
-        "מצפה",
-        "ארבל",
-        "בית סוהר צלמון",
-        "ואדי אל חמאם",
-        "כלנית",
-        "כפר חיטים"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6969_1775230040",
-      "unix_time": 1775230040,
-      "cities": [
-        "הבונים"
       ],
       "beer_sheva": false,
       "negev": false,
