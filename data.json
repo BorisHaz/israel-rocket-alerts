@@ -1,22 +1,63 @@
 {
-  "updated_at": "2026-04-05T11:39:54.469233+00:00",
-  "israel_time": "05/04/2026 14:39:54",
-  "beer_sheva_status": "recent",
+  "updated_at": "2026-04-05T11:59:27.184696+00:00",
+  "israel_time": "05/04/2026 14:59:27",
+  "beer_sheva_status": "clear",
   "prediction": {
-    "risk_level": "high",
-    "quiet_confidence": 38,
+    "risk_level": "medium",
+    "quiet_confidence": 48,
     "last_bs_alert": "05/04/2026 13:48 (IL)",
-    "mins_since_last": 52,
+    "mins_since_last": 71,
     "bs_alerts_24h": 3,
     "bs_alerts_3h": 2,
     "factors": {
-      "recency_score": 30,
+      "recency_score": 55,
       "tod_score": 45,
       "volume_score": 40,
       "burst_score": 45
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "05/04 14:50",
+      "cities": [
+        "משגב עם"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "05/04 14:50",
+      "cities": [
+        "כפר יובל",
+        "מעיין ברוך"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "05/04 14:50",
+      "cities": [
+        "יפתח"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "05/04 14:46",
+      "cities": [
+        "קריית שמונה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "05/04 14:45",
+      "cities": [
+        "מנרה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "05/04 14:38",
       "cities": [
@@ -165,58 +206,69 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "05/04 11:52",
-      "cities": [
-        "צפת - עיר"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "05/04 11:38",
-      "cities": [
-        "אור הגנוז"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "05/04 11:38",
-      "cities": [
-        "ג'ש - גוש חלב",
-        "ספסופה - כפר חושן",
-        "צבעון"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "05/04 11:38",
-      "cities": [
-        "בר יוחאי",
-        "מרכז אזורי מרום גליל",
-        "מירון"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "05/04 10:57",
-      "cities": [
-        "מעלות תרשיחא",
-        "אבירים"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 113,
+    "alerts_today": 115,
     "bs_today": 3
   },
   "alert_history": [
+    {
+      "id": "tza_7054_1775389840",
+      "unix_time": 1775389840,
+      "cities": [
+        "משגב עם"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7054_1775389839",
+      "unix_time": 1775389839,
+      "cities": [
+        "כפר יובל",
+        "מעיין ברוך"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7054_1775389815",
+      "unix_time": 1775389815,
+      "cities": [
+        "יפתח"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7053_1775389578",
+      "unix_time": 1775389578,
+      "cities": [
+        "קריית שמונה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7053_1775389545",
+      "unix_time": 1775389545,
+      "cities": [
+        "מנרה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_7052_1775389103",
       "unix_time": 1775389103,
@@ -5149,135 +5201,6 @@
         "חורפיש",
         "ספסופה - כפר חושן",
         "קדיתא"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6969_1775230153",
-      "unix_time": 1775230153,
-      "cities": [
-        "אליפלט",
-        "מרכז אזורי רמת כורזים"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6969_1775230145",
-      "unix_time": 1775230145,
-      "cities": [
-        "כורזים ורד הגליל",
-        "עמיעד",
-        "צפת - נוף כנרת",
-        "צפת - עכברה",
-        "ביריה",
-        "בית ג'אן",
-        "חוסן",
-        "כפר ורדים",
-        "מעונה",
-        "מעלות תרשיחא",
-        "נתיב השיירה",
-        "עין אל אסד",
-        "צפת - עיר",
-        "שייח' דנון",
-        "אור הגנוז",
-        "אמירים",
-        "בית ספר שדה מירון",
-        "בר יוחאי",
-        "געתון",
-        "יחיעם",
-        "ינוח ג'ת",
-        "כחל",
-        "כסרא סמיע",
-        "כפר שמאי",
-        "מגדל תפן",
-        "מירון",
-        "מרכז אזורי מרום גליל",
-        "עין יעקב",
-        "פקיעין החדשה",
-        "פקיעין",
-        "פרוד",
-        "צוריאל",
-        "שפר",
-        "חמדת ימים"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6969_1775230078",
-      "unix_time": 1775230078,
-      "cities": [
-        "מולדת",
-        "נווה אור",
-        "כפר חרוב",
-        "עין גב"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6969_1775230073",
-      "unix_time": 1775230073,
-      "cities": [
-        "גשר",
-        "חמת גדר",
-        "טייבה בגלבוע",
-        "מרחביה מושב",
-        "מרחביה קיבוץ",
-        "נאעורה",
-        "סולם",
-        "רמת צבי",
-        "אלומות",
-        "אפיקים",
-        "אשדות יעקב",
-        "בית זרע",
-        "בית ירח",
-        "גזית",
-        "דגניה א",
-        "דגניה ב",
-        "האון",
-        "כינרת מושבה",
-        "כינרת קבוצה",
-        "מבוא חמה",
-        "מנחמיה",
-        "מסדה",
-        "מעגן",
-        "פוריה כפר עבודה",
-        "פוריה נווה עובד",
-        "פוריה עילית",
-        "צמח",
-        "שער הגולן",
-        "תל קציר",
-        "חרשים",
-        "סאג'ור",
-        "ראמה",
-        "גינוסר",
-        "חוקוק",
-        "כפר חנניה",
-        "לבנים",
-        "מורן",
-        "קדרים"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_6969_1775230068",
-      "unix_time": 1775230068,
-      "cities": [
-        "מגדל"
       ],
       "beer_sheva": false,
       "negev": false,
