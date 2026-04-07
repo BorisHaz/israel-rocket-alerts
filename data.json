@@ -1,22 +1,40 @@
 {
-  "updated_at": "2026-04-07T01:05:15.102874+00:00",
-  "israel_time": "07/04/2026 04:05:15",
-  "beer_sheva_status": "recent",
+  "updated_at": "2026-04-07T04:05:12.132495+00:00",
+  "israel_time": "07/04/2026 07:05:12",
+  "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "medium",
-    "quiet_confidence": 49,
+    "quiet_confidence": 73,
     "last_bs_alert": "07/04/2026 03:30 (IL)",
-    "mins_since_last": 34,
+    "mins_since_last": 214,
     "bs_alerts_24h": 2,
-    "bs_alerts_3h": 1,
+    "bs_alerts_3h": 0,
     "factors": {
-      "recency_score": 30,
-      "tod_score": 85,
+      "recency_score": 75,
+      "tod_score": 55,
       "volume_score": 65,
-      "burst_score": 45
+      "burst_score": 85
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "07/04 06:55",
+      "cities": [
+        "כפר גלעדי",
+        "מטולה",
+        "משגב עם"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "07/04 06:55",
+      "cities": [
+        "קריית שמונה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "07/04 03:32",
       "cities": [
@@ -171,29 +189,37 @@
       ],
       "beer_sheva": false,
       "negev": false
+    }
+  ],
+  "daily_stats": {
+    "alerts_today": 123,
+    "bs_today": 2
+  },
+  "alert_history": [
+    {
+      "id": "tza_7105_1775534121",
+      "unix_time": 1775534121,
+      "cities": [
+        "כפר גלעדי",
+        "מטולה",
+        "משגב עם"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
     },
     {
-      "time_il": "06/04 19:07",
+      "id": "tza_7105_1775534110",
+      "unix_time": 1775534110,
       "cities": [
         "קריית שמונה"
       ],
       "beer_sheva": false,
-      "negev": false
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
     },
-    {
-      "time_il": "06/04 19:07",
-      "cities": [
-        "כפר בלום"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    }
-  ],
-  "daily_stats": {
-    "alerts_today": 135,
-    "bs_today": 2
-  },
-  "alert_history": [
     {
       "id": "tza_7104_1775521949",
       "unix_time": 1775521949,
@@ -4400,28 +4426,6 @@
       "cities": [
         "חוף בצת",
         "ראש הנקרה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7063_1775404806",
-      "unix_time": 1775404806,
-      "cities": [
-        "כברי"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7063_1775404795",
-      "unix_time": 1775404795,
-      "cities": [
-        "בצת"
       ],
       "beer_sheva": false,
       "negev": false,
