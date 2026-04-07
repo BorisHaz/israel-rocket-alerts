@@ -1,22 +1,30 @@
 {
-  "updated_at": "2026-04-07T10:43:54.040816+00:00",
-  "israel_time": "07/04/2026 13:43:54",
+  "updated_at": "2026-04-07T11:40:51.040694+00:00",
+  "israel_time": "07/04/2026 14:40:51",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "medium",
-    "quiet_confidence": 72,
+    "quiet_confidence": 71,
     "last_bs_alert": "07/04/2026 03:30 (IL)",
-    "mins_since_last": 613,
+    "mins_since_last": 670,
     "bs_alerts_24h": 1,
     "bs_alerts_3h": 0,
     "factors": {
       "recency_score": 75,
-      "tod_score": 50,
+      "tod_score": 45,
       "volume_score": 65,
       "burst_score": 85
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "07/04 14:30",
+      "cities": [
+        "מטולה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "07/04 13:34",
       "cities": [
@@ -217,21 +225,24 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "07/04 11:53",
-      "cities": [
-        "נהריה"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 148,
+    "alerts_today": 131,
     "bs_today": 1
   },
   "alert_history": [
+    {
+      "id": "tza_7131_1775561450",
+      "unix_time": 1775561450,
+      "cities": [
+        "מטולה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_7130_1775558078",
       "unix_time": 1775558078,
@@ -4456,21 +4467,6 @@
         "חוות נחל שילה",
         "חרשה",
         "מלאכי השלום"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7069_1775435778",
-      "unix_time": 1775435778,
-      "cities": [
-        "נוף איילון, שעלבים",
-        "כפר בן נון",
-        "מזכרת בתיה",
-        "משמר איילון",
-        "פדיה"
       ],
       "beer_sheva": false,
       "negev": false,
