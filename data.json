@@ -1,22 +1,32 @@
 {
-  "updated_at": "2026-04-08T11:56:06.316693+00:00",
-  "israel_time": "08/04/2026 14:56:06",
+  "updated_at": "2026-04-08T13:42:24.146441+00:00",
+  "israel_time": "08/04/2026 16:42:24",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "medium",
-    "quiet_confidence": 66,
+    "quiet_confidence": 72,
     "last_bs_alert": "08/04/2026 03:27 (IL)",
-    "mins_since_last": 689,
-    "bs_alerts_24h": 5,
+    "mins_since_last": 795,
+    "bs_alerts_24h": 4,
     "bs_alerts_3h": 0,
     "factors": {
-      "recency_score": 75,
+      "recency_score": 90,
       "tod_score": 45,
       "volume_score": 40,
       "burst_score": 85
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "08/04 16:24",
+      "cities": [
+        "מנרה",
+        "מרגליות",
+        "קריית שמונה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "08/04 03:28",
       "cities": [
@@ -233,22 +243,26 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "08/04 02:59",
-      "cities": [
-        "יקנעם עילית",
-        "עין איילה"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 122,
-    "bs_today": 5
+    "alerts_today": 88,
+    "bs_today": 4
   },
   "alert_history": [
+    {
+      "id": "tza_7157_1775654641",
+      "unix_time": 1775654641,
+      "cities": [
+        "מנרה",
+        "מרגליות",
+        "קריית שמונה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_7156_1775608114",
       "unix_time": 1775608114,
@@ -4437,17 +4451,6 @@
       "unix_time": 1775491649,
       "cities": [
         "בית הלל"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7097_1775491642",
-      "unix_time": 1775491642,
-      "cities": [
-        "קריית שמונה"
       ],
       "beer_sheva": false,
       "negev": false,
