@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-04-10T17:30:19.699943+00:00",
-  "israel_time": "10/04/2026 20:30:20",
+  "updated_at": "2026-04-10T18:29:41.440751+00:00",
+  "israel_time": "10/04/2026 21:29:41",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
     "quiet_confidence": 81,
     "last_bs_alert": "08/04/2026 03:27 (IL)",
-    "mins_since_last": 3903,
+    "mins_since_last": 3962,
     "bs_alerts_24h": 0,
     "bs_alerts_3h": 0,
     "factors": {
@@ -17,6 +17,36 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "10/04 21:06",
+      "cities": [
+        "בוסתן הגליל",
+        "ג'דידה מכר",
+        "עכו - רמות ים",
+        "שמרת",
+        "לוחמי הגטאות"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "10/04 21:06",
+      "cities": [
+        "עין המפרץ",
+        "עכו - אזור תעשייה",
+        "עכו"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "10/04 20:57",
+      "cities": [
+        "אביבים"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "10/04 20:14",
       "cities": [
@@ -170,37 +200,52 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "10/04 18:51",
-      "cities": [
-        "כרמיאל"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "10/04 18:47",
-      "cities": [
-        "עלמה"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "10/04 18:47",
-      "cities": [
-        "ריחאנייה"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 114,
+    "alerts_today": 117,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7218_1775844374",
+      "unix_time": 1775844374,
+      "cities": [
+        "בוסתן הגליל",
+        "ג'דידה מכר",
+        "עכו - רמות ים",
+        "שמרת",
+        "לוחמי הגטאות"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7218_1775844365",
+      "unix_time": 1775844365,
+      "cities": [
+        "עין המפרץ",
+        "עכו - אזור תעשייה",
+        "עכו"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7217_1775843872",
+      "unix_time": 1775843872,
+      "cities": [
+        "אביבים"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_7216_1775841296",
       "unix_time": 1775841296,
@@ -2807,82 +2852,6 @@
         "שדי אברהם",
         "שלומית",
         "תלמי יוסף"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7155_1775607741",
-      "unix_time": 1775607741,
-      "cities": [
-        "באר שבע - דרום",
-        "באר שבע - מזרח",
-        "באר שבע - מערב",
-        "באר שבע - צפון",
-        "אופקים",
-        "גבעות בר",
-        "להבים",
-        "מסלול",
-        "פדויים",
-        "רנן",
-        "תארבין",
-        "אורים",
-        "אשל הנשיא",
-        "בטחה",
-        "גבולות",
-        "גילת",
-        "חצרים",
-        "לקיה",
-        "מבטחים, עמיעוז, ישע",
-        "עומר",
-        "עין הבשור",
-        "פטיש",
-        "צאלים",
-        "צוחר, אוהד",
-        "שדה ניצן",
-        "תלמי אליהו",
-        "תפרח",
-        "אתר דודאים",
-        "ואדי אל נעם דרום",
-        "קריית חינוך מרחבים"
-      ],
-      "beer_sheva": true,
-      "negev": true,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7155_1775607740",
-      "unix_time": 1775607740,
-      "cities": [
-        "אבו קרינאת",
-        "כסייפה",
-        "מרעית",
-        "אל סייד",
-        "חורה",
-        "כרמים",
-        "כרמית",
-        "מיתר",
-        "נבטים",
-        "סנסנה",
-        "סעווה",
-        "שגב שלום",
-        "תל שבע",
-        "אבו תלול",
-        "אום בטין"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7154_1775606436",
-      "unix_time": 1775606436,
-      "cities": [
-        "בית העלמין החדש עכו"
       ],
       "beer_sheva": false,
       "negev": false,
