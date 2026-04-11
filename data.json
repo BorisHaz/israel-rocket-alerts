@@ -1,22 +1,53 @@
 {
-  "updated_at": "2026-04-11T14:52:39.792334+00:00",
-  "israel_time": "11/04/2026 17:52:40",
+  "updated_at": "2026-04-11T15:28:50.719507+00:00",
+  "israel_time": "11/04/2026 18:28:52",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
-    "quiet_confidence": 82,
+    "quiet_confidence": 81,
     "last_bs_alert": null,
     "mins_since_last": null,
     "bs_alerts_24h": 0,
     "bs_alerts_3h": 0,
     "factors": {
       "recency_score": 90,
-      "tod_score": 45,
+      "tod_score": 40,
       "volume_score": 90,
       "burst_score": 85
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "11/04 18:16",
+      "cities": [
+        "ביריה",
+        "אור הגנוז",
+        "בר יוחאי"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "11/04 18:16",
+      "cities": [
+        "אזור תעשייה רמת דלתון",
+        "ג'ש - גוש חלב",
+        "דלתון",
+        "כרם בן זמרה",
+        "קדיתא",
+        "ריחאנייה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "11/04 18:16",
+      "cities": [
+        "צפת - עיר"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "11/04 17:09",
       "cities": [
@@ -166,38 +197,53 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "11/04 16:31",
-      "cities": [
-        "אלקוש"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "11/04 16:30",
-      "cities": [
-        "נטועה",
-        "שתולה"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "11/04 16:30",
-      "cities": [
-        "כברי"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 153,
+    "alerts_today": 127,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7237_1775920609",
+      "unix_time": 1775920609,
+      "cities": [
+        "ביריה",
+        "אור הגנוז",
+        "בר יוחאי"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7237_1775920605",
+      "unix_time": 1775920605,
+      "cities": [
+        "אזור תעשייה רמת דלתון",
+        "ג'ש - גוש חלב",
+        "דלתון",
+        "כרם בן זמרה",
+        "קדיתא",
+        "ריחאנייה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7237_1775920589",
+      "unix_time": 1775920589,
+      "cities": [
+        "צפת - עיר"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_7236_1775916567",
       "unix_time": 1775916567,
@@ -2577,99 +2623,6 @@
       "beer_sheva": false,
       "negev": false,
       "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7191_1775778058",
-      "unix_time": 1775778058,
-      "cities": [
-        "מנות",
-        "עבדון"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7190_1775772861",
-      "unix_time": 1775772861,
-      "cities": [
-        "גאליה",
-        "יבנה",
-        "כפר הנגיד",
-        "תל אביב - דרום העיר ויפו",
-        "תל אביב - מזרח",
-        "תל אביב - מרכז העיר",
-        "תל אביב - עבר הירקון",
-        "אור יהודה",
-        "אזור",
-        "בני ברק",
-        "בת ים",
-        "גבעת שמואל",
-        "גבעתיים",
-        "גיבתון",
-        "גת רימון",
-        "חולון",
-        "יהוד מונוסון",
-        "מעש",
-        "מקווה ישראל",
-        "נצר סרני",
-        "סביון",
-        "פארק אריאל שרון",
-        "פארק תעשיות פלמחים",
-        "פלמחים",
-        "פתח תקווה",
-        "קריית אונו",
-        "ראשון לציון - מזרח",
-        "ראשון לציון - מערב",
-        "רחובות",
-        "רמת גן - מזרח",
-        "רמת גן - מערב",
-        "רמת השרון",
-        "אירוס",
-        "באר יעקב",
-        "בארות יצחק",
-        "בית חנן",
-        "בית עובד",
-        "בני עטרות",
-        "גן שורק",
-        "גני תקווה",
-        "ישרש",
-        "לוד",
-        "מגשימים",
-        "נטעים",
-        "ניר צבי",
-        "נס ציונה",
-        "עיינות",
-        "רמלה",
-        "תעשיון צריפין",
-        "אחיעזר",
-        "בית דגן",
-        "זיתן",
-        "חמד",
-        "יגל",
-        "כפר חב''ד",
-        "משמר השבעה",
-        "צפריה",
-        "איירפורט סיטי",
-        "גנות",
-        "מתחם פי גלילות"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7190_1775772788",
-      "unix_time": 1775772788,
-      "cities": [
-        "אשדוד - איזור תעשייה צפוני"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
       "is_drill": false
     }
   ]
