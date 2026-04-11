@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-11T11:42:27.216385+00:00",
-  "israel_time": "11/04/2026 14:42:28",
+  "updated_at": "2026-04-11T12:02:45.465565+00:00",
+  "israel_time": "11/04/2026 15:02:46",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
@@ -17,6 +17,14 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "11/04 14:45",
+      "cities": [
+        "אביבים"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "11/04 09:01",
       "cities": [
@@ -178,21 +186,24 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "11/04 00:46",
-      "cities": [
-        "משגב עם"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 108,
+    "alerts_today": 103,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7228_1775907956",
+      "unix_time": 1775907956,
+      "cities": [
+        "אביבים"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_7227_1775887266",
       "unix_time": 1775887266,
@@ -2646,18 +2657,6 @@
         "כפר יובל",
         "מעיין ברוך",
         "קריית שמונה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7168_1775725781",
-      "unix_time": 1775725781,
-      "cities": [
-        "כפר יובל",
-        "מעיין ברוך"
       ],
       "beer_sheva": false,
       "negev": false,
