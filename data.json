@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-12T09:27:43.674617+00:00",
-  "israel_time": "12/04/2026 12:27:44",
+  "updated_at": "2026-04-12T10:09:53.753445+00:00",
+  "israel_time": "12/04/2026 13:09:55",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
@@ -17,6 +17,22 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "12/04 13:09",
+      "cities": [
+        "מטולה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "12/04 13:09",
+      "cities": [
+        "מטולה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "12/04 11:20",
       "cities": [
@@ -176,32 +192,35 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "11/04 18:49",
-      "cities": [
-        "דישון",
-        "רמות נפתלי"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "11/04 18:49",
-      "cities": [
-        "שדה אליעזר",
-        "יסוד המעלה",
-        "איילת השחר"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 92,
+    "alerts_today": 94,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "c925e75b-39ea-480f-864f-e216b6209aa6",
+      "unix_time": 1775988574,
+      "cities": [
+        "מטולה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7247_1775988574",
+      "unix_time": 1775988574,
+      "cities": [
+        "מטולה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_7246_1775982025",
       "unix_time": 1775982025,
@@ -2610,34 +2629,6 @@
         "בענה",
         "דיר אל-אסד",
         "לבון",
-        "מג'דל כרום"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7202_1775821755",
-      "unix_time": 1775821755,
-      "cities": [
-        "כישור",
-        "לפידות",
-        "תובל"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7202_1775821730",
-      "unix_time": 1775821730,
-      "cities": [
-        "לבון",
-        "דיר אל-אסד",
-        "בענה",
-        "כרמיאל",
         "מג'דל כרום"
       ],
       "beer_sheva": false,
