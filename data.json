@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-12T23:06:49.308337+00:00",
-  "israel_time": "13/04/2026 02:06:50",
+  "updated_at": "2026-04-12T23:50:31.868088+00:00",
+  "israel_time": "13/04/2026 02:50:32",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
@@ -17,6 +17,14 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "13/04 02:49",
+      "cities": [
+        "דוב''ב"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "13/04 01:20",
       "cities": [
@@ -178,21 +186,24 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "12/04 20:18",
-      "cities": [
-        "יראון"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 75,
+    "alerts_today": 76,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7269_1776037783",
+      "unix_time": 1776037783,
+      "cities": [
+        "דוב''ב"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_7268_1776032454",
       "unix_time": 1776032454,
@@ -2576,17 +2587,6 @@
       "cities": [
         "נהריה",
         "סער"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7215_1775838678",
-      "unix_time": 1775838678,
-      "cities": [
-        "יראון"
       ],
       "beer_sheva": false,
       "negev": false,
