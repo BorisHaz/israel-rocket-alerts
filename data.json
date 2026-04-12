@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-12T19:26:03.509707+00:00",
-  "israel_time": "12/04/2026 22:26:03",
+  "updated_at": "2026-04-12T19:59:40.231120+00:00",
+  "israel_time": "12/04/2026 22:59:40",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
@@ -17,6 +17,16 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "12/04 22:27",
+      "cities": [
+        "כפר גלעדי",
+        "כפר יובל",
+        "תל חי"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "12/04 22:10",
       "cities": [
@@ -176,21 +186,26 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "12/04 19:28",
-      "cities": [
-        "שומרה"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 64,
+    "alerts_today": 65,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7266_1776022020",
+      "unix_time": 1776022020,
+      "cities": [
+        "כפר גלעדי",
+        "כפר יובל",
+        "תל חי"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
     {
       "id": "tza_7265_1776021035",
       "unix_time": 1776021035,
@@ -2577,17 +2592,6 @@
         "דיר אל-אסד",
         "לבון",
         "נחף"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7213_1775836294",
-      "unix_time": 1775836294,
-      "cities": [
-        "כרמיאל"
       ],
       "beer_sheva": false,
       "negev": false,
