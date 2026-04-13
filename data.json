@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-13T07:04:23.519910+00:00",
-  "israel_time": "13/04/2026 10:04:24",
+  "updated_at": "2026-04-13T09:07:42.443730+00:00",
+  "israel_time": "13/04/2026 12:07:43",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
@@ -18,23 +18,15 @@
   },
   "recent_alerts": [
     {
-      "time_il": "13/04 08:38",
+      "time_il": "13/04 11:54",
       "cities": [
-        "שלומי"
+        "מרגליות"
       ],
       "beer_sheva": false,
       "negev": false
     },
     {
-      "time_il": "13/04 08:37",
-      "cities": [
-        "ראש הנקרה"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "13/04 07:57",
+      "time_il": "13/04 11:54",
       "cities": [
         "משגב עם"
       ],
@@ -42,23 +34,95 @@
       "negev": false
     },
     {
-      "time_il": "13/04 07:56",
+      "time_il": "13/04 11:50",
       "cities": [
-        "מטולה"
+        "כפר גלעדי"
       ],
       "beer_sheva": false,
       "negev": false
     },
     {
-      "time_il": "13/04 02:49",
+      "time_il": "13/04 11:49",
       "cities": [
-        "דוב''ב"
+        "אבן מנחם",
+        "זרעית",
+        "שומרה",
+        "שתולה"
       ],
       "beer_sheva": false,
       "negev": false
     },
     {
-      "time_il": "13/04 01:20",
+      "time_il": "13/04 11:18",
+      "cities": [
+        "אביבים"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "13/04 11:10",
+      "cities": [
+        "כפר גלעדי",
+        "קריית שמונה",
+        "תל חי"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "13/04 11:10",
+      "cities": [
+        "הגושרים"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "13/04 11:10",
+      "cities": [
+        "כפר גלעדי",
+        "קריית שמונה",
+        "תל חי"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "13/04 11:10",
+      "cities": [
+        "בית הלל"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "13/04 11:10",
+      "cities": [
+        "מעיין ברוך"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "13/04 11:10",
+      "cities": [
+        "כפר גלעדי"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "13/04 11:09",
+      "cities": [
+        "קריית שמונה",
+        "תל חי"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "13/04 11:09",
       "cities": [
         "כפר יובל"
       ],
@@ -66,132 +130,353 @@
       "negev": false
     },
     {
-      "time_il": "13/04 01:20",
+      "time_il": "13/04 11:09",
       "cities": [
-        "מטולה"
+        "כפר גלעדי"
       ],
       "beer_sheva": false,
       "negev": false
     },
     {
-      "time_il": "13/04 01:20",
+      "time_il": "13/04 11:09",
       "cities": [
-        "בית הלל"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "13/04 01:20",
-      "cities": [
-        "כפר גלעדי",
-        "כפר יובל",
-        "מעיין ברוך",
+        "קריית שמונה",
         "תל חי"
       ],
       "beer_sheva": false,
       "negev": false
     },
     {
-      "time_il": "13/04 01:20",
+      "time_il": "13/04 11:08",
       "cities": [
-        "מטולה",
         "משגב עם"
       ],
       "beer_sheva": false,
       "negev": false
     },
     {
-      "time_il": "13/04 01:19",
+      "time_il": "13/04 11:08",
       "cities": [
-        "קריית שמונה",
-        "בית הלל"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "12/04 23:58",
-      "cities": [
-        "דוב''ב"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "12/04 23:58",
-      "cities": [
-        "סאסא"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "12/04 23:58",
-      "cities": [
-        "דוב''ב"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "12/04 23:58",
-      "cities": [
-        "סאסא"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "12/04 22:27",
-      "cities": [
-        "כפר גלעדי",
-        "כפר יובל",
         "תל חי"
       ],
       "beer_sheva": false,
       "negev": false
     },
     {
-      "time_il": "12/04 22:10",
+      "time_il": "13/04 11:07",
       "cities": [
-        "דישון"
+        "משגב עם"
       ],
       "beer_sheva": false,
       "negev": false
     },
     {
-      "time_il": "12/04 22:10",
+      "time_il": "13/04 11:07",
       "cities": [
-        "אביבים",
-        "יראון",
-        "מלכיה"
+        "מנרה"
       ],
       "beer_sheva": false,
       "negev": false
     },
     {
-      "time_il": "12/04 21:00",
+      "time_il": "13/04 11:07",
       "cities": [
-        "דישון"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "12/04 21:00",
-      "cities": [
-        "מלכיה"
+        "כפר גלעדי"
       ],
       "beer_sheva": false,
       "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 75,
+    "alerts_today": 94,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7276_1776070474",
+      "unix_time": 1776070474,
+      "cities": [
+        "מרגליות"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7276_1776070472",
+      "unix_time": 1776070472,
+      "cities": [
+        "משגב עם"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7275_1776070211",
+      "unix_time": 1776070211,
+      "cities": [
+        "כפר גלעדי"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7275_1776070198",
+      "unix_time": 1776070198,
+      "cities": [
+        "אבן מנחם",
+        "זרעית",
+        "שומרה",
+        "שתולה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7274_1776068300",
+      "unix_time": 1776068300,
+      "cities": [
+        "אביבים"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7273_1776067849",
+      "unix_time": 1776067849,
+      "cities": [
+        "כפר גלעדי",
+        "קריית שמונה",
+        "תל חי"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7273_1776067827",
+      "unix_time": 1776067827,
+      "cities": [
+        "הגושרים"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7273_1776067813",
+      "unix_time": 1776067813,
+      "cities": [
+        "כפר גלעדי",
+        "קריית שמונה",
+        "תל חי"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7273_1776067809",
+      "unix_time": 1776067809,
+      "cities": [
+        "בית הלל"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7273_1776067807",
+      "unix_time": 1776067807,
+      "cities": [
+        "מעיין ברוך"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7273_1776067801",
+      "unix_time": 1776067801,
+      "cities": [
+        "כפר גלעדי"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7273_1776067793",
+      "unix_time": 1776067793,
+      "cities": [
+        "קריית שמונה",
+        "תל חי"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7273_1776067787",
+      "unix_time": 1776067787,
+      "cities": [
+        "כפר יובל"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7273_1776067766",
+      "unix_time": 1776067766,
+      "cities": [
+        "כפר גלעדי"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7273_1776067758",
+      "unix_time": 1776067758,
+      "cities": [
+        "קריית שמונה",
+        "תל חי"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7273_1776067699",
+      "unix_time": 1776067699,
+      "cities": [
+        "משגב עם"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7273_1776067683",
+      "unix_time": 1776067683,
+      "cities": [
+        "תל חי"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7273_1776067659",
+      "unix_time": 1776067659,
+      "cities": [
+        "משגב עם"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7273_1776067655",
+      "unix_time": 1776067655,
+      "cities": [
+        "מנרה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7273_1776067646",
+      "unix_time": 1776067646,
+      "cities": [
+        "כפר גלעדי"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7273_1776067645",
+      "unix_time": 1776067645,
+      "cities": [
+        "קריית שמונה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7273_1776067617",
+      "unix_time": 1776067617,
+      "cities": [
+        "מרגליות",
+        "משגב עם"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7273_1776067363",
+      "unix_time": 1776067363,
+      "cities": [
+        "מנרה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7273_1776067354",
+      "unix_time": 1776067354,
+      "cities": [
+        "קריית שמונה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7272_1776066862",
+      "unix_time": 1776066862,
+      "cities": [
+        "משגב עם"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
     {
       "id": "tza_7271_1776058700",
       "unix_time": 1776058700,
@@ -2282,302 +2567,6 @@
         "אזור תעשייה רמת דלתון",
         "דלתון",
         "קדיתא"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7224_1775859321",
-      "unix_time": 1775859321,
-      "cities": [
-        "ביריה",
-        "צפת - עיר"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7223_1775858011",
-      "unix_time": 1775858011,
-      "cities": [
-        "משגב עם"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7223_1775857966",
-      "unix_time": 1775857966,
-      "cities": [
-        "משגב עם"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7222_1775857813",
-      "unix_time": 1775857813,
-      "cities": [
-        "מטולה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7222_1775857784",
-      "unix_time": 1775857784,
-      "cities": [
-        "משגב עם"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7221_1775857609",
-      "unix_time": 1775857609,
-      "cities": [
-        "משגב עם"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7221_1775857602",
-      "unix_time": 1775857602,
-      "cities": [
-        "קריית שמונה",
-        "מרגליות",
-        "מנרה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7221_1775857598",
-      "unix_time": 1775857598,
-      "cities": [
-        "מטולה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7220_1775851833",
-      "unix_time": 1775851833,
-      "cities": [
-        "מעיין ברוך",
-        "כפר גלעדי",
-        "כפר יובל",
-        "קריית שמונה",
-        "תל חי"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7219_1775847978",
-      "unix_time": 1775847978,
-      "cities": [
-        "מנרה",
-        "מרגליות",
-        "קריית שמונה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7219_1775847938",
-      "unix_time": 1775847938,
-      "cities": [
-        "מטולה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7219_1775847899",
-      "unix_time": 1775847899,
-      "cities": [
-        "מטולה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7219_1775847852",
-      "unix_time": 1775847852,
-      "cities": [
-        "מטולה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7219_1775847847",
-      "unix_time": 1775847847,
-      "cities": [
-        "קריית שמונה",
-        "תל חי"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7219_1775847818",
-      "unix_time": 1775847818,
-      "cities": [
-        "כפר גלעדי"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7219_1775847813",
-      "unix_time": 1775847813,
-      "cities": [
-        "מטולה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7219_1775847810",
-      "unix_time": 1775847810,
-      "cities": [
-        "קריית שמונה",
-        "תל חי"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7219_1775847799",
-      "unix_time": 1775847799,
-      "cities": [
-        "בית הלל"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7219_1775847796",
-      "unix_time": 1775847796,
-      "cities": [
-        "כפר יובל",
-        "מעיין ברוך"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7219_1775847776",
-      "unix_time": 1775847776,
-      "cities": [
-        "מטולה",
-        "כפר גלעדי",
-        "קריית שמונה",
-        "תל חי"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7218_1775844374",
-      "unix_time": 1775844374,
-      "cities": [
-        "בוסתן הגליל",
-        "ג'דידה מכר",
-        "עכו - רמות ים",
-        "שמרת",
-        "לוחמי הגטאות"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7218_1775844365",
-      "unix_time": 1775844365,
-      "cities": [
-        "עין המפרץ",
-        "עכו - אזור תעשייה",
-        "עכו"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7217_1775843872",
-      "unix_time": 1775843872,
-      "cities": [
-        "אביבים"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7216_1775841296",
-      "unix_time": 1775841296,
-      "cities": [
-        "יערה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7216_1775841283",
-      "unix_time": 1775841283,
-      "cities": [
-        "סער"
       ],
       "beer_sheva": false,
       "negev": false,
