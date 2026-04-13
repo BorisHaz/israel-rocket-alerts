@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-13T15:43:28.223367+00:00",
-  "israel_time": "13/04/2026 18:43:29",
+  "updated_at": "2026-04-13T16:47:29.115715+00:00",
+  "israel_time": "13/04/2026 19:47:30",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
@@ -17,6 +17,14 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "13/04 19:40",
+      "cities": [
+        "חניתה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "13/04 18:32",
       "cities": [
@@ -182,23 +190,24 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "13/04 16:04",
-      "cities": [
-        "כפר בלום",
-        "עמיר",
-        "שדה נחמיה"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 157,
+    "alerts_today": 139,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7296_1776098417",
+      "unix_time": 1776098417,
+      "cities": [
+        "חניתה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
     {
       "id": "tza_7295_1776094375",
       "unix_time": 1776094375,
@@ -2533,19 +2542,6 @@
       "unix_time": 1775922592,
       "cities": [
         "שדה אליעזר"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7239_1775922568",
-      "unix_time": 1775922568,
-      "cities": [
-        "לב החולה",
-        "יפתח",
-        "מרכז אזורי מבואות חרמון"
       ],
       "beer_sheva": false,
       "negev": false,
