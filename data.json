@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-14T19:22:24.201521+00:00",
-  "israel_time": "14/04/2026 22:22:24",
+  "updated_at": "2026-04-14T20:29:13.058482+00:00",
+  "israel_time": "14/04/2026 23:29:13",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
@@ -17,6 +17,30 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "14/04 22:51",
+      "cities": [
+        "אודם"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "14/04 22:49",
+      "cities": [
+        "אל רום"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "14/04 22:49",
+      "cities": [
+        "מרום גולן"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "14/04 20:57",
       "cities": [
@@ -157,31 +181,6 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "14/04 18:30",
-      "cities": [
-        "נאות מרדכי"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "14/04 18:29",
-      "cities": [
-        "יראון"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "14/04 18:22",
-      "cities": [
-        "מנרה",
-        "מרגליות"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
@@ -189,6 +188,39 @@
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7319_1776196294",
+      "unix_time": 1776196294,
+      "cities": [
+        "אודם"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7319_1776196161",
+      "unix_time": 1776196161,
+      "cities": [
+        "אל רום"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7319_1776196159",
+      "unix_time": 1776196159,
+      "cities": [
+        "מרום גולן"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
     {
       "id": "tza_7318_1776189473",
       "unix_time": 1776189473,
@@ -2511,39 +2543,6 @@
       "unix_time": 1776067617,
       "cities": [
         "מרגליות",
-        "משגב עם"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7273_1776067363",
-      "unix_time": 1776067363,
-      "cities": [
-        "מנרה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7273_1776067354",
-      "unix_time": 1776067354,
-      "cities": [
-        "קריית שמונה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7272_1776066862",
-      "unix_time": 1776066862,
-      "cities": [
         "משגב עם"
       ],
       "beer_sheva": false,
