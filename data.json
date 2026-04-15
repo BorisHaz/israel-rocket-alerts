@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-15T07:13:30.714859+00:00",
-  "israel_time": "15/04/2026 10:13:31",
+  "updated_at": "2026-04-15T08:56:55.631994+00:00",
+  "israel_time": "15/04/2026 11:56:56",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
@@ -17,6 +17,28 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "15/04 10:55",
+      "cities": [
+        "צבעון"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "15/04 10:54",
+      "cities": [
+        "אלקוש",
+        "דוב''ב",
+        "חורפיש",
+        "מתת",
+        "נטועה",
+        "סאסא",
+        "פסוטה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "15/04 09:30",
       "cities": [
@@ -187,29 +209,41 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "14/04 19:42",
-      "cities": [
-        "ראש הנקרה"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "14/04 19:42",
-      "cities": [
-        "בצת"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 93,
+    "alerts_today": 94,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7326_1776239714",
+      "unix_time": 1776239714,
+      "cities": [
+        "צבעון"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7326_1776239693",
+      "unix_time": 1776239693,
+      "cities": [
+        "אלקוש",
+        "דוב''ב",
+        "חורפיש",
+        "מתת",
+        "נטועה",
+        "סאסא",
+        "פסוטה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
     {
       "id": "tza_7325_1776234618",
       "unix_time": 1776234618,
@@ -2572,30 +2606,6 @@
       "beer_sheva": false,
       "negev": false,
       "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7273_1776067827",
-      "unix_time": 1776067827,
-      "cities": [
-        "הגושרים"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7273_1776067813",
-      "unix_time": 1776067813,
-      "cities": [
-        "כפר גלעדי",
-        "קריית שמונה",
-        "תל חי"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
       "is_drill": false
     }
   ]
