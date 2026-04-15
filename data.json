@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-15T15:43:27.113618+00:00",
-  "israel_time": "15/04/2026 18:43:27",
+  "updated_at": "2026-04-15T16:45:04.582203+00:00",
+  "israel_time": "15/04/2026 19:45:05",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
@@ -17,6 +17,22 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "15/04 19:45",
+      "cities": [
+        "אביבים"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "15/04 19:01",
+      "cities": [
+        "קדיתא"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "15/04 18:24",
       "cities": [
@@ -182,36 +198,35 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "15/04 08:43",
-      "cities": [
-        "דוב''ב"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "15/04 08:33",
-      "cities": [
-        "בית העלמין החדש נהריה",
-        "בית העמק",
-        "נהריה",
-        "נס עמים",
-        "עברון",
-        "שבי ציון",
-        "שייח' דנון",
-        "מזרעה"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 38,
+    "alerts_today": 34,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7332_1776271503",
+      "unix_time": 1776271503,
+      "cities": [
+        "אביבים"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7331_1776268889",
+      "unix_time": 1776268889,
+      "cities": [
+        "קדיתא"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_7330_1776266671",
       "unix_time": 1776266671,
@@ -2554,28 +2569,6 @@
       "unix_time": 1776071985,
       "cities": [
         "נהריה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7277_1776071980",
-      "unix_time": 1776071980,
-      "cities": [
-        "גשר הזיו"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7277_1776071941",
-      "unix_time": 1776071941,
-      "cities": [
-        "חוף אכזיב"
       ],
       "beer_sheva": false,
       "negev": false,
