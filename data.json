@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-16T19:53:34.036147+00:00",
-  "israel_time": "16/04/2026 22:53:34",
+  "updated_at": "2026-04-16T20:44:11.951598+00:00",
+  "israel_time": "16/04/2026 23:44:12",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
@@ -17,6 +17,44 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "16/04 23:32",
+      "cities": [
+        "נהריה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "16/04 23:31",
+      "cities": [
+        "גשר הזיו",
+        "נהריה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "16/04 23:31",
+      "cities": [
+        "לימן",
+        "חוף אכזיב"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "16/04 23:30",
+      "cities": [
+        "גשר הזיו",
+        "נהריה",
+        "סער",
+        "לימן",
+        "חוף אכזיב"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "16/04 22:52",
       "cities": [
@@ -181,45 +219,63 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "16/04 21:55",
-      "cities": [
-        "חוף בצת"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "16/04 21:55",
-      "cities": [
-        "ראש הנקרה"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "16/04 21:42",
-      "cities": [
-        "חוף אכזיב"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "16/04 21:42",
-      "cities": [
-        "איזור תעשייה מילואות צפון"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 81,
+    "alerts_today": 85,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7357_1776371521",
+      "unix_time": 1776371521,
+      "cities": [
+        "נהריה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7357_1776371485",
+      "unix_time": 1776371485,
+      "cities": [
+        "גשר הזיו",
+        "נהריה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7357_1776371475",
+      "unix_time": 1776371475,
+      "cities": [
+        "לימן",
+        "חוף אכזיב"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7357_1776371426",
+      "unix_time": 1776371426,
+      "cities": [
+        "גשר הזיו",
+        "נהריה",
+        "סער",
+        "לימן",
+        "חוף אכזיב"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
     {
       "id": "tza_7356_1776369160",
       "unix_time": 1776369160,
@@ -2570,52 +2626,6 @@
       "unix_time": 1776142091,
       "cities": [
         "מטולה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7299_1776124283",
-      "unix_time": 1776124283,
-      "cities": [
-        "איזור תעשייה מילואות צפון"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7299_1776124282",
-      "unix_time": 1776124282,
-      "cities": [
-        "לימן",
-        "חוף אכזיב"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7299_1776124264",
-      "unix_time": 1776124264,
-      "cities": [
-        "חוף בצת",
-        "ראש הנקרה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7298_1776110147",
-      "unix_time": 1776110147,
-      "cities": [
-        "מלכיה"
       ],
       "beer_sheva": false,
       "negev": false,
