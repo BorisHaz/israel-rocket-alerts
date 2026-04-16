@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-16T07:06:55.185130+00:00",
-  "israel_time": "16/04/2026 10:06:55",
+  "updated_at": "2026-04-16T08:54:27.399562+00:00",
+  "israel_time": "16/04/2026 11:54:27",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
@@ -17,6 +17,24 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "16/04 10:46",
+      "cities": [
+        "כפר גלעדי"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "16/04 10:08",
+      "cities": [
+        "בצת",
+        "ראש הנקרה",
+        "שלומי"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "16/04 08:49",
       "cities": [
@@ -171,22 +189,6 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "16/04 01:17",
-      "cities": [
-        "חוף בצת"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "16/04 01:17",
-      "cities": [
-        "ראש הנקרה"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
@@ -194,6 +196,30 @@
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7344_1776325616",
+      "unix_time": 1776325616,
+      "cities": [
+        "כפר גלעדי"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7343_1776323331",
+      "unix_time": 1776323331,
+      "cities": [
+        "בצת",
+        "ראש הנקרה",
+        "שלומי"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
     {
       "id": "tza_7342_1776318546",
       "unix_time": 1776318546,
@@ -2539,28 +2565,6 @@
         "צורית גילון",
         "פלך",
         "תובל"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7279_1776074275",
-      "unix_time": 1776074275,
-      "cities": [
-        "שתולה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7279_1776074245",
-      "unix_time": 1776074245,
-      "cities": [
-        "שומרה"
       ],
       "beer_sheva": false,
       "negev": false,
