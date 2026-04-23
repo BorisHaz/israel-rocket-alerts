@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-23T19:37:36.996613+00:00",
-  "israel_time": "23/04/2026 22:37:37",
+  "updated_at": "2026-04-23T20:37:49.171998+00:00",
+  "israel_time": "23/04/2026 23:37:49",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
@@ -17,6 +17,14 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "23/04 23:18",
+      "cities": [
+        "שתולה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "21/04 18:39",
       "cities": [
@@ -190,27 +198,24 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "16/04 22:22",
-      "cities": [
-        "גשר הזיו",
-        "סער",
-        "שייח' דנון",
-        "כליל",
-        "אבו סנאן",
-        "אשרת",
-        "עמקה"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 0,
+    "alerts_today": 1,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7362_1776975524",
+      "unix_time": 1776975524,
+      "cities": [
+        "שתולה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_7361_1776785959",
       "unix_time": 1776785959,
@@ -2600,17 +2605,6 @@
         "כרמיאל",
         "נחף",
         "מכמנים - כמאנה מערבית"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7307_1776171197",
-      "unix_time": 1776171197,
-      "cities": [
-        "חוסנייה"
       ],
       "beer_sheva": false,
       "negev": false,
