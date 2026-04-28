@@ -1,22 +1,32 @@
 {
-  "updated_at": "2026-04-28T18:55:52.313709+00:00",
-  "israel_time": "28/04/2026 21:55:52",
+  "updated_at": "2026-04-28T20:19:50.727362+00:00",
+  "israel_time": "28/04/2026 23:19:51",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
-    "quiet_confidence": 81,
+    "quiet_confidence": 86,
     "last_bs_alert": null,
     "mins_since_last": null,
     "bs_alerts_24h": 0,
     "bs_alerts_3h": 0,
     "factors": {
       "recency_score": 90,
-      "tod_score": 40,
+      "tod_score": 70,
       "volume_score": 90,
       "burst_score": 85
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "28/04 22:58",
+      "cities": [
+        "מנרה",
+        "מרגליות",
+        "קריית שמונה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "28/04 18:02",
       "cities": [
@@ -178,21 +188,26 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "25/04 20:19",
-      "cities": [
-        "מלכיה"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 2,
+    "alerts_today": 3,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7373_1777406290",
+      "unix_time": 1777406290,
+      "cities": [
+        "מנרה",
+        "מרגליות",
+        "קריית שמונה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
     {
       "id": "tza_7372_1777388563",
       "unix_time": 1777388563,
@@ -2560,17 +2575,6 @@
       "unix_time": 1776179052,
       "cities": [
         "מטולה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7312_1776179036",
-      "unix_time": 1776179036,
-      "cities": [
-        "משגב עם"
       ],
       "beer_sheva": false,
       "negev": false,
