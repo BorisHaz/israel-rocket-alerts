@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-29T07:13:16.299952+00:00",
-  "israel_time": "29/04/2026 10:13:17",
+  "updated_at": "2026-04-29T09:27:27.810432+00:00",
+  "israel_time": "29/04/2026 12:27:28",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
@@ -17,6 +17,22 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "29/04 11:14",
+      "cities": [
+        "מטולה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "29/04 10:50",
+      "cities": [
+        "אביבים"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "28/04 23:33",
       "cities": [
@@ -171,31 +187,35 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "26/04 14:11",
-      "cities": [
-        "בצת",
-        "ראש הנקרה",
-        "שלומי"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "26/04 14:11",
-      "cities": [
-        "ערב אל עראמשה"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 8,
+    "alerts_today": 10,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7376_1777450440",
+      "unix_time": 1777450440,
+      "cities": [
+        "מטולה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7375_1777449001",
+      "unix_time": 1777449001,
+      "cities": [
+        "אביבים"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
     {
       "id": "tza_7374_1777408395",
       "unix_time": 1777408395,
@@ -2543,31 +2563,6 @@
         "כפר בלום",
         "עמיר",
         "שדה נחמיה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7313_1776179926",
-      "unix_time": 1776179926,
-      "cities": [
-        "גשר הזיו",
-        "נהריה",
-        "סער",
-        "לימן"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7313_1776179921",
-      "unix_time": 1776179921,
-      "cities": [
-        "חוף אכזיב"
       ],
       "beer_sheva": false,
       "negev": false,
