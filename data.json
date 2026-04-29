@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-29T19:57:24.930929+00:00",
-  "israel_time": "29/04/2026 22:57:25",
+  "updated_at": "2026-04-29T21:13:52.618345+00:00",
+  "israel_time": "30/04/2026 00:13:53",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
@@ -183,7 +183,7 @@
     }
   ],
   "daily_stats": {
-    "alerts_today": 13,
+    "alerts_today": 7,
     "bs_today": 0
   },
   "alert_history": [
