@@ -1,22 +1,30 @@
 {
-  "updated_at": "2026-05-06T18:58:41.071310+00:00",
-  "israel_time": "06/05/2026 21:58:41",
+  "updated_at": "2026-05-06T20:41:44.339576+00:00",
+  "israel_time": "06/05/2026 23:41:44",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
-    "quiet_confidence": 81,
+    "quiet_confidence": 86,
     "last_bs_alert": null,
     "mins_since_last": null,
     "bs_alerts_24h": 0,
     "bs_alerts_3h": 0,
     "factors": {
       "recency_score": 90,
-      "tod_score": 40,
+      "tod_score": 70,
       "volume_score": 90,
       "burst_score": 85
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "06/05 22:07",
+      "cities": [
+        "מיצד"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "06/05 09:38",
       "cities": [
@@ -179,21 +187,24 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "30/04 08:24",
-      "cities": [
-        "הילה"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 1,
+    "alerts_today": 2,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7396_1778094436",
+      "unix_time": 1778094436,
+      "cities": [
+        "מיצד"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 2,
+      "is_drill": false
+    },
     {
       "id": "tza_7395_1778049510",
       "unix_time": 1778049510,
@@ -2567,25 +2578,6 @@
       "cities": [
         "בן עמי",
         "נתיב השיירה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7322_1776231148",
-      "unix_time": 1776231148,
-      "cities": [
-        "מנות",
-        "עבדון",
-        "עברון",
-        "מזרעה",
-        "רגבה",
-        "בוסתן הגליל",
-        "עכו",
-        "שמרת",
-        "לוחמי הגטאות"
       ],
       "beer_sheva": false,
       "negev": false,
