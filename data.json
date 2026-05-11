@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-11T11:50:06.399769+00:00",
-  "israel_time": "11/05/2026 14:50:06",
+  "updated_at": "2026-05-11T14:16:18.641300+00:00",
+  "israel_time": "11/05/2026 17:16:19",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
@@ -17,6 +17,14 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "11/05 15:32",
+      "cities": [
+        "נווה ים"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "10/05 22:47",
       "cities": [
@@ -176,21 +184,24 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "09/05 16:03",
-      "cities": [
-        "ערב אל עראמשה"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 9,
+    "alerts_today": 10,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7407_1778502777",
+      "unix_time": 1778502777,
+      "cities": [
+        "נווה ים"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_7406_1778442427",
       "unix_time": 1778442427,
@@ -2565,17 +2576,6 @@
       "unix_time": 1776291535,
       "cities": [
         "חוף אכזיב"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7335_1776291524",
-      "unix_time": 1776291524,
-      "cities": [
-        "לימן"
       ],
       "beer_sheva": false,
       "negev": false,
