@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-11T19:07:14.923573+00:00",
-  "israel_time": "11/05/2026 22:07:15",
+  "updated_at": "2026-05-11T20:52:43.110827+00:00",
+  "israel_time": "11/05/2026 23:52:43",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
@@ -17,6 +17,22 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "11/05 23:02",
+      "cities": [
+        "מסעדה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "11/05 23:00",
+      "cities": [
+        "מג'דל שמס"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "11/05 15:32",
       "cities": [
@@ -168,29 +184,35 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "09/05 20:14",
-      "cities": [
-        "חניתה"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "09/05 19:43",
-      "cities": [
-        "ברעם"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 6,
+    "alerts_today": 3,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7408_1778529750",
+      "unix_time": 1778529750,
+      "cities": [
+        "מסעדה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7408_1778529652",
+      "unix_time": 1778529652,
+      "cities": [
+        "מג'דל שמס"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
     {
       "id": "tza_7407_1778502777",
       "unix_time": 1778502777,
@@ -2558,28 +2580,6 @@
       "beer_sheva": false,
       "negev": false,
       "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7336_1776292870",
-      "unix_time": 1776292870,
-      "cities": [
-        "חוות גלעד"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 2,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7335_1776291535",
-      "unix_time": 1776291535,
-      "cities": [
-        "חוף אכזיב"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
       "is_drill": false
     }
   ]
