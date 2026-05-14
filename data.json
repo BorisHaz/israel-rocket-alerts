@@ -1,22 +1,55 @@
 {
-  "updated_at": "2026-05-14T18:51:48.137601+00:00",
-  "israel_time": "14/05/2026 21:51:48",
+  "updated_at": "2026-05-14T20:24:05.017469+00:00",
+  "israel_time": "14/05/2026 23:24:06",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
-    "quiet_confidence": 81,
+    "quiet_confidence": 86,
     "last_bs_alert": null,
     "mins_since_last": null,
     "bs_alerts_24h": 0,
     "bs_alerts_3h": 0,
     "factors": {
       "recency_score": 90,
-      "tod_score": 40,
+      "tod_score": 70,
       "volume_score": 90,
       "burst_score": 85
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "14/05 22:24",
+      "cities": [
+        "משגב עם"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "14/05 22:23",
+      "cities": [
+        "מטולה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "14/05 22:23",
+      "cities": [
+        "כפר גלעדי"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "14/05 22:23",
+      "cities": [
+        "בית הלל",
+        "קריית שמונה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "14/05 13:25",
       "cities": [
@@ -149,45 +182,58 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "12/05 17:38",
-      "cities": [
-        "מרגליות"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "11/05 23:02",
-      "cities": [
-        "מסעדה"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "11/05 23:00",
-      "cities": [
-        "מג'דל שמס"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "11/05 15:32",
-      "cities": [
-        "נווה ים"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 6,
+    "alerts_today": 10,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7420_1778786648",
+      "unix_time": 1778786648,
+      "cities": [
+        "משגב עם"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7420_1778786625",
+      "unix_time": 1778786625,
+      "cities": [
+        "מטולה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7420_1778786612",
+      "unix_time": 1778786612,
+      "cities": [
+        "כפר גלעדי"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7420_1778786609",
+      "unix_time": 1778786609,
+      "cities": [
+        "בית הלל",
+        "קריית שמונה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_7419_1778754339",
       "unix_time": 1778754339,
@@ -2521,52 +2567,6 @@
       "unix_time": 1776334664,
       "cities": [
         "עבדון"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7345_1776334661",
-      "unix_time": 1776334661,
-      "cities": [
-        "מנות"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7345_1776334656",
-      "unix_time": 1776334656,
-      "cities": [
-        "כברי",
-        "נווה זיו"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7345_1776334651",
-      "unix_time": 1776334651,
-      "cities": [
-        "בית העמק"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7345_1776334644",
-      "unix_time": 1776334644,
-      "cities": [
-        "אשרת",
-        "עמקה"
       ],
       "beer_sheva": false,
       "negev": false,
