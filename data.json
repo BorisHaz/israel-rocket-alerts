@@ -1,22 +1,38 @@
 {
-  "updated_at": "2026-05-14T01:48:01.973529+00:00",
-  "israel_time": "14/05/2026 04:48:02",
+  "updated_at": "2026-05-14T05:35:33.515835+00:00",
+  "israel_time": "14/05/2026 08:35:34",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
-    "quiet_confidence": 88,
+    "quiet_confidence": 84,
     "last_bs_alert": null,
     "mins_since_last": null,
     "bs_alerts_24h": 0,
     "bs_alerts_3h": 0,
     "factors": {
       "recency_score": 90,
-      "tod_score": 85,
+      "tod_score": 55,
       "volume_score": 90,
       "burst_score": 85
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "14/05 08:20",
+      "cities": [
+        "זמרת, שובה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "14/05 08:20",
+      "cities": [
+        "עלומים"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "13/05 09:13",
       "cities": [
@@ -167,30 +183,35 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "10/05 22:45",
-      "cities": [
-        "קיבוץ דן"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "10/05 18:58",
-      "cities": [
-        "זרעית",
-        "שומרה"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 2,
+    "alerts_today": 3,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7416_1778736029",
+      "unix_time": 1778736029,
+      "cities": [
+        "זמרת, שובה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7416_1778736027",
+      "unix_time": 1778736027,
+      "cities": [
+        "עלומים"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_7415_1778652789",
       "unix_time": 1778652789,
@@ -2550,29 +2571,6 @@
       "unix_time": 1776318546,
       "cities": [
         "מרגליות"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7342_1776318543",
-      "unix_time": 1776318543,
-      "cities": [
-        "משגב עם"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7341_1776318374",
-      "unix_time": 1776318374,
-      "cities": [
-        "כפר גלעדי",
-        "קריית שמונה"
       ],
       "beer_sheva": false,
       "negev": false,
