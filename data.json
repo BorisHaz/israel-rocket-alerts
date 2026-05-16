@@ -1,22 +1,30 @@
 {
-  "updated_at": "2026-05-16T01:20:20.383865+00:00",
-  "israel_time": "16/05/2026 04:20:21",
+  "updated_at": "2026-05-16T04:44:31.933054+00:00",
+  "israel_time": "16/05/2026 07:44:32",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
-    "quiet_confidence": 88,
+    "quiet_confidence": 84,
     "last_bs_alert": null,
     "mins_since_last": null,
     "bs_alerts_24h": 0,
     "bs_alerts_3h": 0,
     "factors": {
       "recency_score": 90,
-      "tod_score": 85,
+      "tod_score": 55,
       "volume_score": 90,
       "burst_score": 85
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "16/05 04:24",
+      "cities": [
+        "מג'דל שמס"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "15/05 19:06",
       "cities": [
@@ -170,14 +178,6 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "15/05 17:57",
-      "cities": [
-        "איזור תעשייה מילואות צפון"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
@@ -185,6 +185,17 @@
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7426_1778894692",
+      "unix_time": 1778894692,
+      "cities": [
+        "מג'דל שמס"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
     {
       "id": "tza_7425_1778861175",
       "unix_time": 1778861175,
@@ -2524,19 +2535,6 @@
         "בן עמי",
         "נהריה",
         "עברון"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7351_1776364515",
-      "unix_time": 1776364515,
-      "cities": [
-        "איזור תעשייה מילואות צפון",
-        "ראש הנקרה",
-        "חוף אכזיב"
       ],
       "beer_sheva": false,
       "negev": false,
