@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-16T15:16:13.913979+00:00",
-  "israel_time": "16/05/2026 18:16:14",
+  "updated_at": "2026-05-16T16:13:40.523435+00:00",
+  "israel_time": "16/05/2026 19:13:40",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
@@ -17,6 +17,18 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "16/05 18:44",
+      "cities": [
+        "איזור תעשייה מילואות צפון",
+        "בצת",
+        "חוף בצת",
+        "לימן",
+        "ראש הנקרה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "16/05 15:38",
       "cities": [
@@ -170,21 +182,28 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "15/05 17:59",
-      "cities": [
-        "גשר הזיו"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 15,
+    "alerts_today": 5,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7430_1778946244",
+      "unix_time": 1778946244,
+      "cities": [
+        "איזור תעשייה מילואות צפון",
+        "בצת",
+        "חוף בצת",
+        "לימן",
+        "ראש הנקרה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_7429_1778935136",
       "unix_time": 1778935136,
@@ -2520,17 +2539,6 @@
       "unix_time": 1776364925,
       "cities": [
         "איזור תעשייה מילואות צפון"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7351_1776364840",
-      "unix_time": 1776364840,
-      "cities": [
-        "ראש הנקרה"
       ],
       "beer_sheva": false,
       "negev": false,
