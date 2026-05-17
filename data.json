@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-17T12:43:49.275889+00:00",
-  "israel_time": "17/05/2026 15:43:49",
+  "updated_at": "2026-05-17T14:14:49.320157+00:00",
+  "israel_time": "17/05/2026 17:14:49",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
@@ -17,6 +17,17 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "17/05 15:58",
+      "cities": [
+        "אבן מנחם",
+        "זרעית",
+        "שומרה",
+        "שתולה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "17/05 10:03",
       "cities": [
@@ -176,21 +187,27 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "15/05 18:59",
-      "cities": [
-        "מטולה"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 8,
+    "alerts_today": 9,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7434_1779022738",
+      "unix_time": 1779022738,
+      "cities": [
+        "אבן מנחם",
+        "זרעית",
+        "שומרה",
+        "שתולה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
     {
       "id": "tza_7433_1779001435",
       "unix_time": 1779001435,
@@ -2526,22 +2543,6 @@
         "גיתה",
         "אזור תעשייה כרמיאל",
         "תובל"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7354_1776367021",
-      "unix_time": 1776367021,
-      "cities": [
-        "כישור",
-        "לבון",
-        "נחף",
-        "כסרא סמיע",
-        "לפידות",
-        "מגדל תפן"
       ],
       "beer_sheva": false,
       "negev": false,
