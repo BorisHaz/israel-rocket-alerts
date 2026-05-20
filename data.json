@@ -1,22 +1,30 @@
 {
-  "updated_at": "2026-05-20T10:28:07.914345+00:00",
-  "israel_time": "20/05/2026 13:28:08",
+  "updated_at": "2026-05-20T13:20:14.049593+00:00",
+  "israel_time": "20/05/2026 16:20:19",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
-    "quiet_confidence": 83,
+    "quiet_confidence": 82,
     "last_bs_alert": null,
     "mins_since_last": null,
     "bs_alerts_24h": 0,
     "bs_alerts_3h": 0,
     "factors": {
       "recency_score": 90,
-      "tod_score": 50,
+      "tod_score": 45,
       "volume_score": 90,
       "burst_score": 85
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "20/05 13:52",
+      "cities": [
+        "נופים"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "20/05 08:41",
       "cities": [
@@ -178,21 +186,24 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "16/05 19:50",
-      "cities": [
-        "שלומי"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 4,
+    "alerts_today": 5,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7440_1779274367",
+      "unix_time": 1779274367,
+      "cities": [
+        "נופים"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 2,
+      "is_drill": false
+    },
     {
       "id": "tza_7439_1779255672",
       "unix_time": 1779255672,
@@ -2505,21 +2516,6 @@
       "beer_sheva": false,
       "negev": false,
       "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7357_1776371426",
-      "unix_time": 1776371426,
-      "cities": [
-        "גשר הזיו",
-        "נהריה",
-        "סער",
-        "לימן",
-        "חוף אכזיב"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
       "is_drill": false
     }
   ]
