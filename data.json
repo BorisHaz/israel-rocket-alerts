@@ -1,22 +1,55 @@
 {
-  "updated_at": "2026-05-20T03:45:20.518594+00:00",
-  "israel_time": "20/05/2026 06:45:21",
+  "updated_at": "2026-05-20T07:02:57.886285+00:00",
+  "israel_time": "20/05/2026 10:02:58",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
-    "quiet_confidence": 84,
+    "quiet_confidence": 83,
     "last_bs_alert": null,
     "mins_since_last": null,
     "bs_alerts_24h": 0,
     "bs_alerts_3h": 0,
     "factors": {
       "recency_score": 90,
-      "tod_score": 55,
+      "tod_score": 50,
       "volume_score": 90,
       "burst_score": 85
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "20/05 08:41",
+      "cities": [
+        "מרגליות",
+        "קריית שמונה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "20/05 08:40",
+      "cities": [
+        "מרגליות"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "20/05 08:40",
+      "cities": [
+        "קריית שמונה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "20/05 08:11",
+      "cities": [
+        "מלכיה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "19/05 12:06",
       "cities": [
@@ -153,49 +186,58 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "16/05 18:44",
-      "cities": [
-        "איזור תעשייה מילואות צפון",
-        "בצת",
-        "חוף בצת",
-        "לימן",
-        "ראש הנקרה"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "16/05 15:38",
-      "cities": [
-        "מטולה"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "16/05 13:26",
-      "cities": [
-        "משגב עם"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "16/05 08:47",
-      "cities": [
-        "בית ספר שדה מירון"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 3,
+    "alerts_today": 7,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7439_1779255672",
+      "unix_time": 1779255672,
+      "cities": [
+        "מרגליות",
+        "קריית שמונה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7439_1779255645",
+      "unix_time": 1779255645,
+      "cities": [
+        "מרגליות"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7439_1779255630",
+      "unix_time": 1779255630,
+      "cities": [
+        "קריית שמונה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7438_1779253887",
+      "unix_time": 1779253887,
+      "cities": [
+        "מלכיה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
     {
       "id": "tza_7437_1779181619",
       "unix_time": 1779181619,
@@ -2478,58 +2520,6 @@
       "beer_sheva": false,
       "negev": false,
       "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7356_1776369160",
-      "unix_time": 1776369160,
-      "cities": [
-        "גשר הזיו",
-        "סער",
-        "כברי"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7356_1776369153",
-      "unix_time": 1776369153,
-      "cities": [
-        "לימן",
-        "חוף אכזיב"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7356_1776369148",
-      "unix_time": 1776369148,
-      "cities": [
-        "בן עמי",
-        "נהריה",
-        "עברון"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7355_1776367405",
-      "unix_time": 1776367405,
-      "cities": [
-        "נהריה",
-        "סער",
-        "כליל",
-        "עמקה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
       "is_drill": false
     }
   ]
