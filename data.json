@@ -1,22 +1,38 @@
 {
-  "updated_at": "2026-05-24T05:45:54.695383+00:00",
-  "israel_time": "24/05/2026 08:45:55",
+  "updated_at": "2026-05-24T08:09:29.204218+00:00",
+  "israel_time": "24/05/2026 11:09:29",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
-    "quiet_confidence": 84,
+    "quiet_confidence": 83,
     "last_bs_alert": null,
     "mins_since_last": null,
     "bs_alerts_24h": 0,
     "bs_alerts_3h": 0,
     "factors": {
       "recency_score": 90,
-      "tod_score": 55,
+      "tod_score": 50,
       "volume_score": 90,
       "burst_score": 85
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "24/05 10:10",
+      "cities": [
+        "אבן מנחם"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "24/05 10:09",
+      "cities": [
+        "שומרה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "23/05 20:22",
       "cities": [
@@ -161,29 +177,35 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "22/05 17:07",
-      "cities": [
-        "מרגליות"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "22/05 16:51",
-      "cities": [
-        "משגב עם"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 12,
+    "alerts_today": 14,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7459_1779606635",
+      "unix_time": 1779606635,
+      "cities": [
+        "אבן מנחם"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7459_1779606592",
+      "unix_time": 1779606592,
+      "cities": [
+        "שומרה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
     {
       "id": "tza_7458_1779556971",
       "unix_time": 1779556971,
@@ -2472,29 +2494,6 @@
       "unix_time": 1777137544,
       "cities": [
         "מלכיה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7366_1777126728",
-      "unix_time": 1777126728,
-      "cities": [
-        "עבדון"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7366_1777126679",
-      "unix_time": 1777126679,
-      "cities": [
-        "בצת",
-        "ראש הנקרה"
       ],
       "beer_sheva": false,
       "negev": false,
