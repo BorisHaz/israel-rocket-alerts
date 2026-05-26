@@ -1,22 +1,38 @@
 {
-  "updated_at": "2026-05-26T00:01:01.915586+00:00",
-  "israel_time": "26/05/2026 03:01:03",
+  "updated_at": "2026-05-26T04:21:08.347484+00:00",
+  "israel_time": "26/05/2026 07:21:09",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
-    "quiet_confidence": 88,
+    "quiet_confidence": 84,
     "last_bs_alert": null,
     "mins_since_last": null,
     "bs_alerts_24h": 0,
     "bs_alerts_3h": 0,
     "factors": {
       "recency_score": 90,
-      "tod_score": 85,
+      "tod_score": 55,
       "volume_score": 90,
       "burst_score": 85
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "26/05 03:47",
+      "cities": [
+        "בית ספר שדה מירון"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "26/05 03:45",
+      "cities": [
+        "סאסא"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "25/05 18:23",
       "cities": [
@@ -161,29 +177,35 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "25/05 12:30",
-      "cities": [
-        "מרגליות"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "25/05 12:28",
-      "cities": [
-        "משגב עם"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 29,
+    "alerts_today": 30,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7477_1779756471",
+      "unix_time": 1779756471,
+      "cities": [
+        "בית ספר שדה מירון"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7477_1779756349",
+      "unix_time": 1779756349,
+      "cities": [
+        "סאסא"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
     {
       "id": "tza_7476_1779722626",
       "unix_time": 1779722626,
@@ -2451,28 +2473,6 @@
         "קיבוץ דן",
         "שאר ישוב",
         "שניר"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7384_1777621869",
-      "unix_time": 1777621869,
-      "cities": [
-        "ראש הנקרה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7383_1777550064",
-      "unix_time": 1777550064,
-      "cities": [
-        "תל חי"
       ],
       "beer_sheva": false,
       "negev": false,
