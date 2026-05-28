@@ -1,22 +1,55 @@
 {
-  "updated_at": "2026-05-28T08:30:53.915730+00:00",
-  "israel_time": "28/05/2026 11:30:54",
+  "updated_at": "2026-05-28T12:00:48.591566+00:00",
+  "israel_time": "28/05/2026 15:00:49",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
-    "quiet_confidence": 83,
+    "quiet_confidence": 82,
     "last_bs_alert": null,
     "mins_since_last": null,
     "bs_alerts_24h": 0,
     "bs_alerts_3h": 0,
     "factors": {
       "recency_score": 90,
-      "tod_score": 50,
+      "tod_score": 45,
       "volume_score": 90,
       "burst_score": 85
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "28/05 14:20",
+      "cities": [
+        "זרעית"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "28/05 14:02",
+      "cities": [
+        "זרעית",
+        "שומרה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "28/05 13:27",
+      "cities": [
+        "מרכז אזורי מבואות חרמון"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "28/05 13:26",
+      "cities": [
+        "יפתח"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "28/05 11:04",
       "cities": [
@@ -162,59 +195,58 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "27/05 13:14",
-      "cities": [
-        "ראש הנקרה"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "27/05 11:42",
-      "cities": [
-        "שלומי"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "27/05 03:37",
-      "cities": [
-        "כפר גלעדי",
-        "כפר יובל",
-        "מטולה",
-        "מנרה",
-        "מעיין ברוך",
-        "מרגליות",
-        "משגב עם",
-        "קריית שמונה"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "27/05 03:37",
-      "cities": [
-        "בית הלל",
-        "כפר גלעדי",
-        "כפר יובל",
-        "מנרה",
-        "מעיין ברוך",
-        "מרגליות",
-        "משגב עם",
-        "קריית שמונה"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 18,
+    "alerts_today": 16,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7498_1779967200",
+      "unix_time": 1779967200,
+      "cities": [
+        "זרעית"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7497_1779966155",
+      "unix_time": 1779966155,
+      "cities": [
+        "זרעית",
+        "שומרה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7496_1779964049",
+      "unix_time": 1779964049,
+      "cities": [
+        "מרכז אזורי מבואות חרמון"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7496_1779963997",
+      "unix_time": 1779963997,
+      "cities": [
+        "יפתח"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_7495_1779955486",
       "unix_time": 1779955486,
@@ -2440,52 +2472,6 @@
       "beer_sheva": false,
       "negev": false,
       "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7404_1778426221",
-      "unix_time": 1778426221,
-      "cities": [
-        "זרעית"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7403_1778347127",
-      "unix_time": 1778347127,
-      "cities": [
-        "חוף אכזיב"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7403_1778347101",
-      "unix_time": 1778347101,
-      "cities": [
-        "איזור תעשייה מילואות צפון",
-        "חוף בצת",
-        "לימן"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7403_1778347085",
-      "unix_time": 1778347085,
-      "cities": [
-        "שלומי"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
       "is_drill": false
     }
   ]
