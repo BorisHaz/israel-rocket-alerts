@@ -1,22 +1,54 @@
 {
-  "updated_at": "2026-05-28T04:37:36.270316+00:00",
-  "israel_time": "28/05/2026 07:37:37",
+  "updated_at": "2026-05-28T08:30:53.915730+00:00",
+  "israel_time": "28/05/2026 11:30:54",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
-    "quiet_confidence": 84,
+    "quiet_confidence": 83,
     "last_bs_alert": null,
     "mins_since_last": null,
     "bs_alerts_24h": 0,
     "bs_alerts_3h": 0,
     "factors": {
       "recency_score": 90,
-      "tod_score": 55,
+      "tod_score": 50,
       "volume_score": 90,
       "burst_score": 85
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "28/05 11:04",
+      "cities": [
+        "משגב עם"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "28/05 09:21",
+      "cities": [
+        "מנרה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "28/05 09:21",
+      "cities": [
+        "מרגליות"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "28/05 08:53",
+      "cities": [
+        "שתולה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "28/05 05:57",
       "cities": [
@@ -176,45 +208,57 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "27/05 03:37",
-      "cities": [
-        "מטולה"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "26/05 21:28",
-      "cities": [
-        "ברעם"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "26/05 17:10",
-      "cities": [
-        "מלכיה"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "26/05 14:22",
-      "cities": [
-        "נטועה"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 14,
+    "alerts_today": 18,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7495_1779955486",
+      "unix_time": 1779955486,
+      "cities": [
+        "משגב עם"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7494_1779949279",
+      "unix_time": 1779949279,
+      "cities": [
+        "מנרה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7494_1779949266",
+      "unix_time": 1779949266,
+      "cities": [
+        "מרגליות"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7493_1779947621",
+      "unix_time": 1779947621,
+      "cities": [
+        "שתולה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
     {
       "id": "tza_7492_1779937063",
       "unix_time": 1779937063,
@@ -2438,51 +2482,6 @@
       "unix_time": 1778347085,
       "cities": [
         "שלומי"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7403_1778347076",
-      "unix_time": 1778347076,
-      "cities": [
-        "ראש הנקרה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7403_1778347062",
-      "unix_time": 1778347062,
-      "cities": [
-        "בצת"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7403_1778347049",
-      "unix_time": 1778347049,
-      "cities": [
-        "שלומי"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7402_1778346957",
-      "unix_time": 1778346957,
-      "cities": [
-        "יערה",
-        "מצובה"
       ],
       "beer_sheva": false,
       "negev": false,
