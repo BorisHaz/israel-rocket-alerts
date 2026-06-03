@@ -1,22 +1,30 @@
 {
-  "updated_at": "2026-06-03T17:14:59.024202+00:00",
-  "israel_time": "03/06/2026 20:14:59",
+  "updated_at": "2026-06-03T20:30:39.015582+00:00",
+  "israel_time": "03/06/2026 23:30:40",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
-    "quiet_confidence": 81,
+    "quiet_confidence": 86,
     "last_bs_alert": null,
     "mins_since_last": null,
     "bs_alerts_24h": 0,
     "bs_alerts_3h": 0,
     "factors": {
       "recency_score": 90,
-      "tod_score": 40,
+      "tod_score": 70,
       "volume_score": 90,
       "burst_score": 85
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "03/06 21:39",
+      "cities": [
+        "זרעית"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "03/06 14:39",
       "cities": [
@@ -193,28 +201,24 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "02/06 01:35",
-      "cities": [
-        "צפת - נוף כנרת",
-        "צפת - עיר",
-        "איילת השחר",
-        "גדות",
-        "חולתה",
-        "יסוד המעלה",
-        "משמר הירדן",
-        "עלמה"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 4,
+    "alerts_today": 5,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7571_1780511955",
+      "unix_time": 1780511955,
+      "cities": [
+        "זרעית"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
     {
       "id": "tza_7570_1780486765",
       "unix_time": 1780486765,
@@ -2604,17 +2608,6 @@
       "beer_sheva": false,
       "negev": false,
       "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7507_1780079855",
-      "unix_time": 1780079855,
-      "cities": [
-        "זרעית"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
       "is_drill": false
     }
   ]
