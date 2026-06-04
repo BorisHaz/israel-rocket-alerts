@@ -1,22 +1,38 @@
 {
-  "updated_at": "2026-06-04T00:20:26.536101+00:00",
-  "israel_time": "04/06/2026 03:20:37",
+  "updated_at": "2026-06-04T05:16:30.230428+00:00",
+  "israel_time": "04/06/2026 08:16:30",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
-    "quiet_confidence": 88,
+    "quiet_confidence": 84,
     "last_bs_alert": null,
     "mins_since_last": null,
     "bs_alerts_24h": 0,
     "bs_alerts_3h": 0,
     "factors": {
       "recency_score": 90,
-      "tod_score": 85,
+      "tod_score": 55,
       "volume_score": 90,
       "burst_score": 85
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "04/06 05:57",
+      "cities": [
+        "כפר יובל"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "04/06 05:54",
+      "cities": [
+        "ערב אל עראמשה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "03/06 21:39",
       "cities": [
@@ -183,31 +199,35 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "02/06 01:35",
-      "cities": [
-        "דישון",
-        "ביריה",
-        "דלתון"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "02/06 01:35",
-      "cities": [
-        "ריחאנייה"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 5,
+    "alerts_today": 7,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7572_1780541874",
+      "unix_time": 1780541874,
+      "cities": [
+        "כפר יובל"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7572_1780541656",
+      "unix_time": 1780541656,
+      "cities": [
+        "ערב אל עראמשה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
     {
       "id": "tza_7571_1780511955",
       "unix_time": 1780511955,
@@ -2581,29 +2601,6 @@
       "unix_time": 1780093813,
       "cities": [
         "קריית שמונה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7508_1780093807",
-      "unix_time": 1780093807,
-      "cities": [
-        "מטולה",
-        "מרגליות"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7508_1780093806",
-      "unix_time": 1780093806,
-      "cities": [
-        "משגב עם"
       ],
       "beer_sheva": false,
       "negev": false,
