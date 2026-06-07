@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-07T06:43:35.108142+00:00",
-  "israel_time": "07/06/2026 09:43:35",
+  "updated_at": "2026-06-07T09:51:33.155531+00:00",
+  "israel_time": "07/06/2026 12:51:34",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
@@ -17,6 +17,22 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "07/06 11:49",
+      "cities": [
+        "צור נתן"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "07/06 11:11",
+      "cities": [
+        "צור יצחק"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "07/06 08:31",
       "cities": [
@@ -171,29 +187,35 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "04/06 16:32",
-      "cities": [
-        "מטולה"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "04/06 16:07",
-      "cities": [
-        "שלומי"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 6,
+    "alerts_today": 7,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7584_1780822160",
+      "unix_time": 1780822160,
+      "cities": [
+        "צור נתן"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 2,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7583_1780819902",
+      "unix_time": 1780819902,
+      "cities": [
+        "צור יצחק"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 2,
+      "is_drill": false
+    },
     {
       "id": "tza_7582_1780810295",
       "unix_time": 1780810295,
@@ -2563,33 +2585,6 @@
       "unix_time": 1780149026,
       "cities": [
         "נהריה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7518_1780147181",
-      "unix_time": 1780147181,
-      "cities": [
-        "צפת - נוף כנרת",
-        "צפת - עיר",
-        "ראש פינה",
-        "עמוקה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7518_1780147166",
-      "unix_time": 1780147166,
-      "cities": [
-        "ביריה",
-        "אזור תעשייה רמת דלתון",
-        "דלתון"
       ],
       "beer_sheva": false,
       "negev": false,
