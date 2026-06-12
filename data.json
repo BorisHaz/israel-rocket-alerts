@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-06-12T20:37:54.242950+00:00",
-  "israel_time": "12/06/2026 23:37:54",
+  "updated_at": "2026-06-12T22:14:05.471795+00:00",
+  "israel_time": "13/06/2026 01:14:06",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
     "quiet_confidence": 86,
     "last_bs_alert": "08/06/2026 07:18 (IL)",
-    "mins_since_last": 6740,
+    "mins_since_last": 6836,
     "bs_alerts_24h": 0,
     "bs_alerts_3h": 0,
     "factors": {
