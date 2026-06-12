@@ -1,22 +1,30 @@
 {
-  "updated_at": "2026-06-12T10:44:12.619638+00:00",
-  "israel_time": "12/06/2026 13:44:13",
+  "updated_at": "2026-06-12T13:53:02.043625+00:00",
+  "israel_time": "12/06/2026 16:53:02",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
-    "quiet_confidence": 83,
+    "quiet_confidence": 82,
     "last_bs_alert": "08/06/2026 07:18 (IL)",
-    "mins_since_last": 6146,
+    "mins_since_last": 6335,
     "bs_alerts_24h": 0,
     "bs_alerts_3h": 0,
     "factors": {
       "recency_score": 90,
-      "tod_score": 50,
+      "tod_score": 45,
       "volume_score": 90,
       "burst_score": 85
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "12/06 15:04",
+      "cities": [
+        "מטולה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "12/06 11:33",
       "cities": [
@@ -202,28 +210,24 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "08/06 09:35",
-      "cities": [
-        "גבת",
-        "יפעת",
-        "יקנעם המושבה והזורע",
-        "מגדל העמק",
-        "נוף הגליל",
-        "נצרת",
-        "עין מאהל",
-        "אתר ההנצחה גולני"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 4,
+    "alerts_today": 5,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7639_1781265856",
+      "unix_time": 1781265856,
+      "cities": [
+        "מטולה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 5,
+      "is_drill": false
+    },
     {
       "id": "tza_7638_1781253181",
       "unix_time": 1781253181,
@@ -4709,17 +4713,6 @@
       "unix_time": 1780245019,
       "cities": [
         "איזור תעשייה מילואות צפון"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 5,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7542_1780244971",
-      "unix_time": 1780244971,
-      "cities": [
-        "חוף בצת"
       ],
       "beer_sheva": false,
       "negev": false,
