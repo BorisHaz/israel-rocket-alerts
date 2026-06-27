@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-26T23:39:43.281239+00:00",
-  "israel_time": "27/06/2026 02:39:44",
+  "updated_at": "2026-06-27T01:34:27.659585+00:00",
+  "israel_time": "27/06/2026 04:34:27",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
@@ -17,6 +17,14 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "27/06 04:29",
+      "cities": [
+        "בית אריה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "19/06 16:51",
       "cities": [
@@ -174,21 +182,24 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "14/06 03:01",
-      "cities": [
-        "ע'ג'ר"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 0,
+    "alerts_today": 1,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7656_1782523796",
+      "unix_time": 1782523796,
+      "cities": [
+        "בית אריה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 2,
+      "is_drill": false
+    },
     {
       "id": "tza_7655_1781877090",
       "unix_time": 1781877090,
@@ -4657,17 +4668,6 @@
       "cities": [
         "חוקוק",
         "קדרים"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7554_1780306801",
-      "unix_time": 1780306801,
-      "cities": [
-        "כחל"
       ],
       "beer_sheva": false,
       "negev": false,
