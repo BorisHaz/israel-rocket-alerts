@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-02T15:36:25.512042+00:00",
-  "israel_time": "02/07/2026 18:36:25",
+  "updated_at": "2026-07-02T17:16:57.040717+00:00",
+  "israel_time": "02/07/2026 20:16:57",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
@@ -17,6 +17,15 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "02/07 19:46",
+      "cities": [
+        "אביבים",
+        "יראון"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "27/06 04:29",
       "cities": [
@@ -174,21 +183,25 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "14/06 03:02",
-      "cities": [
-        "מטולה"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 0,
+    "alerts_today": 1,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7657_1783010802",
+      "unix_time": 1783010802,
+      "cities": [
+        "אביבים",
+        "יראון"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_7656_1782523796",
       "unix_time": 1782523796,
@@ -4656,18 +4669,6 @@
         "ראש פינה",
         "מרכז אזורי רמת כורזים",
         "מנחת מחניים"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7554_1780306802",
-      "unix_time": 1780306802,
-      "cities": [
-        "חוקוק",
-        "קדרים"
       ],
       "beer_sheva": false,
       "negev": false,
