@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-19T23:31:30.575402+00:00",
-  "israel_time": "20/07/2026 02:31:30",
+  "updated_at": "2026-07-20T01:08:29.823660+00:00",
+  "israel_time": "20/07/2026 04:08:30",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
@@ -17,6 +17,22 @@
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "20/07 02:59",
+      "cities": [
+        "סעד"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
+    {
+      "time_il": "20/07 02:59",
+      "cities": [
+        "כפר עזה"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "02/07 19:46",
       "cities": [
@@ -165,31 +181,35 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "14/06 08:07",
-      "cities": [
-        "חוף בצת"
-      ],
-      "beer_sheva": false,
-      "negev": false
-    },
-    {
-      "time_il": "14/06 03:18",
-      "cities": [
-        "אילות",
-        "אילת",
-        "אזור תעשייה שחורת"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 0,
+    "alerts_today": 2,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7658_1784505545",
+      "unix_time": 1784505545,
+      "cities": [
+        "סעד"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
+    {
+      "id": "tza_7658_1784505542",
+      "unix_time": 1784505542,
+      "cities": [
+        "כפר עזה"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_7657_1783010802",
       "unix_time": 1783010802,
@@ -4619,56 +4639,6 @@
       "unix_time": 1780306822,
       "cities": [
         "אמירים"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7554_1780306821",
-      "unix_time": 1780306821,
-      "cities": [
-        "צפת - נוף כנרת",
-        "צפת - עכברה",
-        "ביריה",
-        "צפת - עיר",
-        "אור הגנוז",
-        "אזור תעשייה רמת דלתון",
-        "בר יוחאי",
-        "ג'ש - גוש חלב",
-        "דלתון",
-        "כפר שמאי",
-        "כרם בן זמרה",
-        "מירון",
-        "מרכז אזורי מרום גליל",
-        "ספסופה - כפר חושן",
-        "עלמה",
-        "עמוקה",
-        "קדיתא",
-        "ריחאנייה"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7554_1780306806",
-      "unix_time": 1780306806,
-      "cities": [
-        "אזור תעשייה צ.ח.ר",
-        "אליפלט",
-        "אלמגור",
-        "אמנון",
-        "חצור הגלילית",
-        "טובא זנגריה",
-        "כורזים ורד הגליל",
-        "מחניים",
-        "עמיעד",
-        "ראש פינה",
-        "מרכז אזורי רמת כורזים",
-        "מנחת מחניים"
       ],
       "beer_sheva": false,
       "negev": false,
