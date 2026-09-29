@@ -1,22 +1,30 @@
 {
-  "updated_at": "2026-09-29T14:16:24.713340+00:00",
-  "israel_time": "29/09/2026 17:16:25",
+  "updated_at": "2026-09-29T19:28:25.590206+00:00",
+  "israel_time": "29/09/2026 22:28:26",
   "beer_sheva_status": "clear",
   "prediction": {
     "risk_level": "low",
-    "quiet_confidence": 82,
+    "quiet_confidence": 86,
     "last_bs_alert": "08/06/2026 07:18 (IL)",
     "mins_since_last": null,
     "bs_alerts_24h": 0,
     "bs_alerts_3h": 0,
     "factors": {
       "recency_score": 90,
-      "tod_score": 45,
+      "tod_score": 70,
       "volume_score": 90,
       "burst_score": 85
     }
   },
   "recent_alerts": [
+    {
+      "time_il": "29/09 21:35",
+      "cities": [
+        "נחל עוז"
+      ],
+      "beer_sheva": false,
+      "negev": false
+    },
     {
       "time_il": "29/09 03:33",
       "cities": [
@@ -172,22 +180,24 @@
       ],
       "beer_sheva": false,
       "negev": false
-    },
-    {
-      "time_il": "02/07 19:46",
-      "cities": [
-        "אביבים",
-        "יראון"
-      ],
-      "beer_sheva": false,
-      "negev": false
     }
   ],
   "daily_stats": {
-    "alerts_today": 1,
+    "alerts_today": 2,
     "bs_today": 0
   },
   "alert_history": [
+    {
+      "id": "tza_7669_1790706920",
+      "unix_time": 1790706920,
+      "cities": [
+        "נחל עוז"
+      ],
+      "beer_sheva": false,
+      "negev": false,
+      "threat": 0,
+      "is_drill": false
+    },
     {
       "id": "tza_7668_1790642018",
       "unix_time": 1790642018,
@@ -4622,21 +4632,6 @@
         "אשבל",
         "אשחר",
         "סכנין"
-      ],
-      "beer_sheva": false,
-      "negev": false,
-      "threat": 0,
-      "is_drill": false
-    },
-    {
-      "id": "tza_7559_1780319569",
-      "unix_time": 1780319569,
-      "cities": [
-        "בענה",
-        "דיר אל-אסד",
-        "הר חלוץ",
-        "לבון",
-        "נחף"
       ],
       "beer_sheva": false,
       "negev": false,
